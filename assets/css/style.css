@@ -1,0 +1,267 @@
+
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700);
+
+
+body {
+	transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+	font: 300 15px/1.6 'Raleway', serif, sans-serif;
+	background-color: #eeeeee;
+}
+
+/* USER PROFILE - HEADER*/
+
+.profile-name {
+	width:100%;
+	background-color: #3a3a3a;
+	color: #eeeeee;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	margin: 0px;
+	text-align: center;
+}
+
+.profile-name h1 {
+	font-size: 70px;
+}
+
+.profile-name i {
+	font-size: 30px;
+}
+
+.profile-name a {
+	background-color: #eeeeee;
+	color: #3a3a3a;
+	padding: 20px 10px 5px 10px;
+	margin: 0px 10px 0px 10px;
+}
+
+a.linkedin-icon:hover {
+	color: #007bb6;
+	animation-name: linkedin;
+    animation-duration: 0.2s;
+	-webkit-animation-name: linkedin; 
+    -webkit-animation-duration: 0.2s; 
+}
+
+a.facebook-icon:hover {
+	color: #3b5998;
+	animation-name: facebook;
+    animation-duration: 0.2s;
+	-webkit-animation-name: facebook; 
+    -webkit-animation-duration: 0.2s; 
+}
+
+a.gplus-icon:hover {
+	color: #d34836;
+	animation-name: gplus;
+    animation-duration: 0.2s;
+	-webkit-animation-name: gplus; 
+    -webkit-animation-duration: 0.2s; 
+}
+
+a.github-icon:hover {
+	color: #eeeeee;
+	background-color: #3a3a3a;
+	animation-name: github;
+    animation-duration: 0.2s;
+	-webkit-animation-name: github; 
+    -webkit-animation-duration: 0.2s; 
+}
+
+@-webkit-keyframes linkedin {
+    from {color: #eeeeee;}
+    to {color: #007bb6;}
+}
+
+@keyframes linkedin {
+    from {color: #eeeeee;}
+    to {color: #007bb6;}
+}
+
+@-webkit-keyframes facebook {
+    from {color: #eeeeee;}
+    to {color: #3b5998;}
+}
+
+@keyframes facebook {
+    from {color: #eeeeee;}
+    to {color: #3b5998;}
+}
+
+@-webkit-keyframes gplus {
+    from {color: #eeeeee;}
+    to {color: #d34836;}
+}
+
+@keyframes gplus {
+    from {color: #eeeeee;}
+    to {color: #d34836;}
+}
+
+@-webkit-keyframes github {
+    from {color: #3a3a3a;background-color: #eeeeee;}
+    to {color: #eeeeee;background-color: #3a3a3a;}
+}
+
+@keyframes github {
+    from {color: #3a3a3a;background-color: #eeeeee;}
+    to {color: #eeeeee;background-color: #3a3a3a;}
+}
+
+.profile-icon {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.topic {
+	padding-top: 40px;
+	padding-bottom: 10px;
+	margin: 0px 0px 40px;
+	color: #eeeeee;
+	text-align: center;
+}
+
+/*.topic:hover {
+	margin-bottom: 0px;
+	padding-top: 80px;
+	animation-name: grow;
+    animation-duration: 0.2s;
+	-webkit-animation-name: grow; 
+    -webkit-animation-duration: 0.2s; 
+}*/
+
+.hvr-sink {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active {
+  -webkit-transform: translateY(40px);
+  transform: translateY(40px);
+}
+
+@-webkit-keyframes grow {
+    from {padding-top: 40px;}
+    to {padding-top: 80px;}
+}
+
+@keyframes grow {
+    from {padding-top: 40px;}
+    to {padding-top: 80px;}
+}
+
+.topic i {
+	font-size: 40px;
+}
+
+.topic h3 {
+	font-size: 30px;
+	margin-bottom: 0px;
+}
+
+.pink {
+	background-color: #ED306A;
+}
+
+.purple {
+	background-color: #601DD6;
+}
+
+.orange {
+	background-color: #F8A233;
+}
+
+.green {
+	background-color: #37DB8E;
+}
+/* END OF USER PROFILE - HEADER */
+/* WEBSITE - CONTENT */
+
+.website-content {
+	margin: 0px;
+	padding: 30px;
+	background-color: #3a3a3a;
+	color: #eeeeee;
+	z-index: 1;
+	display: absolute;
+	bottom: 0px;
+	left:0px;
+	text-align: justify;
+}
+
+.website-content h1 {
+	margin-bottom: 30px;
+}
+
+.website-content img.profile-picture {
+	width: 100%;
+	margin: 0px auto;
+	display:block;
+}
+
+.website-content p.profile-description {
+	padding-top: 80px;
+	font-size: 20px;
+}
+
+.website-content img.programming-icon {
+	width: 100%;
+}
+
+.website-content .second-line-icons {
+	padding: 30px 0px;
+}
+
+.website-content h4 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.website-content h5 {
+	font-size:  18px;
+}
+
+.website-content i {
+	padding-right: 10px;
+}
+
+.website-content .resume-line i {
+	color: #F8A233;
+	padding-right: 10px;
+}
+
+.website-content .resume-line {
+	padding: 20px 5px;
+}
+
+.website-content img.portfolio-icon {
+	height: 250px;
+	margin: 20px auto;
+	display: block;
+	border-radius: 20px;
+}
+
+.website-content a {
+	color: #eeeeee;
+}
+/* END OF WEBSITE - CONTENT */
+
+/* FOOTER */
+
+footer p {
+	color: #f4f4f4;
+}
+
+/* END OF FOOTER*/
