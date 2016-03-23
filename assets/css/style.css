@@ -246,6 +246,14 @@ a.github-icon:hover {
 	padding: 20px 5px;
 }
 
+.website-content .download-button {
+	margin: 0px auto;
+	color: #3a3a3a;
+	text-align: center;
+	padding: 10px;
+	border: 2px solid #F8A233;
+}
+
 .website-content img.portfolio-icon {
 	height: 250px;
 	margin: 20px auto;
