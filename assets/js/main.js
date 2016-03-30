@@ -1,4 +1,4 @@
-angular.module('resumePage', ['ui.bootstrap']).controller('PageController', ['$scope', function($scope, $console) { 
+angular.module('resumePage', ['ui.bootstrap']).controller('PageController', ['$scope',  function($scope, $console) { 
 
 	$scope.backgroundColor = "green";
 
@@ -24,9 +24,6 @@ angular.module('resumePage', ['ui.bootstrap']).controller('PageController', ['$s
 
 	      }
     }
-
-
-
 
 
 }]);
