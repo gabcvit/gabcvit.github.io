@@ -62,7 +62,7 @@
 									<h2>Second Step</h2>
 								</header>
 								<div class="12u 12u$(mobile)">
-									<p>On the screen bellow it was implemented HammerJS, so it can recognize horizontal swapping and pinch gesture. If you swap the square horizontally, it will move the blue square, and if you pinch the object, it will change the size of the square</p>
+									<p>On the screen bellow it was implemented HammerJS, so it can recognize horizontal swapping and pinch gesture. If you swipe the square horizontally, it will move it 100px to the chosen side, and if you pinch the square, it will change its size</p>
 								</div>
 								<div class="12u 12u$(mobile)">
 									<div class="row">
@@ -120,39 +120,55 @@
 			<script src="assets/js/main.js"></script>
 
 			<script>
-				
-				    var blue = document.getElementById("hammer-object");
-				    $blue = jQuery(blue);
-				    var manager = new Hammer.Manager(blue);
-				    var Pinch = new Hammer.Pinch();
-				    manager.add(Pinch);
-
-				    Hammer(blue).get('pinch').set({ enable: true });
-				    
-				    Hammer(blue).on("swipeleft", function() {
-				    	$(blue).animate({left: "-=100"}, 500)  
-				    });
-				    
-				    Hammer(blue).on("swiperight", function() {
-				    	$(blue).animate({left: "+=100"}, 500)  
-				    });
-
-				    var currentScale = 1;
-					function getRelativeScale(scale) {
-					  return scale * currentScale;
-					}
-					manager.on('pinchmove', function(e) {
-					  // do something cool
-					  var scale = getRelativeScale(e.scale);
-					  $.Velocity.hook($blue, 'scale', scale);
-					});
-					manager.on('pinchend', function(e) {
-					  // cache the scale
-					  currentScale = getRelativeScale(e.scale);
-					  liveScale = currentScale;
-					});
+				var blue=document.getElementById("hammer-object");$blue=jQuery(blue);var manager=new Hammer.Manager(blue),Pinch=new Hammer.Pinch;manager.add(Pinch);Hammer(blue).get("pinch").set({enable:!0});Hammer(blue).on("swipeleft",function(){$(blue).animate({left:"-=100"},500)});Hammer(blue).on("swiperight",function(){$(blue).animate({left:"+=100"},500)});var currentScale=1;function getRelativeScale(a){return a*currentScale}
+manager.on("pinchmove",function(a){a=getRelativeScale(a.scale);$.Velocity.hook($blue,"scale",a)});manager.on("pinchend",function(a){liveScale=currentScale=getRelativeScale(a.scale)});   
 			</script>
 			<script src="https://cdn.rawgit.com/julianshapiro/velocity/master/velocity.min.js"></script>
+
+			<script>
+			navigator.getBattery().then(function(battery) {
+			  function updateAllBatteryInfo(){
+			    updateChargeInfo();
+			    updateLevelInfo();
+			    updateChargingInfo();
+			    updateDischargingInfo();
+			  }
+			  updateAllBatteryInfo();
+
+			  battery.addEventListener('chargingchange', function(){
+			    updateChargeInfo();
+			  });
+			  function updateChargeInfo(){
+			    console.log("Battery charging? "
+			                + (battery.charging ? "Yes" : "No"));
+			  }
+
+			  battery.addEventListener('levelchange', function(){
+			    updateLevelInfo();
+			  });
+			  function updateLevelInfo(){
+			    console.log("Battery level: "
+			                + battery.level * 100 + "%");
+			  }
+
+			  battery.addEventListener('chargingtimechange', function(){
+			    updateChargingInfo();
+			  });
+			  function updateChargingInfo(){
+			    console.log("Battery charging time: "
+			                 + battery.chargingTime + " seconds");
+			  }
+
+			  battery.addEventListener('dischargingtimechange', function(){
+			    updateDischargingInfo();
+			  });
+			  function updateDischargingInfo(){
+			    console.log("Battery discharging time: "
+			                 + battery.dischargingTime + " seconds");
+			  }
+			});
+
+			</script>
 
 	</body>
 </html>
