@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 3 - Gabriel Vitali</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#me" class="icon fa-home active"><span>Home</span></a>
+						<a href="#first" class="icon fa-css3"><span>First Step</span></a>
+						<a href="#second" class="icon fa-check"><span>Second Step</span></a>
+						<a href="#third" class="icon fa-desktop"><span>Third Step</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						
+							<article id="me" class="panel">
+								<header>
+									<h1>Assignment 3</h1>
+									<p>by Gabriel Vitali</p>
+								</header>
+								<a href="#first" class="jumplink pic">
+									<span class="arrow icon fa-chevron-right"><span>See the assignment</span></span>
+									<img src="images/uoft.png" alt="" />
+								</a>
+							</article>
+
+						
+							<article id="first" class="panel">
+								<header>
+									<h2>First Step</h2>
+								</header>
+								<div class="6u 12u$(mobile)">
+									
+								</div>
+								<div class="row">
+									<div class="box-button">
+										<button class="map-button" onclick="showMap()">See my location</button>
+									</div>
+									<div id="map"></div>
+								</div>
+							</article>
+
+						
+							<article id="second" class="panel">
+								<header>
+									<h2>Second Step</h2>
+								</header>
+								<p>
+									This page uses Modernizr to check whether the current browser is compatible with the 4 following miscellaneous HTML5/CSS3 features. If your browser is compatible with the feature described above it will show a green tick icon, otherwise it will show a red X icon.
+								</p>
+								<div class="row">
+									<div class="6u 12u$(mobile)">
+										<p>HTML5 Video</p> 
+										<div class="box-video">
+										</div>
+									</div>
+									<div class="6u 12u$(mobile)">
+										<p>Emoji</p> 
+										<div class="box-emoji">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="6u 12u$(mobile)">
+										<p>Geolocation API</p>
+										<div class="box-geolocation">
+										</div>
+									</div>
+									<div class="6u 12u$(mobile)">
+										<p>CSS Animation</p>
+										<div class="box-cssanimation">
+										</div>
+									</div>
+								</div>
+							</article>
+
+							<article id="third" class="panel">
+								<header>
+									<h2>Third Step</h2>
+								</header>
+								<p>
+									This page was built to be completely different for different screen dimentions, try changing your mobile device orientation or resizing your browser screen size on your computer to try it.
+								</p>
+									<div class="row">
+										<div class="6u 12u$(mobile)">
+											<div class="dynamic-block">
+												<span>You are seeing this page </span>
+											</div>
+										</div>
+										<div class="6u 12u$(mobile)">
+											<div class="dynamic-image">
+											</div>
+										</div>
+									</div>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+
+		      function showMap() {
+		      	if(navigator.geolocation)
+		      	{
+		      		navigator.geolocation.getCurrentPosition(openMap);
+		      	}
+		      	else
+		      	{
+		      		error();
+		      	}
+		      	
+		      }
+
+		      function openMap(position) {
+		      	console.warn('GEOLOCATION');
+	      			var latitude = position.coords.latitude;
+			        var longitude = position.coords.longitude;
+			        var mapDiv = document.getElementById('map');
+			        var map = new google.maps.Map(mapDiv, 
+			        {
+			        	center: {lat: latitude, lng: longitude},
+					    zoom: 15
+			        	
+			        });
+		      }
+
+		      function error() {
+		      	console.warn('NO GEOLOCATION');
+		      		latitude = 43.6628917;
+			        longitude = -79.3956564;
+			        var mapDiv = document.getElementById('map');
+			        var map = new google.maps.Map(mapDiv, 
+			        {
+			        	center: {lat: latitude, lng: longitude},
+					    zoom: 15
+			        	
+			        });
+		      }
+
+		    </script>
+		    <script src="https://maps.googleapis.com/maps/api/js?callback=openMap"
+        async defer></script>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel-viewport.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/modernizr-custom.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
