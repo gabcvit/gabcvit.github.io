@@ -77,18 +77,16 @@
 								<header>
 									<h2>Third Step</h2>
 								</header>
-								<p>
-									This page was built to be completely different for different screen dimentions, try changing your mobile device orientation or resizing your browser screen size on your computer to try it.
-								</p>
+									<p>It was implemented three different behaviors throughout Javascript APIs: battery status, vibration, and media caption through the device’s camera.</p>
 									<div class="row">
 										<div class="6u 12u$(mobile)">
-											<div class="dynamic-block">
-												<span>You are seeing this page </span>
-											</div>
+											<p><i class="fa fa-battery-three-quarters"></i> On this part it's possible to see how much battery life your device got left:</p>
+											<h6 id="battery-life"></h6>
+											<h6 id="battery-charging"></h6>
 										</div>
 										<div class="6u 12u$(mobile)">
-											<div class="dynamic-image">
-											</div>
+											<p><i class="fa fa-mobile"></i> Here it's possible to press the button bellow and your device will vibrate (if possible)</p>
+											<button class="vibrate-button" onclick="showMap()">Vibrate device</button>
 										</div>
 									</div>
 							</article>
@@ -105,11 +103,6 @@
 			</div>
 
 		<!-- Scripts -->
-			<script>
-		      function showMap(){navigator.geolocation?navigator.geolocation.getCurrentPosition(openMap):error()}function openMap(a){console.warn("GEOLOCATION");var b=a.coords.latitude;a=a.coords.longitude;var c=document.getElementById("map");new google.maps.Map(c,{center:{lat:b,lng:a},zoom:15})}function error(){console.warn("NO GEOLOCATION");latitude=43.6628917;longitude=-79.3956564;var a=document.getElementById("map");new google.maps.Map(a,{center:{lat:latitude,lng:longitude},zoom:15})};
-		    </script>
-		    <script src="https://maps.googleapis.com/maps/api/js?callback=openMap"
-        async defer></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/skel-viewport.min.js"></script>
@@ -119,56 +112,42 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
+			<!-- Google maps API - First Step -->
+			<script>
+		      function showMap(){navigator.geolocation?navigator.geolocation.getCurrentPosition(openMap):error()}function openMap(a){console.warn("GEOLOCATION");var b=a.coords.latitude;a=a.coords.longitude;var c=document.getElementById("map");new google.maps.Map(c,{center:{lat:b,lng:a},zoom:15})}function error(){console.warn("NO GEOLOCATION");latitude=43.6628917;longitude=-79.3956564;var a=document.getElementById("map");new google.maps.Map(a,{center:{lat:latitude,lng:longitude},zoom:15})};
+		    </script>
+		    <script src="https://maps.googleapis.com/maps/api/js?callback=openMap"
+        async defer></script>
+			
+			<!-- Hammer JS - Second Step -->
 			<script>
 				var blue=document.getElementById("hammer-object");$blue=jQuery(blue);var manager=new Hammer.Manager(blue),Pinch=new Hammer.Pinch;manager.add(Pinch);Hammer(blue).get("pinch").set({enable:!0});Hammer(blue).on("swipeleft",function(){$(blue).animate({left:"-=100"},500)});Hammer(blue).on("swiperight",function(){$(blue).animate({left:"+=100"},500)});var currentScale=1;function getRelativeScale(a){return a*currentScale}
 manager.on("pinchmove",function(a){a=getRelativeScale(a.scale);$.Velocity.hook($blue,"scale",a)});manager.on("pinchend",function(a){liveScale=currentScale=getRelativeScale(a.scale)});   
 			</script>
 			<script src="https://cdn.rawgit.com/julianshapiro/velocity/master/velocity.min.js"></script>
 
+			<!-- Battery level API - Third Step -->
 			<script>
-			navigator.getBattery().then(function(battery) {
-			  function updateAllBatteryInfo(){
-			    updateChargeInfo();
-			    updateLevelInfo();
-			    updateChargingInfo();
-			    updateDischargingInfo();
-			  }
-			  updateAllBatteryInfo();
+				navigator.getBattery().then(function(a){function b(){document.getElementById("battery-charging").innerHTML="Is the battery charging? "+(a.charging?"Yes":"No");console.log()}function c(){document.getElementById("battery-life").innerHTML="Battery level: "+100*a.level+"%"}b();c();updateChargingInfo();updateDischargingInfo();a.addEventListener("chargingchange",function(){b()});a.addEventListener("levelchange",function(){c()})});
+			</script>
 
-			  battery.addEventListener('chargingchange', function(){
-			    updateChargeInfo();
-			  });
-			  function updateChargeInfo(){
-			    console.log("Battery charging? "
-			                + (battery.charging ? "Yes" : "No"));
-			  }
-
-			  battery.addEventListener('levelchange', function(){
-			    updateLevelInfo();
-			  });
-			  function updateLevelInfo(){
-			    console.log("Battery level: "
-			                + battery.level * 100 + "%");
-			  }
-
-			  battery.addEventListener('chargingtimechange', function(){
-			    updateChargingInfo();
-			  });
-			  function updateChargingInfo(){
-			    console.log("Battery charging time: "
-			                 + battery.chargingTime + " seconds");
-			  }
-
-			  battery.addEventListener('dischargingtimechange', function(){
-			    updateDischargingInfo();
-			  });
-			  function updateDischargingInfo(){
-			    console.log("Battery discharging time: "
-			                 + battery.dischargingTime + " seconds");
-			  }
-			});
+			<!-- Battery level API - Third Step -->
+			<script>
+				function vibrateNow() {
+					if(navigator.vibrate)
+					{
+						navigator.vibrate(1000);
+					}
+					else {
+						console.log("NOT COMPATIBLE")
+					}
+					
+				}
+				
 
 			</script>
+
+			<!-- Battery level API - Third Step -->
 
 	</body>
 </html>

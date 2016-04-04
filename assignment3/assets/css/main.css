@@ -1669,3 +1669,12 @@
 	height: 80px;
 }
 
+button.vibrate-button {
+	padding: 50px;
+	font-size: 24px;
+	background-color: #3a3a3a;
+	color: #f4f4f4;
+	margin: 50px auto;
+	display: block;
+}
+
