@@ -122,6 +122,7 @@
 			<script>
 				
 				    var blue = document.getElementById("hammer-object");
+				    Hammer(blue).get('pinch').set({ enable: true });
 				    
 				    Hammer(blue).on("swipeleft", function() {
 				    	$(blue).animate({left: "-=100"}, 500)  
@@ -131,11 +132,11 @@
 				    	$(blue).animate({left: "+=100"}, 500)  
 				    });
 
-				    Hammer(blue).on('pinchmove', function() {
+				    Hammer(blue).on('pinchout', function() {
 						$(blue).animate({width: "+=10px"}, 500)
 					});
 
-					Hammer(blue).on('pinchend', function() {
+					Hammer(blue).on('pinchin', function() {
 						$(blue).animate({width: "-=10px"}, 500)
 					});
 			</script>
