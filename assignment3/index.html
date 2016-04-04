@@ -122,6 +122,11 @@
 			<script>
 				
 				    var blue = document.getElementById("hammer-object");
+				    $blue = jQuery(blue);
+				    var manager = new Hammer.Manager(blue);
+				    var Pinch = new Hammer.Pinch();
+				    manager.add(Pinch);
+
 				    Hammer(blue).get('pinch').set({ enable: true });
 				    
 				    Hammer(blue).on("swipeleft", function() {
@@ -132,12 +137,19 @@
 				    	$(blue).animate({left: "+=100"}, 500)  
 				    });
 
-				    Hammer(blue).on('pinchout', function() {
-						$(blue).animate({width: "+=10px"}, 500)
+				    var currentScale = 1;
+					function getRelativeScale(scale) {
+					  return scale * currentScale;
+					}
+					manager.on('pinchmove', function(e) {
+					  // do something cool
+					  var scale = getRelativeScale(e.scale);
+					  $.Velocity.hook($blue, 'scale', scale);
 					});
-
-					Hammer(blue).on('pinchin', function() {
-						$(blue).animate({width: "-=10px"}, 500)
+					manager.on('pinchend', function(e) {
+					  // cache the scale
+					  currentScale = getRelativeScale(e.scale);
+					  liveScale = currentScale;
 					});
 			</script>
 			<script src="https://cdn.rawgit.com/julianshapiro/velocity/master/velocity.min.js"></script>
