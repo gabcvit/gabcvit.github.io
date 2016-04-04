@@ -62,7 +62,7 @@
 									<h2>Second Step</h2>
 								</header>
 								<div class="12u 12u$(mobile)">
-									<p>On the screen bellow it was implemented HammerJS, so it can recognize horizontal swapping and pinch gesture. If you swap the screen horizontally, it will change the color, and if you pinch the screen, it will change the size of the screen</p>
+									<p>On the screen bellow it was implemented HammerJS, so it can recognize horizontal swapping and pinch gesture. If you swap the square horizontally, it will move the blue square, and if you pinch the object, it will change the size of the square</p>
 								</div>
 								<div class="12u 12u$(mobile)">
 									<div class="row">
@@ -124,23 +124,19 @@
 				    var blue = document.getElementById("hammer-object");
 				    
 				    Hammer(blue).on("swipeleft", function() {
-				          $(blue).animate({left: "-=100"}, 500)  
+				    	$(blue).animate({left: "-=100"}, 500)  
 				    });
 				    
 				    Hammer(blue).on("swiperight", function() {
-				          $(blue).animate({left: "+=100"}, 500)  
+				    	$(blue).animate({left: "+=100"}, 500)  
 				    });
 
 				    Hammer(blue).on('pinchmove', function(e) {
-					  // do something cool
-					  var scale = getRelativeScale(e.scale);
-					  $.Velocity.hook($stage, 'scale', scale);
+						$(blue).animate({width: "+=10px", height: "+=10px"}, 500)
 					});
-					
+
 					Hammer(blue).on('pinchend', function(e) {
-					  // cache the scale
-					  currentScale = getRelativeScale(e.scale);
-					  liveScale = currentScale;
+						$(blue).animate({width: "-=10px", height: "-=10px"}, 500)
 					});
 			</script>
 			<script src="https://cdn.rawgit.com/julianshapiro/velocity/master/velocity.min.js"></script>
