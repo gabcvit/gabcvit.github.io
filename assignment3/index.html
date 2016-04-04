@@ -17,9 +17,9 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<a href="#me" class="icon fa-home active"><span>Home</span></a>
-						<a href="#first" class="icon fa-css3"><span>First Step</span></a>
-						<a href="#second" class="icon fa-check"><span>Second Step</span></a>
-						<a href="#third" class="icon fa-desktop"><span>Third Step</span></a>
+						<a href="#first" class="icon fa-globe"><span>First Step</span></a>
+						<a href="#second" class="icon fa-puzzle-piece"><span>Second Step</span></a>
+						<a href="#third" class="icon fa-battery-half"><span>Third Step</span></a>
 					</nav>
 
 				<!-- Main -->
@@ -42,15 +42,18 @@
 								<header>
 									<h2>First Step</h2>
 								</header>
-								<div class="6u 12u$(mobile)">
-									
+								<div class="12u 12u$(mobile)">
+									<p>It was implemented a button that runs a Javascript code (compressed by Google Closure Compiler) to show a map bellow. This map should provide your device's location which you are accessing this website. If it's not compatible it will show the location of University of Toronto St. George campus</p>
 								</div>
-								<div class="row">
-									<div class="box-button">
-										<button class="map-button" onclick="showMap()">See my location</button>
+								<div class="12u 12u$(mobile)">
+									<div class="row">
+										<div class="box-button">
+											<button class="map-button" onclick="showMap()">See my location</button>
+										</div>
+										<div id="map"></div>
 									</div>
-									<div id="map"></div>
 								</div>
+								
 							</article>
 
 						
@@ -58,30 +61,13 @@
 								<header>
 									<h2>Second Step</h2>
 								</header>
-								<p>
-									This page uses Modernizr to check whether the current browser is compatible with the 4 following miscellaneous HTML5/CSS3 features. If your browser is compatible with the feature described above it will show a green tick icon, otherwise it will show a red X icon.
-								</p>
-								<div class="row">
-									<div class="6u 12u$(mobile)">
-										<p>HTML5 Video</p> 
-										<div class="box-video">
-										</div>
-									</div>
-									<div class="6u 12u$(mobile)">
-										<p>Emoji</p> 
-										<div class="box-emoji">
-										</div>
-									</div>
+								<div class="12u 12u$(mobile)">
+									<p>On the screen bellow it was implemented HammerJS, so it can recognize horizontal swapping and pinch gesture. If you swap the screen horizontally, it will change the color, and if you pinch the screen, it will change the size of the screen</p>
 								</div>
-								<div class="row">
-									<div class="6u 12u$(mobile)">
-										<p>Geolocation API</p>
-										<div class="box-geolocation">
-										</div>
-									</div>
-									<div class="6u 12u$(mobile)">
-										<p>CSS Animation</p>
-										<div class="box-cssanimation">
+								<div class="12u 12u$(mobile)">
+									<div class="row">
+										<div class="hammer-screen">
+											<div id="hammer-object"></div>
 										</div>
 									</div>
 								</div>
@@ -120,56 +106,44 @@
 
 		<!-- Scripts -->
 			<script>
-
-		      function showMap() {
-		      	if(navigator.geolocation)
-		      	{
-		      		navigator.geolocation.getCurrentPosition(openMap);
-		      	}
-		      	else
-		      	{
-		      		error();
-		      	}
-		      	
-		      }
-
-		      function openMap(position) {
-		      	console.warn('GEOLOCATION');
-	      			var latitude = position.coords.latitude;
-			        var longitude = position.coords.longitude;
-			        var mapDiv = document.getElementById('map');
-			        var map = new google.maps.Map(mapDiv, 
-			        {
-			        	center: {lat: latitude, lng: longitude},
-					    zoom: 15
-			        	
-			        });
-		      }
-
-		      function error() {
-		      	console.warn('NO GEOLOCATION');
-		      		latitude = 43.6628917;
-			        longitude = -79.3956564;
-			        var mapDiv = document.getElementById('map');
-			        var map = new google.maps.Map(mapDiv, 
-			        {
-			        	center: {lat: latitude, lng: longitude},
-					    zoom: 15
-			        	
-			        });
-		      }
-
+		      function showMap(){navigator.geolocation?navigator.geolocation.getCurrentPosition(openMap):error()}function openMap(a){console.warn("GEOLOCATION");var b=a.coords.latitude;a=a.coords.longitude;var c=document.getElementById("map");new google.maps.Map(c,{center:{lat:b,lng:a},zoom:15})}function error(){console.warn("NO GEOLOCATION");latitude=43.6628917;longitude=-79.3956564;var a=document.getElementById("map");new google.maps.Map(a,{center:{lat:latitude,lng:longitude},zoom:15})};
 		    </script>
 		    <script src="https://maps.googleapis.com/maps/api/js?callback=openMap"
         async defer></script>
-
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/skel-viewport.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/modernizr-custom.js"></script>
+			<script src="assets/js/hammer.min.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				
+				    var blue = document.getElementById("hammer-object");
+				    
+				    Hammer(blue).on("swipeleft", function() {
+				          $(blue).animate({left: "-=100"}, 500)  
+				    });
+				    
+				    Hammer(blue).on("swiperight", function() {
+				          $(blue).animate({left: "+=100"}, 500)  
+				    });
+
+				    Hammer(blue).on('pinchmove', function(e) {
+					  // do something cool
+					  var scale = getRelativeScale(e.scale);
+					  $.Velocity.hook($stage, 'scale', scale);
+					});
+					
+					Hammer(blue).on('pinchend', function(e) {
+					  // cache the scale
+					  currentScale = getRelativeScale(e.scale);
+					  liveScale = currentScale;
+					});
+			</script>
+			<script src="https://cdn.rawgit.com/julianshapiro/velocity/master/velocity.min.js"></script>
 
 	</body>
 </html>
