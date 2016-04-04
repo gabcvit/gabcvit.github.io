@@ -131,12 +131,12 @@
 				    	$(blue).animate({left: "+=100"}, 500)  
 				    });
 
-				    Hammer(blue).on('pinchmove', function(e) {
-						$(blue).animate({width: "+=10px", height: "+=10px"}, 500)
+				    Hammer(blue).on('pinchmove', function() {
+						$(blue).animate({width: "+=10px"}, 500)
 					});
 
-					Hammer(blue).on('pinchend', function(e) {
-						$(blue).animate({width: "-=10px", height: "-=10px"}, 500)
+					Hammer(blue).on('pinchend', function() {
+						$(blue).animate({width: "-=10px"}, 500)
 					});
 			</script>
 			<script src="https://cdn.rawgit.com/julianshapiro/velocity/master/velocity.min.js"></script>
