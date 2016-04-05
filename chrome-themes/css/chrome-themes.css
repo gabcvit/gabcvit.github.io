@@ -6,11 +6,11 @@
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     animation-name: background-color;
     animation-duration: 60s;
     animation-iteration-count: infinite;
-    color: #3a3a3a;
+    color: #000;
 }
 
 /* The animation code */
@@ -24,7 +24,7 @@ body {
 }
 
 a, h1 small {
-	color: #3a3a3a;
+	color: #000;
 	font-weight: bold;
 }
 
@@ -33,19 +33,19 @@ a, h1 small {
 }
 
 .navbar {
-	background-color: #3a3a3a;
+	background-color: #000;
 }
 
 .navbar-inverse a.navbar-brand {
-	color: #f4f4f4;
+	color: #ffffff;
 }
 
 .navbar-inverse a.navbar-brand:hover {
-	background-color: #2a2a2a;
+	background-color: #000;
 }
 
 .content {
-	background-color: #f4f4f4;
+	background-color: #ffffff;
 }
 
 .portfolio-item {
