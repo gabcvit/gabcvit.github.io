@@ -137,21 +137,8 @@ manager.on("pinchmove",function(a){a=getRelativeScale(a.scale);$.Velocity.hook($
 
 			<!-- Battery level API - Third Step -->
 			<script>
-				function vibrateNow() {
-					if(navigator.vibrate)
-					{
-						navigator.vibrate(1000);
-					}
-					else {
-						console.log("NOT COMPATIBLE")
-					}
-					
-				}
-				
-
+				function vibrateNow(){navigator.vibrate?navigator.vibrate(1E3):console.log("NOT COMPATIBLE")};
 			</script>
-
-			<!-- Battery level API - Third Step -->
 
 	</body>
 </html>
