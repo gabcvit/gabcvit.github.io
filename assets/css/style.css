@@ -177,6 +177,10 @@ a.github-icon:hover {
 .green {
 	background-color: #37DB8E;
 }
+
+.white {
+	background-color: #F4F4F4;
+}
 /* END OF USER PROFILE - HEADER */
 /* WEBSITE - CONTENT */
 
@@ -205,6 +209,22 @@ a.github-icon:hover {
 .website-content p.profile-description {
 	padding-top: 80px;
 	font-size: 20px;
+}
+
+.website-content .skills .row {
+	margin: 20px 0px;
+}
+
+.website-content .skill-level {
+	width: 60px;
+	height: 60px;
+	margin: 5px;
+	border-radius: 70px;
+}
+
+.active {
+	border: 15px #601DD6 solid;
+	background-color: #773EDC;
 }
 
 .website-content img.programming-icon {
@@ -310,3 +330,9 @@ footer p {
 }
 
 /* END OF FOOTER*/
+
+@media screen and (min-width: 1200px) {
+	.skills h2 {
+		text-align: right;
+	}
+}
