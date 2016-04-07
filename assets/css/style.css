@@ -270,6 +270,10 @@ a.github-icon:hover {
 
 /* RESUME */
 
+.website-content .resume-line h5.description {
+	margin: 20px 0px;
+}
+
 .website-content .resume-line i {
 	color: #F8A233;
 	padding-right: 10px;
@@ -277,6 +281,10 @@ a.github-icon:hover {
 
 .website-content .resume-line {
 	padding: 20px 5px;
+}
+
+.website-content .resume-line:hover {
+	background-color: #5c5c5c;
 }
 
 .website-content .download-button {
@@ -360,6 +368,10 @@ footer p {
 	.skills h2 {
 		text-align: right;
 	}
+
+	.website-content .resume-line h5 {
+	margin: 20px 0px;
+}
 }
 
 /* END OF MEDIA QUERIES */
