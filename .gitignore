@@ -1,2 +1,4 @@
 patriciafaro/
 .DS_STORE
+.app.js
+node_modules/
