@@ -9,7 +9,7 @@ body {
 	background-color: #eeeeee;
 }
 
-/* USER PROFILE - HEADER*/
+/* HEADER BAR */
 
 .profile-name {
 	width:100%;
@@ -181,7 +181,8 @@ a.github-icon:hover {
 .white {
 	background-color: #F4F4F4;
 }
-/* END OF USER PROFILE - HEADER */
+/* END OF HEADER BAR */
+
 /* WEBSITE - CONTENT */
 
 .website-content {
@@ -200,6 +201,27 @@ a.github-icon:hover {
 	margin-bottom: 30px;
 }
 
+.website-content h4 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.website-content h5 {
+	font-size:  18px;
+}
+
+.website-content i {
+	padding-right: 10px;
+}
+
+.website-content a {
+	color: #eeeeee;
+}
+
+/* END OF WEBSITE CONTENT */
+
+/* PROFILE */
+
 .website-content img.profile-picture {
 	width: 100%;
 	margin: 0px auto;
@@ -211,8 +233,17 @@ a.github-icon:hover {
 	font-size: 20px;
 }
 
+/* END OF PROFILE*/
+
+/* KNOWLEDGE */
+
 .website-content .skills .row {
 	margin: 20px 0px;
+	padding: 10px;
+}
+
+.website-content .skills .row:hover {
+	background-color: #5c5c5c;
 }
 
 .website-content .skill-level {
@@ -235,18 +266,9 @@ a.github-icon:hover {
 	padding: 30px 0px;
 }
 
-.website-content h4 {
-	font-size: 20px;
-	font-weight: bold;
-}
+/* END OF KNOWLEDGE*/
 
-.website-content h5 {
-	font-size:  18px;
-}
-
-.website-content i {
-	padding-right: 10px;
-}
+/* RESUME */
 
 .website-content .resume-line i {
 	color: #F8A233;
@@ -264,6 +286,10 @@ a.github-icon:hover {
 	padding: 10px;
 	border: 2px solid #F8A233;
 }
+
+/* END OF RESUME*/
+
+/* PORTFOLIO */
 
 .website-content .portfolio-piece {
 	display:block;
@@ -318,10 +344,7 @@ a.github-icon:hover {
 	border-radius: 20px;
 }
 
-.website-content a {
-	color: #eeeeee;
-}
-/* END OF WEBSITE - CONTENT */
+/* END OF PORTFOLIO */
 
 /* FOOTER */
 
@@ -331,8 +354,12 @@ footer p {
 
 /* END OF FOOTER*/
 
+/* MEDIA QUERIES */
+
 @media screen and (min-width: 1200px) {
 	.skills h2 {
 		text-align: right;
 	}
 }
+
+/* END OF MEDIA QUERIES */

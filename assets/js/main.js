@@ -1,6 +1,7 @@
 angular.module('resumePage', ['ui.bootstrap']).controller('PageController', ['$scope',  function($scope, $console) { 
 
 	$scope.backgroundColor = "green";
+	$scope.skillPointClasses = "skill-level active animated infinite pulse";
 
     $scope.changePage = function(name) {
 	      if(name == "profile")
@@ -24,6 +25,7 @@ angular.module('resumePage', ['ui.bootstrap']).controller('PageController', ['$s
 
 	      }
     }
+
 
 
 }]);
