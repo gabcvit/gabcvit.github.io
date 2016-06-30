@@ -9,6 +9,18 @@ body {
 	background-color: #eeeeee;
 }
 
+.container {
+	width: 100%;
+}
+
+h1 {
+	font-size:35px;
+}
+
+h2 {
+	font-size:24px;
+}
+
 /* HEADER BAR */
 
 .profile-name {
@@ -22,7 +34,7 @@ body {
 }
 
 .profile-name h1 {
-	font-size: 70px;
+	font-size: 45px;
 }
 
 .profile-name i {
@@ -158,7 +170,7 @@ a.github-icon:hover {
 }
 
 .topic h3 {
-	font-size: 30px;
+	font-size: 20px;
 	margin-bottom: 0px;
 }
 
@@ -202,12 +214,12 @@ a.github-icon:hover {
 }
 
 .website-content h4 {
-	font-size: 20px;
+	font-size: 15px;
 	font-weight: bold;
 }
 
 .website-content h5 {
-	font-size:  18px;
+	font-size:  13px;
 }
 
 .website-content i {
@@ -223,14 +235,14 @@ a.github-icon:hover {
 /* PROFILE */
 
 .website-content img.profile-picture {
-	width: 100%;
+	width: 90%;
 	margin: 0px auto;
 	display:block;
 }
 
 .website-content p.profile-description {
 	padding-top: 80px;
-	font-size: 20px;
+	font-size: 15px;
 }
 
 .website-content .profile i {
@@ -323,8 +335,8 @@ a.github-icon:hover {
 .website-content .portfolio-piece .portfolio-link .caption {
 	background: rgba(237, 48, 106, 0.9);
 	position: absolute;
-	width: 333px;
-	height: 250px;
+	width: 200px;
+	height: 150px;
 	border-radius: 20px;
 	opacity: 0;
 	transition: all ease 0.5s;
@@ -353,7 +365,8 @@ a.github-icon:hover {
 }
 
 .website-content img.portfolio-icon {
-	height: 250px;
+	width: 200px;
+	height: 150px;
 	margin: 20px 0px;
 	text-align: center;
 	display: block;
@@ -372,14 +385,90 @@ footer p {
 
 /* MEDIA QUERIES */
 
+@media screen and (min-width: 400px) {
+	h1 {
+		font-size:36px;
+	}
+
+	h2 {
+		font-size:30px;
+	}
+
+	.profile-name h1 {
+		font-size: 70px;
+	}
+
+	.topic h3 {
+		font-size: 30px;
+		margin-bottom: 0px;
+	}
+
+	.website-content h4 {
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.website-content h5 {
+		font-size:  18px;
+	}
+
+	.website-content p.profile-description {
+		padding-top: 80px;
+		font-size: 20px;
+	}
+
+	.website-content img.portfolio-icon {
+		height: 250px;
+		width: 333px;
+		margin: 20px 0px;
+		text-align: center;
+		display: block;
+		border-radius: 20px;
+	}
+
+	.website-content .portfolio-piece .portfolio-link .caption {
+		background: rgba(237, 48, 106, 0.9);
+		position: absolute;
+		width: 333px;
+		height: 250px;
+		border-radius: 20px;
+		opacity: 0;
+		transition: all ease 0.5s;
+		-webkit-transition: all ease 0.5s;
+		-moz-transition: all ease 0.5s;
+	}
+
+	
+}
+
+@media screen and (min-width: 768px) {
+
+	.container {
+		width: 768px;
+	}
+
+	.website-content img.profile-picture {
+		width: 500px;
+		margin: 0px auto;
+		display:block;
+	}
+}
+
 @media screen and (min-width: 1200px) {
+
 	.skills h2 {
 		text-align: right;
 	}
 
 	.website-content .resume-line h5 {
-	margin: 20px 0px;
+		margin: 20px 0px;
+	}
+
+	.container {
+		width: 1170px;
+	}
 }
-}
+
+
 
 /* END OF MEDIA QUERIES */
