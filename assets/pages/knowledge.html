@@ -5,23 +5,10 @@
 		<div class="col-lg-6">
 			<h2>HTML5 / CSS3 / Bootstrap</h2>
 		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div class="skill-level"></div>
+		<div ng-repeat="i in getNumber(5) track by $index">
+			<div class="col-lg-1 col-xs-2">
+				<div ng-class="skillPointClassesGreat"></div>
+			</div>
 		</div>
 	</div>
 
@@ -29,23 +16,10 @@
 		<div class="col-lg-6">
 			<h2>AngularJS</h2>
 		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div class="skill-level"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div class="skill-level"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div class="skill-level"></div>
+		<div ng-repeat="i in getNumber(3) track by $index">
+			<div class="col-lg-1 col-xs-2">
+				<div ng-class="skillPointClassesMedium"></div>
+			</div>
 		</div>
 	</div>
 
@@ -53,23 +27,10 @@
 		<div class="col-lg-6">
 			<h2>UML</h2>
 		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div class="skill-level"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div class="skill-level"></div>
+		<div ng-repeat="i in getNumber(4) track by $index">
+			<div class="col-lg-1 col-xs-2">
+				<div ng-class="skillPointClassesMedium"></div>
+			</div>
 		</div>
 	</div>
 
@@ -77,23 +38,10 @@
 		<div class="col-lg-6">
 			<h2>UX Design</h2>
 		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
+		<div ng-repeat="i in getNumber(6) track by $index">
+			<div class="col-lg-1 col-xs-2">
+				<div ng-class="skillPointClassesGreat"></div>
+			</div>
 		</div>
 	</div>
 
@@ -101,23 +49,10 @@
 		<div class="col-lg-6">
 			<h2>Java</h2>
 		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div ng-class="skillPointClasses"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div class="skill-level"></div>
-		</div>
-		<div class="col-lg-1 col-xs-2">
-			<div class="skill-level"></div>
+		<div ng-repeat="i in getNumber(4) track by $index">
+			<div class="col-lg-1 col-xs-2">
+				<div ng-class="skillPointClassesMedium"></div>
+			</div>
 		</div>
 	</div>
 </div>

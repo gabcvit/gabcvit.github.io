@@ -175,7 +175,7 @@ a.github-icon:hover {
 }
 
 .pink {
-	background-color: #ED306A;
+	background-color: #ED4548;
 }
 
 .purple {
@@ -246,7 +246,7 @@ a.github-icon:hover {
 }
 
 .website-content .profile i {
-	color: #37DB8E;
+	color: #ED4548;
 }
 
 /* END OF PROFILE*/
@@ -269,9 +269,19 @@ a.github-icon:hover {
 	border-radius: 70px;
 }
 
-.active {
-	border: 15px #601DD6 solid;
-	background-color: #773EDC;
+.active-bad {
+	border: 15px #ED306A solid;
+	background-color: #b46000;
+}
+
+.active-medium {
+	border: 15px #F8A233 solid;
+	background-color: #D68011;
+}
+
+.active-great {
+	border: 15px #37DB8E solid;
+	background-color: #15c96c;
 }
 
 .website-content img.programming-icon {
@@ -295,7 +305,7 @@ a.github-icon:hover {
 }
 
 .website-content .resume-line i {
-	color: #F8A233;
+	color: #37DB8E;
 	padding-right: 10px;
 }
 
@@ -333,7 +343,7 @@ a.github-icon:hover {
 }
 
 .website-content .portfolio-piece .portfolio-link .caption {
-	background: rgba(237, 48, 106, 0.9);
+	background: rgba(77, 0, 214, 0.9);
 	position: absolute;
 	width: 200px;
 	height: 150px;
@@ -427,7 +437,7 @@ footer p {
 	}
 
 	.website-content .portfolio-piece .portfolio-link .caption {
-		background: rgba(237, 48, 106, 0.9);
+		background: rgba(77, 0, 214, 0.9);
 		position: absolute;
 		width: 333px;
 		height: 250px;

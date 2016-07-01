@@ -2,7 +2,9 @@ angular.module('resumePage', ['ui.bootstrap']).controller('PageController', ['$s
 
 	$scope.backgroundColor = "green";
 	$scope.selectedArea = 'assets/pages/profile.html';
-	$scope.skillPointClasses = "skill-level active animated infinite pulse";
+	$scope.skillPointClassesBad = "skill-level active-bad animated infinite pulse";
+	$scope.skillPointClassesMedium = "skill-level active-medium animated infinite pulse";
+	$scope.skillPointClassesGreat = "skill-level active-great animated infinite pulse";
 
     $scope.changePage = function(name) {
 	      if(name == "profile")
@@ -34,5 +36,9 @@ angular.module('resumePage', ['ui.bootstrap']).controller('PageController', ['$s
 
 	      }
     }
+
+    $scope.getNumber = function(num) {
+	    return new Array(num);   
+	}
 
 }]);
