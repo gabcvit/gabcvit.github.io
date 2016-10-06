@@ -52,24 +52,24 @@ a.linkedin-icon:hover {
 	color: #007bb6;
 	animation-name: linkedin;
     animation-duration: 0.2s;
-	-webkit-animation-name: linkedin; 
-    -webkit-animation-duration: 0.2s; 
+	-webkit-animation-name: linkedin;
+    -webkit-animation-duration: 0.2s;
 }
 
 a.facebook-icon:hover {
 	color: #3b5998;
 	animation-name: facebook;
     animation-duration: 0.2s;
-	-webkit-animation-name: facebook; 
-    -webkit-animation-duration: 0.2s; 
+	-webkit-animation-name: facebook;
+    -webkit-animation-duration: 0.2s;
 }
 
 a.gplus-icon:hover {
 	color: #d34836;
 	animation-name: gplus;
     animation-duration: 0.2s;
-	-webkit-animation-name: gplus; 
-    -webkit-animation-duration: 0.2s; 
+	-webkit-animation-name: gplus;
+    -webkit-animation-duration: 0.2s;
 }
 
 a.github-icon:hover {
@@ -77,8 +77,8 @@ a.github-icon:hover {
 	background-color: #3a3a3a;
 	animation-name: github;
     animation-duration: 0.2s;
-	-webkit-animation-name: github; 
-    -webkit-animation-duration: 0.2s; 
+	-webkit-animation-name: github;
+    -webkit-animation-duration: 0.2s;
 }
 
 @-webkit-keyframes linkedin {
@@ -296,6 +296,10 @@ a.github-icon:hover {
     background: #3a3a3a;
 }
 
+.popover{
+	color: #3a3a3a;
+}
+
 /* END OF KNOWLEDGE*/
 
 /* RESUME */
@@ -448,7 +452,7 @@ footer p {
 		-moz-transition: all ease 0.5s;
 	}
 
-	
+
 }
 
 @media screen and (min-width: 768px) {
