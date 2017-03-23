@@ -4,7 +4,6 @@
 
 
 body {
-	transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
 	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
 	font-weight: 100;
 	font-style: normal;
@@ -107,62 +106,62 @@ a.github-icon:hover {
 }
 
 @-webkit-keyframes linkedin {
-    from {color: #eeeeee;}
+    from {color: #3a3a3a;}
     to {color: #007bb6;}
 }
 
 @keyframes linkedin {
-    from {color: #eeeeee;}
+    from {color: #3a3a3a;}
     to {color: #007bb6;}
 }
 
 @-webkit-keyframes facebook {
-    from {color: #eeeeee;}
+    from {color: #3a3a3a;}
     to {color: #3b5998;}
 }
 
 @keyframes facebook {
-    from {color: #eeeeee;}
+    from {color: #3a3a3a;}
     to {color: #3b5998;}
 }
 
 @-webkit-keyframes instagram {
-    from {color: #eeeeee;}
+    from {color: #3a3a3a;}
     to {color: #6f33b2;}
 }
 
 @keyframes instagram {
-    from {color: #eeeeee;}
+    from {color: #3a3a3a;}
     to {color: #6f33b2;}
 }
 
 @-webkit-keyframes gplus {
-    from {color: #eeeeee;}
+    from {color: #3a3a3a;}
     to {color: #d34836;}
 }
 
 @keyframes gplus {
-    from {color: #eeeeee;}
+    from {color: #3a3a3a;}
     to {color: #d34836;}
 }
 
 @-webkit-keyframes stackoverflow {
-    from {color: #eeeeee;}
+    from {color: #3a3a3a;}
     to {color: #f48024;}
 }
 
 @keyframes stackoverflow {
-    from {color: #eeeeee;}
+    from {color: #3a3a3a;}
     to {color: #f48024;}
 }
 
 @-webkit-keyframes github {
-		from {color: #eeeeee;}
+		from {color: #3a3a3a;}
 		to {color: #000000;}
 }
 
 @keyframes github {
-		from {color: #eeeeee;}
+		from {color: #3a3a3a;}
 		to {color: #000000;}
 }
 
@@ -173,6 +172,7 @@ a.github-icon:hover {
 }
 
 .selected-line div{
+	transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
 	width: 100%;
 	height: 5px;
 	margin:0px;
@@ -221,7 +221,7 @@ a.github-icon:hover {
 	display: absolute;
 	bottom: 0px;
 	left:0px;
-	text-align: justify;
+	text-align: left;
 }
 
 .website-content h1 {
@@ -394,7 +394,7 @@ a.github-icon:hover {
 	position: absolute;
 	width: 100%;
 	height: 20px;
-	font-size: 20px;
+	font-size: 16px;
 	text-align: center;
 	top: 50%;
 	margin-top: -12px;
@@ -409,7 +409,7 @@ a.github-icon:hover {
 .website-content img.portfolio-icon {
 	width: 200px;
 	height: 150px;
-	margin: 20px 0px;
+	margin: 20px;
 	text-align: center;
 	display: block;
 	box-shadow: 1px 1px 2px #3a3a3a;
@@ -430,34 +430,34 @@ footer p {
 
 @media screen and (min-width: 400px) {
 	h1 {
-		font-size:36px;
-	}
-
-	h2 {
 		font-size:30px;
 	}
 
+	h2 {
+		font-size:18px;
+	}
+
 	.profile-name h1 {
-		font-size: 70px;
+		font-size: 60px;
 	}
 
 	.topic h3 {
-		font-size: 20px;
+		font-size: 18px;
 		margin-bottom: 0px;
 	}
 
 	.website-content h4 {
-		font-size: 20px;
+		font-size: 16px;
 		font-weight: bold;
 	}
 
 	.website-content h5 {
-		font-size:  18px;
+		font-size:  14px;
 	}
 
 	.website-content p.profile-description {
 		padding-top: 80px;
-		font-size: 20px;
+		font-size: 14px;
 	}
 
 	.website-content img.portfolio-icon {
