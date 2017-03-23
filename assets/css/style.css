@@ -5,8 +5,11 @@
 
 body {
 	transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
-	font: 300 15px/1.6 'Raleway', serif, sans-serif;
-	background-color: #eeeeee;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	font-variant: normal;
+	background-color: #ffffff;
 }
 
 .container {
@@ -14,35 +17,42 @@ body {
 }
 
 h1 {
-	font-size:35px;
+	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-weight: 100;
+	font-style: normal;
+	font-variant: normal;
+	font-size: 35px;
 }
 
 h2 {
 	font-size:24px;
 }
 
+h3 {
+	font-size: 20px;
+	color: #3a3a3a;
+}
+
 /* HEADER BAR */
 
 .profile-name {
 	width:100%;
-	background-color: #3a3a3a;
-	color: #eeeeee;
-	padding-top: 20px;
-	padding-bottom: 10px;
+	color: #3a3a3a;
+	padding: 20px 0px 10px 10px;
 	margin: 0px;
-	text-align: center;
+	text-align: left;
 }
 
-.profile-name h1 {
-	font-size: 45px;
-}
-
-.profile-name i {
+.social-icons {
+	display: block;
 	font-size: 30px;
+	margin: 40px 20px;
+	height: 100%;
+
 }
 
-.profile-name a {
-	background-color: #eeeeee;
+.social-icons a {
+	background-color: transparent;
 	color: #3a3a3a;
 	padding: 20px 10px 5px 10px;
 	margin: 0px 10px 0px 10px;
@@ -64,6 +74,14 @@ a.facebook-icon:hover {
     -webkit-animation-duration: 0.2s;
 }
 
+a.instagram-icon:hover {
+	color: #6f33b2;
+	animation-name: instagram;
+    animation-duration: 0.2s;
+	-webkit-animation-name: instagram;
+    -webkit-animation-duration: 0.2s;
+}
+
 a.gplus-icon:hover {
 	color: #d34836;
 	animation-name: gplus;
@@ -72,9 +90,16 @@ a.gplus-icon:hover {
     -webkit-animation-duration: 0.2s;
 }
 
+a.stackoverflow-icon:hover {
+	color: #f48024;
+	animation-name: stackoverflow;
+    animation-duration: 0.2s;
+	-webkit-animation-name: stackoverflow;
+    -webkit-animation-duration: 0.2s;
+}
+
 a.github-icon:hover {
-	color: #eeeeee;
-	background-color: #3a3a3a;
+	color: #000000;
 	animation-name: github;
     animation-duration: 0.2s;
 	-webkit-animation-name: github;
@@ -101,6 +126,16 @@ a.github-icon:hover {
     to {color: #3b5998;}
 }
 
+@-webkit-keyframes instagram {
+    from {color: #eeeeee;}
+    to {color: #6f33b2;}
+}
+
+@keyframes instagram {
+    from {color: #eeeeee;}
+    to {color: #6f33b2;}
+}
+
 @-webkit-keyframes gplus {
     from {color: #eeeeee;}
     to {color: #d34836;}
@@ -111,48 +146,37 @@ a.github-icon:hover {
     to {color: #d34836;}
 }
 
+@-webkit-keyframes stackoverflow {
+    from {color: #eeeeee;}
+    to {color: #f48024;}
+}
+
+@keyframes stackoverflow {
+    from {color: #eeeeee;}
+    to {color: #f48024;}
+}
+
 @-webkit-keyframes github {
-    from {color: #3a3a3a;background-color: #eeeeee;}
-    to {color: #eeeeee;background-color: #3a3a3a;}
+		from {color: #eeeeee;}
+		to {color: #000000;}
 }
 
 @keyframes github {
-    from {color: #3a3a3a;background-color: #eeeeee;}
-    to {color: #eeeeee;background-color: #3a3a3a;}
-}
-
-.profile-icon {
-	padding: 0px;
-	margin: 0px;
-	border: 0px;
+		from {color: #eeeeee;}
+		to {color: #000000;}
 }
 
 .topic {
-	padding-top: 40px;
-	padding-bottom: 10px;
-	margin: 0px 0px 40px;
-	color: #eeeeee;
 	text-align: center;
+	cursor: pointer;
+	margin-bottom: 10px;
 }
 
-.hvr-sink {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
-.hvr-sink:hover, .hvr-sink:focus, .hvr-sink:active {
-  -webkit-transform: translateY(40px);
-  transform: translateY(40px);
+.selected-line div{
+	width: 100%;
+	height: 5px;
+	margin:0px;
+	padding:0px;
 }
 
 @-webkit-keyframes grow {
@@ -163,15 +187,6 @@ a.github-icon:hover {
 @keyframes grow {
     from {padding-top: 40px;}
     to {padding-top: 80px;}
-}
-
-.topic i {
-	font-size: 40px;
-}
-
-.topic h3 {
-	font-size: 20px;
-	margin-bottom: 0px;
 }
 
 .pink {
@@ -200,8 +215,8 @@ a.github-icon:hover {
 .website-content {
 	margin: 0px;
 	padding: 30px;
-	background-color: #3a3a3a;
-	color: #eeeeee;
+	background-color: #fefefe;
+	color: #3a3a3a;
 	z-index: 1;
 	display: absolute;
 	bottom: 0px;
@@ -246,7 +261,7 @@ a.github-icon:hover {
 }
 
 .website-content .profile i {
-	color: #ED4548;
+	color: #37DB8E;
 }
 
 /* END OF PROFILE*/
@@ -259,7 +274,7 @@ a.github-icon:hover {
 }
 
 .website-content .skills .row:hover {
-	background-color: #5c5c5c;
+	background-color: #eee;
 }
 
 .website-content .skill-level {
@@ -280,12 +295,13 @@ a.github-icon:hover {
 }
 
 .active-great {
-	border: 15px #37DB8E solid;
-	background-color: #15c96c;
+	border: 15px #601DD6 solid;
+	background-color: #400CC5;
 }
 
 .website-content img.programming-icon {
-	width: 100%;
+	width: 60%;
+	padding: 10%;
 }
 
 .website-content .second-line-icons {
@@ -309,8 +325,13 @@ a.github-icon:hover {
 }
 
 .website-content .resume-line i {
-	color: #37DB8E;
+	color: #F8A233;
 	padding-right: 10px;
+}
+
+.website-content .resume-line a {
+	color: #F8A233;
+
 }
 
 .website-content .resume-line {
@@ -318,7 +339,7 @@ a.github-icon:hover {
 }
 
 .website-content .resume-line:hover {
-	background-color: #5c5c5c;
+	background-color: #eee;
 }
 
 .website-content .download-button {
@@ -347,7 +368,7 @@ a.github-icon:hover {
 }
 
 .website-content .portfolio-piece .portfolio-link .caption {
-	background: rgba(77, 0, 214, 0.9);
+	background: rgba(237, 69, 72, 0.9);
 	position: absolute;
 	width: 200px;
 	height: 150px;
@@ -392,7 +413,7 @@ a.github-icon:hover {
 /* FOOTER */
 
 footer p {
-	color: #f4f4f4;
+	color: #3a3a3a;
 }
 
 /* END OF FOOTER*/
@@ -413,7 +434,7 @@ footer p {
 	}
 
 	.topic h3 {
-		font-size: 30px;
+		font-size: 20px;
 		margin-bottom: 0px;
 	}
 
@@ -441,7 +462,6 @@ footer p {
 	}
 
 	.website-content .portfolio-piece .portfolio-link .caption {
-		background: rgba(77, 0, 214, 0.9);
 		position: absolute;
 		width: 333px;
 		height: 250px;
