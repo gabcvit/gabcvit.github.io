@@ -2,7 +2,7 @@
 <h1 class="animated fadeInDown">Skills I'm proud of</h1>
 <div class="col-lg-10 col-lg-offset-1 skills animated fadeInRight">
 	<div class="row">
-		<div class="col-lg-6">
+		<div class="col-lg-4">
 			<h2>System design</h2>
 		</div>
 		<div ng-repeat="i in getNumber(5) track by $index">
@@ -13,7 +13,7 @@
 	</div>
 
 	<div class="row">
-		<div class="col-lg-6">
+		<div class="col-lg-4">
 			<h2>Coding</h2>
 		</div>
 		<div ng-repeat="i in getNumber(4) track by $index">
@@ -24,7 +24,7 @@
 	</div>
 
 	<div class="row">
-		<div class="col-lg-6">
+		<div class="col-lg-4">
 			<h2>System architecture</h2>
 		</div>
 		<div ng-repeat="i in getNumber(3) track by $index">
@@ -35,7 +35,7 @@
 	</div>
 
 	<div class="row">
-		<div class="col-lg-6">
+		<div class="col-lg-4">
 			<h2>Comunication skills</h2>
 		</div>
 		<div ng-repeat="i in getNumber(6) track by $index">
@@ -46,7 +46,7 @@
 	</div>
 
 	<div class="row">
-		<div class="col-lg-6">
+		<div class="col-lg-4">
 			<h2>Debugging</h2>
 		</div>
 		<div ng-repeat="i in getNumber(3) track by $index">
@@ -59,7 +59,8 @@
 
 <div class="col-lg-12 animated fadeInRight">
 	<h1>Things I can work with</h1>
-	<div class="row">
+	<div class="row wrap">
+		<!-- DEVELOPING TOOLS -->
 		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 hvr-grow">
 			<a href="http://developer.android.com/index.html"><img uib-popover="Android development" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/android.png"/></a>
 		</div>
@@ -73,18 +74,22 @@
 			<a href="http://ionicframework.com/"><img uib-popover="Ionic framework 2" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/ionic2.png"/></a>
 		</div>
 		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 hvr-grow">
-			<a href="https://angularjs.org/"><img uib-popover="AngularJS" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/angular.png"/></a>
+			<a href="https://angularjs.org/"><img uib-popover="Angular" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/angular.png"/></a>
 		</div>
 		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 hvr-grow">
 			<a href="http://www.w3schools.com/html/default.asp"><img uib-popover="HTML5" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/html5.png"/></a>
 		</div>
-	</div>
-	<div class="row second-line-icons">
 		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 hvr-grow">
 			<a href="http://www.w3schools.com/css/css3_intro.asp"><img uib-popover="CSS3" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/css3.png"/></a>
 		</div>
 		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 hvr-grow">
 			<a href="http://getbootstrap.com/"><img uib-popover="Bootstrap" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/bootstrap.png"/></a>
+		</div>
+		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 hvr-grow">
+			<a href="https://git-scm.com/"><img uib-popover="git" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/git.png"/></a>
+		</div>
+		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 hvr-grow">
+			<a href="https://nodejs.org/en/"><img uib-popover="NodeJS" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/node.png"/></a>
 		</div>
 		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 hvr-grow">
 			<a href="http://www.photoshop.com/"><img uib-popover="Adobe photoshop" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/photoshop.jpg"/></a>
@@ -93,21 +98,17 @@
 			<a href="https://www.sketchapp.com/"><img uib-popover="Sketch" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/sketch.png"/></a>
 		</div>
 		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 hvr-grow">
+			<a href="https://affinity.serif.com"><img uib-popover="Affinity designer" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/affinity.png"/></a>
+		</div>
+		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 hvr-grow">
 			<a href="https://www.invisionapp.com/"><img uib-popover="inVision" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/invision.jpg"/></a>
 		</div>
 		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 hvr-grow">
 			<a href="http://www.uml.org/"><img uib-popover="UML" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/uml.png"/></a>
 		</div>
-	</div>
-	<div class="row third-line-icons">
 		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 hvr-grow">
 			<a href="https://br.wordpress.com/"><img uib-popover="Wordpress" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/wordpress.png"/></a>
 		</div>
-		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 hvr-grow">
-			<a href="https://git-scm.com/"><img uib-popover="git" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/git.png"/></a>
-		</div>
-		<div class="col-lg-2 col-md-4 col-sm-6 col-xs-6 hvr-grow">
-			<a href="https://nodejs.org/en/"><img uib-popover="NodeJS" popover-trigger="mouseenter" class="programming-icon" src="assets/img/knowledge-icons/node.png"/></a>
-		</div>
+
 	</div>
 </div>

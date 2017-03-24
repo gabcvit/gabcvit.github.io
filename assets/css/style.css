@@ -461,8 +461,8 @@ footer p {
 	}
 
 	.website-content img.portfolio-icon {
-		height: 250px;
-		width: 333px;
+		height: 225px;
+		width: 300px;
 		margin: 20px 0px;
 		text-align: center;
 		display: block;
@@ -471,8 +471,8 @@ footer p {
 
 	.website-content .portfolio-piece .portfolio-link .caption {
 		position: absolute;
-		width: 333px;
-		height: 250px;
+		width: 300px;
+		height: 225px;
 		border-radius: 20px;
 		opacity: 0;
 		transition: all ease 0.5s;
