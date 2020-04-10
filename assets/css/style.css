@@ -85,11 +85,11 @@ a.instagram-icon:hover {
     -webkit-animation-duration: 0.2s;
 }
 
-a.gplus-icon:hover {
-	color: #d34836;
-	animation-name: gplus;
+a.medium-icon:hover {
+	color: #22b8cf;
+	animation-name: medium;
     animation-duration: 0.2s;
-	-webkit-animation-name: gplus;
+	-webkit-animation-name: medium;
     -webkit-animation-duration: 0.2s;
 }
 
@@ -139,14 +139,14 @@ a.github-icon:hover {
     to {color: #6f33b2;}
 }
 
-@-webkit-keyframes gplus {
+@-webkit-keyframes medium {
     from {color: #3a3a3a;}
-    to {color: #d34836;}
+    to {color: #22b8cf;}
 }
 
-@keyframes gplus {
+@keyframes medium {
     from {color: #3a3a3a;}
-    to {color: #d34836;}
+    to {color: #22b8cf;}
 }
 
 @-webkit-keyframes stackoverflow {
