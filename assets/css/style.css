@@ -9,7 +9,7 @@ body {
 	letter-spacing: 2px;
 	font-style: normal;
 	font-variant: normal;
-	background-color: #ffffff;
+	background-color: #29313D;
 }
 
 .container {
@@ -32,7 +32,7 @@ h2 {
 
 h3 {
 	font-size: 20px;
-	color: #3a3a3a;
+	color: #F6F7F7;
 	letter-spacing: 2px;
 }
 
@@ -40,7 +40,7 @@ h3 {
 
 .profile-name {
 	width:100%;
-	color: #3a3a3a;
+	color: #F6F7F7;
 	padding: 20px 0px 10px 10px;
 	margin: 0px;
 	text-align: left;
@@ -56,7 +56,7 @@ h3 {
 
 .social-icons a {
 	background-color: transparent;
-	color: #3a3a3a;
+	color: #F6F7F7;
 	padding: 20px 10px 5px 10px;
 	margin: 0px 10px 0px 10px;
 }
@@ -110,62 +110,62 @@ a.github-icon:hover {
 }
 
 @-webkit-keyframes linkedin {
-    from {color: #3a3a3a;}
+    from {color: #F6F7F7;}
     to {color: #007bb6;}
 }
 
 @keyframes linkedin {
-    from {color: #3a3a3a;}
+    from {color: #F6F7F7;}
     to {color: #007bb6;}
 }
 
 @-webkit-keyframes facebook {
-    from {color: #3a3a3a;}
+    from {color: #F6F7F7;}
     to {color: #3b5998;}
 }
 
 @keyframes facebook {
-    from {color: #3a3a3a;}
+    from {color: #F6F7F7;}
     to {color: #3b5998;}
 }
 
 @-webkit-keyframes instagram {
-    from {color: #3a3a3a;}
+    from {color: #F6F7F7;}
     to {color: #6f33b2;}
 }
 
 @keyframes instagram {
-    from {color: #3a3a3a;}
+    from {color: #F6F7F7;}
     to {color: #6f33b2;}
 }
 
 @-webkit-keyframes medium {
-    from {color: #3a3a3a;}
+    from {color: #F6F7F7;}
     to {color: #22b8cf;}
 }
 
 @keyframes medium {
-    from {color: #3a3a3a;}
+    from {color: #F6F7F7;}
     to {color: #22b8cf;}
 }
 
 @-webkit-keyframes stackoverflow {
-    from {color: #3a3a3a;}
+    from {color: #F6F7F7;}
     to {color: #f48024;}
 }
 
 @keyframes stackoverflow {
-    from {color: #3a3a3a;}
+    from {color: #F6F7F7;}
     to {color: #f48024;}
 }
 
 @-webkit-keyframes github {
-		from {color: #3a3a3a;}
+		from {color: #F6F7F7;}
 		to {color: #000000;}
 }
 
 @keyframes github {
-		from {color: #3a3a3a;}
+		from {color: #F6F7F7;}
 		to {color: #000000;}
 }
 
@@ -194,19 +194,19 @@ a.github-icon:hover {
 }
 
 .pink {
-	background-color: #ED4548;
+	background-color: #FFB3BD;
 }
 
 .purple {
-	background-color: #601DD6;
+	background-color: #6562F8;
 }
 
 .orange {
-	background-color: #F8A233;
+	background-color: #E9B85A;
 }
 
 .green {
-	background-color: #37DB8E;
+	background-color: #FFA979;
 }
 
 .white {
@@ -219,8 +219,8 @@ a.github-icon:hover {
 .website-content {
 	margin: 0px;
 	padding: 30px;
-	background-color: #fefefe;
-	color: #3a3a3a;
+	background-color: #29313D;
+	color: #F6F7F7;
 	z-index: 1;
 	display: absolute;
 	bottom: 0px;
@@ -266,7 +266,7 @@ a.github-icon:hover {
 }
 
 .website-content .profile i {
-	color: #37DB8E;
+	color: #FFA979;
 }
 
 /* END OF PROFILE*/
@@ -279,7 +279,7 @@ a.github-icon:hover {
 }
 
 .website-content .skills .row:hover {
-	background-color: #eee;
+	background-color: #1F252E;
 }
 
 .website-content .skill-level {
@@ -295,13 +295,13 @@ a.github-icon:hover {
 }
 
 .active-medium {
-	border: 15px #F8A233 solid;
+	border: 15px #E9B85A solid;
 	background-color: #D68011;
 }
 
 .active-great {
-	border: 15px #601DD6 solid;
-	background-color: #400CC5;
+	border: 15px #6562F8 solid;
+	background-color: #4845B5;
 }
 
 .website-content img.programming-icon {
@@ -314,11 +314,12 @@ a.github-icon:hover {
 }
 
 .popover-title{
-    background: #3a3a3a;
+    background: #1F252E;
 }
 
 .popover{
-	color: #3a3a3a;
+	color: #F6F7F7;
+	background: #1F252E;
 }
 
 /* END OF KNOWLEDGE*/
@@ -330,12 +331,12 @@ a.github-icon:hover {
 }
 
 .website-content .resume-line i {
-	color: #F8A233;
+	color: #E9B85A;
 	padding-right: 10px;
 }
 
 .website-content .resume-line a {
-	color: #F8A233;
+	color: #E9B85A;
 
 }
 
@@ -344,13 +345,13 @@ a.github-icon:hover {
 }
 
 .website-content .resume-line:hover {
-	background-color: #eee;
+	background-color: #1F252E;
 }
 
 .website-content .download-button {
 	margin: 20px auto;
 	border-radius: 20px;
-	box-shadow: 1px 1px 2px #3a3a3a;
+	box-shadow: 1px 1px 2px #F6F7F7;
 	text-align: center;
 	padding: 10px;
 }
@@ -378,7 +379,7 @@ a.github-icon:hover {
 }
 
 .website-content .portfolio-piece .portfolio-link .caption {
-	background: rgba(237, 69, 72, 0.9);
+	background: rgba(186, 128, 139, 0.9);
 	position: absolute;
 	width: 200px;
 	height: 150px;
@@ -402,6 +403,7 @@ a.github-icon:hover {
 	top: 50%;
 	margin-top: -12px;
 	color: white;
+
 }
 
 .website-content .portfolio-piece .portfolio-link .caption .caption-content h3,
@@ -424,7 +426,7 @@ a.github-icon:hover {
 /* FOOTER */
 
 footer p {
-	color: #3a3a3a;
+	color: #F6F7F7;
 }
 
 /* END OF FOOTER*/
