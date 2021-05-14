@@ -383,7 +383,7 @@ a.github-icon:hover {
 	position: absolute;
 	width: 200px;
 	height: 150px;
-	border-radius: 20px;
+	border-radius: 10px;
 	opacity: 0;
 	transition: all ease 0.5s;
 	-webkit-transition: all ease 0.5s;
@@ -400,14 +400,15 @@ a.github-icon:hover {
 	height: 20px;
 	font-size: 16px;
 	text-align: center;
-	top: 50%;
+	top: 40%;
 	margin-top: -12px;
 	color: white;
 
 }
 
 .website-content .portfolio-piece .portfolio-link .caption .caption-content h3,
-.website-content .portfolio-piece .portfolio-link .caption .caption-content h4 {
+.website-content .portfolio-piece .portfolio-link .caption .caption-content h4,
+.website-content .portfolio-piece .portfolio-link .caption .caption-content h5 {
  	margin: 0;
 }
 
@@ -417,8 +418,7 @@ a.github-icon:hover {
 	margin: 20px;
 	text-align: center;
 	display: block;
-	box-shadow: 0px 0px 1px 1px #cccccc;
-	border-radius: 20px;
+	border-radius: 10px;
 }
 
 /* END OF PORTFOLIO */
@@ -471,14 +471,14 @@ footer p {
 		margin: 20px 0px;
 		text-align: center;
 		display: block;
-		border-radius: 20px;
+		border-radius: 10px;
 	}
 
 	.website-content .portfolio-piece .portfolio-link .caption {
 		position: absolute;
 		width: 300px;
 		height: 225px;
-		border-radius: 20px;
+		border-radius: 10px;
 		opacity: 0;
 		transition: all ease 0.5s;
 		-webkit-transition: all ease 0.5s;
