@@ -1,0 +1,8 @@
+---
+layout: none
+permalink: .well-known/brave-payments-verification.txt
+---
+This is a Brave Rewards publisher verification file.
+
+Domain: gabcvit.github.io
+Token: 07adf7e81cea47a67910ba55fdfd6efe0ba307564baad3fb05e41c960a341074
