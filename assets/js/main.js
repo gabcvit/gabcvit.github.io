@@ -1,5 +1,6 @@
 angular.module('resumePage', ['ui.bootstrap']).controller('PageController', ['$scope',  function($scope, $console) { 
 
+	$scope.currentYear = new Date().getFullYear()
 	$scope.backgroundColor = "green";
 	$scope.selectedArea = 'assets/pages/profile.html';
 	$scope.skillPointClassesBad = "skill-level active-bad animated infinite pulse";
