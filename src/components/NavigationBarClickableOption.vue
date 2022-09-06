@@ -12,7 +12,7 @@ const emit = defineEmits<{
 
 const props = defineProps(['optionId'])
 
-const onOptionClicked = (optionId: string) => {
+const onOptionClicked = (e: MouseEvent) => {
   emit('onOptionClicked', props.optionId)
 };
 

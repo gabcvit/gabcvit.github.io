@@ -47,7 +47,7 @@
   />
 </template>
 
-<script>
+<script lang="ts">
 import ResumeSingleElement from "./ResumeSingleElement.vue";
 export default {
   name: "ResumeComponent.vue",

@@ -12,7 +12,7 @@
   <p class="mt-8 mb-16">And last but not least: Meditation is a very important part of my routine and my life.</p>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "ProfileComponent"
 }

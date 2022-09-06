@@ -11,7 +11,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   name: "ResumeSingleElement",
   props: ['title', 'description', 'office', 'period']

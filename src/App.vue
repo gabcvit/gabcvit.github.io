@@ -15,9 +15,20 @@
   import ResumeComponent from './components/ResumeComponent.vue'
   import PortfolioComponent from './components/PortfolioComponent.vue'
   import NavigationBar from './components/NavigationBar.vue'
-  import {reactive, ref} from "vue";
+  import {reactive, ref, defineComponent } from "vue";
 
-  export default {
+  interface Tabs {
+    profile: Tab,
+    knowledge: Tab,
+    resume: Tab,
+    portfolio: Tab,
+  }
+
+  interface Tab {
+    component: string
+  }
+
+  export default defineComponent({
     components: {
       ProfileComponent,
       KnowledgeComponent,
@@ -25,33 +36,36 @@
       PortfolioComponent,
       NavigationBar,
     },
-    data() {
-      return {
-        currentTab: 'ProfileComponent',
-        tabs: {
-          profile: {
-            component: 'ProfileComponent'
-          },
-          knowledge: {
-            component: 'KnowledgeComponent'
-          },
-          resume: {
-            component: 'ResumeComponent'
-          },
-          portfolio: {
-            component: 'PortfolioComponent'
-          }
+    data(): {
+      currentTab: string,
+      tabs: Tabs,
+    } {
+    return {
+      currentTab: 'ProfileComponent',
+      tabs: {
+        profile: {
+          component: 'ProfileComponent'
+        },
+        knowledge: {
+          component: 'KnowledgeComponent'
+        },
+        resume: {
+          component: 'ResumeComponent'
+        },
+        portfolio: {
+          component: 'PortfolioComponent'
         }
       }
-    },
+    }},
     methods: {
       renderComponentForOptionId(optionId: string) {
-        if (this.tabs[optionId] !== null) {
-          this.currentTab = this.tabs[optionId].component
+        let treatedOptionId = optionId as keyof Tabs;
+        if (this.tabs[treatedOptionId]) {
+          this.currentTab = this.tabs[treatedOptionId].component
         }
       },
     }
-  }
+  })
 </script>
 
 <style scoped>
