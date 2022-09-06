@@ -1,6 +1,6 @@
 <template>
-  <div class="absolute">
-    <p>Gabriel Vitali</p>
+  <div class="absolute top-5 left-5">
+    <p class="text-xl">Gabriel Vitali<span class="animate-ping">_</span></p>
   </div>
   <div class="h-screen place-items-center py-10 grid">
     <div class="max-h-64 w-full space-y-8">
