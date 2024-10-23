@@ -1,5 +1,5 @@
 <template>
-  <p class="hover:text-indigo-600 text-2xl cursor-pointer px-24"
+  <p class="hover:text-indigo-600 text-2xl cursor-pointer"
      @click="onOptionClicked">{{ getNameForOptionId() }}</p>
 </template>
 

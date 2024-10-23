@@ -3,15 +3,15 @@
   <p class="text-xl my-12 underline-offset-4 underline">Working experience</p>
 
   <ResumeSingleElement
-    title="Developer Consultant"
-    description="Currently working as a Developer Consultant in an Agile, diverse, equitable, inclusive, innovative workspace. Which is currently bringing extraordinary impact to many clients all around the globe."
+    title="Senior Developer Consultant"
+    description="Currently working as a Developer Consultant in an Agile, diverse, equitable, inclusive, innovative workspace. Which is currently bringing extraordinary impact to many clients all around the globe. Tech stack: Swift, SwiftUI, Vue3, Typescript, GraphQL, GitHub Actions, Terraform, AWS."
     office="Thoughtworks"
     period="2021 - now"
   />
 
   <ResumeSingleElement
       title="Mobile application developer"
-      description="Worked in mobile aplication development, design, test and debug in a fast-paced environment. For both native apps and hybrid. <br>Tools and frameworks used: React-Native, Ionic 1 and 3, Unity, Sketch, InVision, MongoDB, Node."
+      description="Worked in mobile aplication development, design, test and debug in a fast-paced environment. For both native apps and hybrid. Tech Stack: React-Native, Ionic 1 and 3, Unity, Sketch, InVision, MongoDB, Node."
       office="app-affairs GmbH."
       period="2017 - 2021"
   />

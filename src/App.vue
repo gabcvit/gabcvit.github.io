@@ -1,9 +1,9 @@
 <template>
-  <div class="grid grid-cols-3 h-screen w-screen place-items-center bg-stone-900">
-    <div class="col-span-1 w-full h-screen">
+  <div class="grid grid-cols-4 h-screen w-screen place-items-center bg-stone-900">
+    <div class="col-span-1 w-full h-screen pl-16">
       <NavigationBar @onNewPageSelected="renderComponentForOptionId" />
     </div>
-    <div class="col-span-2 w-full h-screen overflow-y-scroll">
+    <div class="col-span-3 w-full h-screen overflow-y-scroll pr-16">
       <component :is="currentTab" />
     </div>
   </div>
