@@ -65,7 +65,7 @@
 
 <script lang="ts">
 export default {
-  name: "KnowledgeComponent"
+  name: "KnowledgePage"
 }
 </script>
 

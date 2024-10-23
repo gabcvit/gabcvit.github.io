@@ -4,16 +4,16 @@
       <NavigationBar @onNewPageSelected="renderComponentForOptionId" />
     </div>
     <div class="col-span-3 w-full h-screen overflow-y-scroll pr-16">
-      <component :is="currentTab" />
+      <router-view></router-view>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-  import ProfileComponent from './components/ProfileComponent.vue'
-  import KnowledgeComponent from './components/KnowledgeComponent.vue'
-  import ResumeComponent from './components/ResumeComponent.vue'
-  import PortfolioComponent from './components/PortfolioComponent.vue'
+  import ProfileComponent from './views/ProfilePage.vue'
+  import KnowledgePage from './views/KnowledgePage.vue'
+  import ResumeComponent from './views/ResumePage.vue'
+  import PortfolioComponent from './views/PortfolioPage.vue'
   import NavigationBar from './components/NavigationBar.vue'
   import {reactive, ref, defineComponent } from "vue";
 
@@ -31,7 +31,7 @@
   export default defineComponent({
     components: {
       ProfileComponent,
-      KnowledgeComponent,
+      KnowledgePage,
       ResumeComponent,
       PortfolioComponent,
       NavigationBar,
@@ -47,7 +47,7 @@
           component: 'ProfileComponent'
         },
         knowledge: {
-          component: 'KnowledgeComponent'
+          component: 'KnowledgePage'
         },
         resume: {
           component: 'ResumeComponent'

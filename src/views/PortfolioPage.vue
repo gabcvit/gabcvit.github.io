@@ -43,7 +43,7 @@
 </template>
 
 <script lang="ts">
-import PortfolioSingleElement from "./PortfolioSingleElement.vue";
+import PortfolioSingleElement from "../components/PortfolioSingleElement.vue";
 export default {
   name: "PortfolioComponent.vue",
   components: {PortfolioSingleElement}

@@ -2,44 +2,16 @@
   <div class="absolute top-5 left-5">
     <p class="text-xl">Gabriel Vitali<span class="animate-ping">_</span></p>
   </div>
-  <div class="h-screen place-items-center py-10 grid">
-    <div class="max-h-64 w-full space-y-8">
-      <NavigationBarClicableOption
-        optionId="profile"
-        @onOptionClicked="selectOption"
-      />
-      <NavigationBarClicableOption
-          optionId="knowledge"
-          @onOptionClicked="selectOption"
-      />
-      <NavigationBarClicableOption
-          optionId="resume"
-          @onOptionClicked="selectOption"
-      />
-      <NavigationBarClicableOption
-          optionId="portfolio"
-          @onOptionClicked="selectOption"
-      />
-    </div>
-  </div>
+  <nav class="h-screen w-1/2 grid content-center space-y-10">
+    <NavigationBarRouterLink optionId="profile" />
+    <NavigationBarRouterLink optionId="knowledge" />
+    <NavigationBarRouterLink optionId="resume" />
+    <NavigationBarRouterLink optionId="portfolio" />
+  </nav>
 </template>
 
 <script setup lang="ts">
 
-import NavigationBarClicableOption from "./NavigationBarClickableOption.vue";
-import {defineEmits} from "vue";
+import NavigationBarRouterLink from "./NavigationBarRouterLink.vue";
 
-const emit = defineEmits<{
-  (e: 'onNewPageSelected', optionId: string): void
-}>()
-
-const selectOption = (optionId: string) => {
-  emit('onNewPageSelected', optionId)
-};
 </script>
-
-<style scoped>
-.read-the-docs {
-  color: #888;
-}
-</style>
