@@ -1,15 +1,15 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import KnowledgePage from './views/KnowledgePage.vue';
-import PortfolioComponent from './views/PortfolioPage.vue';
-import ResumeComponent from './views/ResumePage.vue';
-import ProfileComponent from './views/ResumePage.vue';
+import PortfolioPage from './views/PortfolioPage.vue';
+import ResumePage from './views/ResumePage.vue';
+import ProfilePage from './views/ProfilePage.vue';
 
 const routes = [
-    { path: '/', component: ProfileComponent },
-    { path: '/profile', component: ProfileComponent },
+    { path: '/', component: ProfilePage },
+    { path: '/profile', component: ProfilePage },
     { path: '/knowledge', component: KnowledgePage },
-    { path: '/portfolio', component: PortfolioComponent },
-    { path: '/resume', component: ResumeComponent },
+    { path: '/portfolio', component: PortfolioPage },
+    { path: '/resume', component: ResumePage },
 ];
 
 const router = createRouter({
