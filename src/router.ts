@@ -5,7 +5,7 @@ import ResumePage from './views/ResumePage.vue';
 import ProfilePage from './views/ProfilePage.vue';
 
 const routes = [
-    { name: 'profile', path: '/', component: ProfilePage },
+    { name: 'home', path: '/', component: ProfilePage },
     { name: 'profile', path: '/profile', component: ProfilePage },
     { name: 'knowledge', path: '/knowledge', component: KnowledgePage },
     { name: 'portfolio', path: '/portfolio', component: PortfolioPage },
