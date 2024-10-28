@@ -5,11 +5,11 @@ import ResumePage from './views/ResumePage.vue';
 import ProfilePage from './views/ProfilePage.vue';
 
 const routes = [
-    { path: '/', component: ProfilePage },
-    { path: '/profile', component: ProfilePage },
-    { path: '/knowledge', component: KnowledgePage },
-    { path: '/portfolio', component: PortfolioPage },
-    { path: '/resume', component: ResumePage },
+    { name: 'profile', path: '/', component: ProfilePage },
+    { name: 'profile', path: '/profile', component: ProfilePage },
+    { name: 'knowledge', path: '/knowledge', component: KnowledgePage },
+    { name: 'portfolio', path: '/portfolio', component: PortfolioPage },
+    {name: 'resume',  path: '/resume', component: ResumePage },
 ];
 
 const router = createRouter({
