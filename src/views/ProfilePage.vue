@@ -1,55 +1,61 @@
 <template>
   <p class="text-2xl mt-16 mb-8">
-    Who am I?
+    Profile
   </p>
-  <p class="my-8 underline-offset-4 underline">
-    Pronouns: He / they
+  <p class="text-m mb-4 mt-8">
+    Professional info
   </p>
-  <p class="my-4 underline-offset-4 underline">
-    Professional info:
+  <p class="text-sm my-4">
+    I'm a Senior Developer with {{ yearsOfExperience }} years of experience.
+    My key areas of knowledge are:
   </p>
-  <p class="my-4">
-    I'm a Developer with strong focus in Native and Hybrid development for Mobile applications,
-    Web Frontend, UI development, as well as UX design and Game development in Unity 3D.
-  </p>
-  <p class="my-4">
-    Currently I'm working as a Developer Consultant at <a
+  <ul class="text-sm">
+    <li>- Full Stack development with Javascript, Typescript (Vue), GraphQL and cloud native development</li>
+    <li>- Specialist in Stakeholder management and consulting streamlined solutions for greenfield/ongoing projects</li>
+    <li>- Expert in refactoring strategies and Test-Driven Development</li>
+    <li>- Mobile app development with both React Native (Hybrid) and Swift (Native iOS)</li>
+    <li>- UX Designing and prototyping for mobile apps for multiple clients across branches</li>
+  </ul>
+  <p class="text-sm my-4">
+    Currently I'm working as a Senior Developer Consultant at <a
+      class="underline"
       href="https://www.thoughtworks.com/"
       target="_blank"
     >Thoughtworks</a> in Munich, Germany. Where I'm polishing every day not only my developer
     skills, but also my leading, consulting and agile skills.
   </p>
-  <p class="mt-8 mb-16">
+  <p class="text-sm my-4">
     What defines me professionally is a very active and curious person who's not afraid to
     dive deep into a brand new framework or project completely far away from my comfort zone.
     Extremely adaptable and highly communicative, my inner drive has always been bringing equitable
-    and inclusive technology and all its features to the service of people.
+    technology and all its features to the service of people.
   </p>
 
-  <p class="my-4 underline-offset-4 underline">
-    Personal info:
+  <p class="text-m mb-4 mt-8">
+    Let's get connected!
   </p>
-  <p class="my-4">
-    Born and raised in Brazil
-  </p>
-  <p class="my-4">
-    One of my strongest social skills is being able to create a friendly and inclusive
-    atmosphere with those I work and chat with, standing up against bigotry and creating
-    a space where everyone feels heard and cherished.
-  </p>
-  <p class="my-4">
-    In my free time I enjoy reading books about psychology, philosophy and Buddhism. When
-    picking a movie or series to watch, I love picking the ones that dare the watcher to get
-    out of their comfort zone and learn something new. Catching up with friends is also a very
-    refreshing activity for me, which I do quite often.
-  </p>
-  <p class="mt-8 mb-16">
-    And last but not least: Meditation is a very important part of my routine and my life.
-  </p>
+  <a
+    class="underline block"
+    href="https://github.com/gabcvit"
+  >GitHub</a>
+  <a
+    class="underline block"
+    href="https://stackoverflow.com/users/6231562/gabcvit"
+  >Stackoverflow</a>
+  <a
+    class="underline block"
+    href="https://www.linkedin.com/in/gabcvit/"
+  >LinkedIn</a>
 </template>
 
-<script lang="ts">
-export default {
-  name: "ProfileComponent"
-}
+<script lang="ts" setup>
+import {computed} from "vue";
+
+const yearsOfExperience = computed(() => {
+  const currentTime = new Date().getTime();
+  const firstJobDate= new Date('01-08-2016').getTime();
+  const difference = (currentTime - firstJobDate)
+  const yearOnlyDiff = Math.floor(difference/(1000*60*60*24*365))
+  return `+${yearOnlyDiff}`
+})
 </script>
