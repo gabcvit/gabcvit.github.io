@@ -1,0 +1,91 @@
+<script setup lang="ts">
+import TagWithIcon from "../components/TagWithIcon.vue";
+
+const URL_PREFIX = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/';
+
+const LANGUAGES = [
+  { name: 'Javascript', iconUrl: 'javascript/javascript-plain.svg'},
+  { name: 'Typescript', iconUrl: 'typescript/typescript-plain.svg'},
+  { name: 'GraphQL', iconUrl: 'graphql/graphql-plain.svg'},
+  { name: 'HTML5', iconUrl: 'html5/html5-original.svg'},
+  { name: 'CSS3', iconUrl: 'css3/css3-original.svg'},
+  { name: 'NodeJS', iconUrl: 'nodejs/nodejs-original.svg'},
+  { name: 'Swift', iconUrl: 'swift/swift-original.svg'},
+]
+
+const FRAMEWORKS_LIBRARIES = [
+  { name: 'Vue', iconUrl: 'vuejs/vuejs-original.svg'},
+  { name: 'Jest', iconUrl: 'jest/jest-plain.svg'},
+  { name: 'TailwindCSS', iconUrl: 'tailwindcss/tailwindcss-original-wordmark.svg'},
+  { name: 'React Native', iconUrl: 'react/react-original.svg'},
+  { name: 'Ionic', iconUrl: 'ionic/ionic-original.svg'},
+  { name: 'Bootstrap', iconUrl: 'bootstrap/bootstrap-original.svg'},
+
+]
+
+const TOOLS = [
+  { name: 'Unity 3D C#', iconUrl: 'unity/unity-original.svg'},
+  { name: 'Wordpress', iconUrl: 'wordpress/wordpress-plain.svg'},
+  { name: 'Sketch', iconUrl: 'sketch/sketch-original.svg'},
+  { name: 'Figma', iconUrl: 'figma/figma-original.svg'},
+  { name: 'Android Studio', iconUrl: 'androidstudio/androidstudio-original.svg'},
+  { name: 'Xcode', iconUrl: 'xcode/xcode-original.svg'},
+]
+
+const DEVOPS = [
+  { name: 'GitHub Actions', iconUrl: 'githubactions/githubactions-original.svg'},
+  { name: 'AWS', iconUrl: 'amazonwebservices/amazonwebservices-plain-wordmark.svg'},
+  { name: 'Terraform', iconUrl: 'terraform/terraform-original.svg'},
+  { name: 'Docker', iconUrl: 'docker/docker-original.svg'},
+]
+</script>
+
+<template>
+  <p class="text-2xl mt-16 mb-8">
+    Technical Skills
+  </p>
+
+  <p class="text-m mb-4 mt-8">
+    Languages
+  </p>
+
+  <TagWithIcon
+    v-for="(singleLanguage, index) in LANGUAGES"
+    :key="`tagWithIcon-language-${index}`"
+    :label="singleLanguage.name"
+    :iconUrl="`${URL_PREFIX}${singleLanguage.iconUrl}`"
+  />
+
+  <p class="text-m mb-4 mt-8">
+    Frameworks and Libraries
+  </p>
+
+  <TagWithIcon
+    v-for="(singleFramework, index) in FRAMEWORKS_LIBRARIES"
+    :key="`tagWithIcon-frameworks-${index}`"
+    :label="singleFramework.name"
+    :iconUrl="`${URL_PREFIX}${singleFramework.iconUrl}`"
+  />
+
+  <p class="text-m mb-4 mt-8">
+    Tools
+  </p>
+
+  <TagWithIcon
+    v-for="(singleTool, index) in TOOLS"
+    :key="`tagWithIcon-tool-${index}`"
+    :label="singleTool.name"
+    :iconUrl="`${URL_PREFIX}${singleTool.iconUrl}`"
+  />
+
+  <p class="text-m mb-4 mt-8">
+    DevOps and Cloud
+  </p>
+
+  <TagWithIcon
+    v-for="(singleDevop, index) in DEVOPS"
+    :key="`tagWithIcon-devop-${index}`"
+    :label="singleDevop.name"
+    :iconUrl="`${URL_PREFIX}${singleDevop.iconUrl}`"
+  />
+</template>

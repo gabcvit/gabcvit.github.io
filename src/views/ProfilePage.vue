@@ -1,5 +1,5 @@
 <template>
-  <p class="text-2xl my-16">
+  <p class="text-2xl mt-16 mb-8">
     Who am I?
   </p>
   <p class="my-8 underline-offset-4 underline">

@@ -6,7 +6,7 @@
     ]"
     :to="optionId"
   >
-    {{ getNameForOptionId() }}
+    {{ label }}
   </router-link>
 </template>
 
@@ -16,6 +16,7 @@ import {useRoute} from "vue-router";
 
 const props = withDefaults(defineProps<{
   optionId: string,
+  label: string,
 }>(), {});
 
 const route = useRoute();
@@ -23,10 +24,5 @@ const route = useRoute();
 const isActive = computed(() => {
   return route.name === props.optionId;
 })
-
-const getNameForOptionId = () => {
-  return props.optionId.charAt(0).toUpperCase()
-      + props.optionId.slice(1)
-};
 
 </script>

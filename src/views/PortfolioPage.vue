@@ -1,15 +1,7 @@
 <template>
-  <p class="text-2xl my-16">
+  <p class="text-2xl mt-16 mb-8">
     Portfolio
   </p>
-
-  <PortfolioSingleElement
-    title="Caravana do Absurdo"
-    theme="Entertainment channel"
-    roles="Website development, Tech guru, Podcaster"
-    link="https://caravanadoabsurdo.com.br"
-    period="2021 - today"
-  />
 
   <PortfolioSingleElement
     title="Pellegrini Traduções"
