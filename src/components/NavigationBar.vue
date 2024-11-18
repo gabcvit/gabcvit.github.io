@@ -7,8 +7,10 @@
   <nav class="h-screen w-1/2 grid content-center space-y-10">
     <NavigationBarRouterLink
       v-for="singleRouteOption in routes"
+      :key="`navigationOptions-${singleRouteOption.name}`"
       :label="capitalizeString(singleRouteOption.name)"
-      :optionId="singleRouteOption.path" />
+      :optionId="singleRouteOption.path"
+    />
   </nav>
 </template>
 
