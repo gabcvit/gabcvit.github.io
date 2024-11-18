@@ -1,6 +1,6 @@
 <template>
-  <p class="text-2xl my-16">
-    My Resume
+  <p class="text-2xl mt-16 mb-8">
+    Professional Experience
   </p>
   <p class="text-xl my-12 underline-offset-4 underline">
     Working experience

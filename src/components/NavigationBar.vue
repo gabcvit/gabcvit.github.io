@@ -5,15 +5,17 @@
     </p>
   </div>
   <nav class="h-screen w-1/2 grid content-center space-y-10">
-    <NavigationBarRouterLink optionId="profile" />
-    <NavigationBarRouterLink optionId="knowledge" />
-    <NavigationBarRouterLink optionId="resume" />
-    <NavigationBarRouterLink optionId="portfolio" />
+    <NavigationBarRouterLink
+      v-for="singleRouteOption in routes"
+      :label="capitalizeString(singleRouteOption.name)"
+      :optionId="singleRouteOption.path" />
   </nav>
 </template>
 
 <script setup lang="ts">
 
 import NavigationBarRouterLink from "./NavigationBarRouterLink.vue";
+import {routes} from "../router";
+import {capitalizeString} from "../utils/capitalize";
 
 </script>
