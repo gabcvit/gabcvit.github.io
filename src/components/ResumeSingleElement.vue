@@ -1,15 +1,17 @@
 <template>
-  <div class="grid grid-cols-4 my-8">
+  <div class="grid grid-cols-4 my-4 p-4 rounded border border-indigo-600 bg-stone-800">
     <div class="col-span-3 row-span-1">
-      <p class="">
-        _ {{ office }}
+      <p class="font-bold">
+        > {{ office }}
       </p>
-      <p class="">
+      <p class="text-indigo-600 pb-2">
         {{ title }}
       </p>
-      <p>{{ description }}</p>
+      <p class="text-sm">
+        {{ description }}
+      </p>
     </div>
-    <div class="col-span-1 mr-16 text-right">
+    <div class="col-span-1 text-right">
       <p>{{ period }}</p>
     </div>
   </div>
