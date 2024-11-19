@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import TagWithIcon from "../components/TagWithIcon.vue";
+import SectionSubheader from "../components/SectionSubheader.vue";
+import SectionHeader from "../components/SectionHeader.vue";
 
 const URL_PREFIX = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/';
 
@@ -41,51 +43,39 @@ const DEVOPS = [
 </script>
 
 <template>
-  <p class="text-2xl mt-16 mb-8">
-    Technical Skills
-  </p>
+  <SectionHeader title="Technical Skills" />
 
-  <p class="text-m mb-4 mt-8">
-    Languages
-  </p>
+  <div class="section-wrapper">
+    <SectionSubheader title="Languages" />
+    <TagWithIcon
+      v-for="(singleLanguage, index) in LANGUAGES"
+      :key="`tagWithIcon-language-${index}`"
+      :label="singleLanguage.name"
+      :iconUrl="`${URL_PREFIX}${singleLanguage.iconUrl}`"
+    />
 
-  <TagWithIcon
-    v-for="(singleLanguage, index) in LANGUAGES"
-    :key="`tagWithIcon-language-${index}`"
-    :label="singleLanguage.name"
-    :iconUrl="`${URL_PREFIX}${singleLanguage.iconUrl}`"
-  />
+    <SectionSubheader title="Frameworks and Libraries" />
+    <TagWithIcon
+      v-for="(singleFramework, index) in FRAMEWORKS_LIBRARIES"
+      :key="`tagWithIcon-frameworks-${index}`"
+      :label="singleFramework.name"
+      :iconUrl="`${URL_PREFIX}${singleFramework.iconUrl}`"
+    />
 
-  <p class="text-m mb-4 mt-8">
-    Frameworks and Libraries
-  </p>
+    <SectionSubheader title="Tools" />
+    <TagWithIcon
+      v-for="(singleTool, index) in TOOLS"
+      :key="`tagWithIcon-tool-${index}`"
+      :label="singleTool.name"
+      :iconUrl="`${URL_PREFIX}${singleTool.iconUrl}`"
+    />
 
-  <TagWithIcon
-    v-for="(singleFramework, index) in FRAMEWORKS_LIBRARIES"
-    :key="`tagWithIcon-frameworks-${index}`"
-    :label="singleFramework.name"
-    :iconUrl="`${URL_PREFIX}${singleFramework.iconUrl}`"
-  />
-
-  <p class="text-m mb-4 mt-8">
-    Tools
-  </p>
-
-  <TagWithIcon
-    v-for="(singleTool, index) in TOOLS"
-    :key="`tagWithIcon-tool-${index}`"
-    :label="singleTool.name"
-    :iconUrl="`${URL_PREFIX}${singleTool.iconUrl}`"
-  />
-
-  <p class="text-m mb-4 mt-8">
-    DevOps and Cloud
-  </p>
-
-  <TagWithIcon
-    v-for="(singleDevop, index) in DEVOPS"
-    :key="`tagWithIcon-devop-${index}`"
-    :label="singleDevop.name"
-    :iconUrl="`${URL_PREFIX}${singleDevop.iconUrl}`"
-  />
+    <SectionSubheader title="DevOps and Cloud" />
+    <TagWithIcon
+      v-for="(singleDevop, index) in DEVOPS"
+      :key="`tagWithIcon-devop-${index}`"
+      :label="singleDevop.name"
+      :iconUrl="`${URL_PREFIX}${singleDevop.iconUrl}`"
+    />
+  </div>
 </template>

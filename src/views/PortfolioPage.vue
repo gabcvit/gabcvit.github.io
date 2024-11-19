@@ -1,7 +1,5 @@
 <template>
-  <p class="text-2xl mt-16 mb-8">
-    Portfolio
-  </p>
+  <SectionHeader title="Portfolio" />
 
   <PortfolioSingleElement
     title="Pellegrini Traduções"
@@ -38,5 +36,6 @@
 
 <script lang="ts" setup>
 import PortfolioSingleElement from "../components/PortfolioSingleElement.vue";
+import SectionHeader from "../components/SectionHeader.vue";
 
 </script>

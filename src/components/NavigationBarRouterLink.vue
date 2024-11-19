@@ -22,7 +22,7 @@ const props = withDefaults(defineProps<{
 const route = useRoute();
 
 const isActive = computed(() => {
-  return route.name === props.optionId;
+  return route.fullPath === props.optionId;
 })
 
 </script>

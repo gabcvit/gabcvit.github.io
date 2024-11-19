@@ -1,10 +1,10 @@
 <template>
-  <div class="grid grid-cols-4 my-4 p-4 rounded border border-indigo-600 bg-stone-800">
+  <div class="grid grid-cols-4 my-4 p-4 rounded border border-indigo-500 bg-stone-800">
     <div class="col-span-3 row-span-1">
       <p class="font-bold">
         > {{ office }}
       </p>
-      <p class="text-indigo-600 pb-2">
+      <p class="text-indigo-400 pb-2">
         {{ title }}
       </p>
       <p class="text-sm">
