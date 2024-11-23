@@ -9,6 +9,27 @@ import ResumeSingleElement from "../components/ResumeSingleElement.vue";
 
   <div class="section-wrapper">
     <ResumeSingleElement
+      title="Understanding TypeScript"
+      description="Total duration: 15 hours"
+      office="Udemy"
+      period="2024"
+    />
+
+    <ResumeSingleElement
+      title="Vue - The Complete Guide (incl. Router & Composition API)"
+      description="Total duration: 32 hours"
+      office="Udemy"
+      period="2024"
+    />
+
+    <ResumeSingleElement
+      title="Kubernetes Deep Dive"
+      description="Total duration: 4.7 hours"
+      office="A Cloud Guru - Online"
+      period="2021"
+    />
+
+    <ResumeSingleElement
       title="Certificate in Mobile Business Technologies & Applications"
       description="Finished the Certificate in Mobile Business
 Technologies & Applications at School of Continuing Studies, which
