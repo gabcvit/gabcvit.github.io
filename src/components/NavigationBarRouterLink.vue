@@ -1,5 +1,5 @@
 <template>
-  <router-link
+  <RouterLink
     :class="[
       'hover:text-indigo-600 text-2xl cursor-pointer',
       isActive ? 'text-indigo-600 cursor-not-allowed' : '',
@@ -7,12 +7,12 @@
     :to="optionId"
   >
     {{ label }}
-  </router-link>
+  </RouterLink>
 </template>
 
 <script lang="ts" setup>
 import {computed} from "vue";
-import {useRoute} from "vue-router";
+import {useRoute} from "vue-router/auto";
 
 const props = withDefaults(defineProps<{
   optionId: string,
@@ -22,7 +22,7 @@ const props = withDefaults(defineProps<{
 const route = useRoute();
 
 const isActive = computed(() => {
-  return route.fullPath === props.optionId;
+  return route.path === props.optionId;
 })
 
 </script>

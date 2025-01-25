@@ -4,7 +4,7 @@
       <NavigationBar />
     </div>
     <div class="md:col-span-3 w-full h-screen md:overflow-y-scroll px-4 md:pl-0 md:pr-16">
-      <router-view />
+      <RouterView />
     </div>
   </div>
 </template>

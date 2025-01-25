@@ -35,7 +35,7 @@
 </template>
 
 <script lang="ts" setup>
-import PortfolioSingleElement from "../components/PortfolioSingleElement.vue";
-import SectionHeader from "../components/SectionHeader.vue";
+import PortfolioSingleElement from "@/components/PortfolioSingleElement.vue";
+import SectionHeader from "@/components/SectionHeader.vue";
 
 </script>
