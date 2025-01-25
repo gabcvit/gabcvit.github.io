@@ -5,6 +5,8 @@ date: 2025-01-25
 duration: 8min
 ---
 
+<!-- @layout-blog-post -->
+
 # Generative AI: A Weapon of Math Destruction in the Making?
 
 After reading Cathy O’Neil’s brilliant *Weapons of Math Destruction,* I found myself thinking deeply about how her insights apply to the explosive rise of Generative AI (GenAI). While GenAI holds tremendous promise to revolutionize industries, it also risks replicating many of the same systemic issues Cathy highlighted in her analysis of algorithms.
@@ -61,8 +63,6 @@ To avoid turning GenAI into a "Weapon of Math Destruction," we must take proacti
 As someone deeply passionate about reducing bias and promoting fairness in technology, I believe these solutions aren’t just idealistic—they’re necessary. The stakes are too high to ignore. Generative AI is shaping how we work, communicate, and make decisions. If we don’t address its risks now, we risk entrenching inequality on a massive scale.
 
 Cathy O’Neil’s work reminds us that algorithms are not inherently fair—they reflect the values of those who create them. Let’s ensure that as we build the future of AI, we prioritize transparency, fairness, and accountability.
-
----
 
 ### Call to Action
 💡 What do you think? How can we design a better AI ecosystem while avoiding the pitfalls Cathy O’Neil warned us about? Let’s discuss and work together to shape a more equitable technological future.

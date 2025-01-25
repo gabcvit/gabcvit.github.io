@@ -10,7 +10,7 @@ const props = withDefaults(defineProps<{
 
 <template>
   <a
-    class="inline-flex items-center gap-2 bg-stone-600 py-1 px-2 m-1 rounded border"
+    class="inline-flex items-center gap-2 bg-gray-800 py-1 px-2 m-1 rounded border"
     :href="props.url"
     target="_blank"
   >

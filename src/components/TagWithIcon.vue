@@ -8,7 +8,7 @@ const props = withDefaults(defineProps<{
 </script>
 
 <template>
-  <span class="inline-flex items-center gap-2 bg-stone-800 py-1 px-2 mr-2 mb-2 rounded border border-indigo-500">
+  <span class="inline-flex items-center gap-2 bg-gray-950 py-1 px-2 mr-2 mb-2 rounded border border-indigo-500">
     <img
       class="w-6"
       :alt="`${props.label} tag icon`"

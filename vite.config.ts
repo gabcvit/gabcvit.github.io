@@ -50,6 +50,9 @@ export default defineConfig({
 
     Markdown({
       headEnabled: true,
+      wrapperClasses: (id, code) => {
+        return code.includes('@layout-blog-post') ? 'blog-post' : ''
+      },
     }),
 
     AutoImport({

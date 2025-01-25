@@ -1,23 +1,24 @@
 <template>
-	<RouterLink 
-		class="grid grid-cols-4 my-4 p-4 rounded border border-pink-500 bg-stone-800"
-	  	:to="path">
-		<div class="col-span-3 row-span-1">
-			<p class="font-bold text-pink-400">
-			> {{ title }}
-			</p>
-			<p class="pb-2">
-			{{ duration }}
-			</p>
-			<p class="text-sm">
-			{{ description }}
-			</p>
-		</div>
-	  	<div class="col-span-1 text-right">
-			<p>{{ date }}</p>
-		</div>
-	</RouterLink>
-  </template>
+  <RouterLink 
+    class="grid grid-cols-4 my-4 p-4 rounded border border-pink-500 bg-gray-950"
+    :to="path"
+  >
+    <div class="col-span-3 row-span-1">
+      <p class="font-bold text-pink-400">
+        > {{ title }}
+      </p>
+      <p class="pb-2">
+        Reading duration: {{ duration }}
+      </p>
+      <p class="text-sm">
+        {{ description }}
+      </p>
+    </div>
+    <div class="col-span-1 text-right">
+      <p>{{ date }}</p>
+    </div>
+  </RouterLink>
+</template>
   
   <script lang="ts" setup>
   withDefaults(defineProps<{

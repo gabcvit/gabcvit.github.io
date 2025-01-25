@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-4 my-4 p-4 rounded border border-indigo-500 bg-stone-800">
+  <div class="grid grid-cols-4 my-4 p-4 rounded border border-indigo-500 bg-gray-950">
     <div class="col-span-3 row-span-1">
       <p class="font-bold">
         > {{ office }}

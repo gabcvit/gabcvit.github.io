@@ -4,5 +4,3 @@ description: Gabriel Vitali's portfolio
 ---
 
 <HomePage />
-
-

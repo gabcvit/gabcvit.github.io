@@ -1,17 +1,15 @@
 <template>
-	<SectionHeader title="Blog" />
+  <SectionHeader title="Blog" />
 
-	<BlogPostPreview
-		v-for="post in posts"
-		:key="post.path"
-		:path="post.path"
-		:title="post.title"
-		:description="post.description"
-		:date="post.date"
-		:duration="post.duration"
-	/>
-
-
+  <BlogPostPreview
+    v-for="post in posts"
+    :key="post.path"
+    :path="post.path"
+    :title="post.title"
+    :description="post.description"
+    :date="post.date"
+    :duration="post.duration"
+  />
 </template>
   
 <script lang="ts" setup>
@@ -24,7 +22,6 @@ const router = useRouter()
 const posts = computed<Post[]>(() => {
 	return router.getRoutes()
 		.filter(route => {
-			console.log('route', route.path, route.path.startsWith('/blog'));
 			return route.path.startsWith('/blog/')
 		})
 		.map(route => {

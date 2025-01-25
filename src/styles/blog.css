@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.blog-post h1 {
+	@apply text-3xl pt-8 pb-4 text-pink-400;
+}
+
+.blog-post h2 {
+	@apply text-2xl pt-8 pb-4 text-pink-300;
+}
+
+.blog-post h3 {
+	@apply text-xl pt-4 pb-2;
+}
+
+.blog-post p {
+	@apply text-sm pt-4;
+}

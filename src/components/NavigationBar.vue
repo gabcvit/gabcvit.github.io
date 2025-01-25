@@ -8,18 +8,22 @@
     <NavigationBarRouterLink
       label="Home"
       optionId="/"
+      color="orange"
     />
     <NavigationBarRouterLink
       label="Resume"
       optionId="/resume"
+      color="indigo"
     />
     <NavigationBarRouterLink
       label="Blog"
       optionId="/blog"
+      color="pink"
     />
     <NavigationBarRouterLink
       label="Portfolio"
       optionId="/portfolio"
+      color="emerald"
     />
   </nav>
   <SocialLinksWrapper />
@@ -29,6 +33,5 @@
 
 import NavigationBarRouterLink from "./NavigationBarRouterLink.vue";
 import SocialLinksWrapper from './SocialLinksWrapper.vue'
-import { routes } from 'vue-router/auto-routes'
 
 </script>

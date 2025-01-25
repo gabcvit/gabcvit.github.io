@@ -1,5 +1,5 @@
 <template>
-  <div class="grid grid-cols-4 my-8">
+  <div class="grid grid-cols-4 my-4 p-4 rounded border border-emerald-500 bg-gray-950">
     <div class="col-span-3 row-span-1">
       <p class="text-emerald-500 underline-offset-4 underline">
         <a
@@ -8,10 +8,10 @@
         >{{ title }}</a>
       </p>
       <p>
-        {{ theme }}
+        Role(s): {{ roles }}
       </p>
       <p>
-        {{ roles }}
+        {{ theme }}
       </p>
     </div>
     <div class="col-span-1 mr-16 text-right">
