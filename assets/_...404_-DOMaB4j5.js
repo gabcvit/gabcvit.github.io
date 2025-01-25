@@ -1,0 +1,1 @@
+import{u as a}from"./vue.-sixQ7xP-BDIvRDpo.js";import{c as s,b as e,o as r}from"./app-Bvrn7tx0.js";const n={class:"markdown-body"},_=[],f={__name:"[...404]",setup(m,{expose:o}){return o({frontmatter:{meta:[]}}),a({meta:[]}),(l,t)=>(r(),s("div",n,t[0]||(t[0]=[e("h1",null,"404",-1),e("p",null,"Sorry, couldn’t find this page",-1)])))}};export{f as default,_ as meta};
