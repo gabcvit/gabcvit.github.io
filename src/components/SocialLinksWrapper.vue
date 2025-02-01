@@ -18,6 +18,11 @@
       label="LinkedIn"
       url="https://www.linkedin.com/in/gabcvit/"
     />
+    <TagSocial
+      iconUrl="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg"
+      label="BlueSky"
+      url="https://bsky.app/profile/gabcvit.bsky.social"
+    />
   </div>
 </template>
 
