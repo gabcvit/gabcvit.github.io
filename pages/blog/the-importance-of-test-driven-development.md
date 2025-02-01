@@ -2,7 +2,7 @@
 title: The Importance of Test-Driven Development (TDD)
 description: Test-Driven Development (TDD) is more than just a software development methodology—it’s a philosophy that fundamentally changes how we approach coding. Popularized by Kent Beck and detailed in Martin Fowler’s writings, We're gonna do a deeper dive in this post...
 date: 2024-08-07
-duration: 8min
+duration: 5min
 ---
 
 <!-- @layout-blog-post -->
@@ -80,6 +80,3 @@ Poorly written tests can undermine TDD. Teams must prioritize:
 Test-Driven Development is not just a practice—it’s a mindset shift that transforms how we build software. By focusing on tests first, developers write better code, catch issues early, and create systems that are resilient to change. As Martin Fowler eloquently puts it: *"Code without tests is code that you don’t trust."*
 
 Adopting TDD may seem challenging at first, but its long-term advantages make it indispensable for building modern, high-quality software.
-
-### Call to Action
-💡 Are you or your team using TDD? What challenges or successes have you experienced? Let’s share insights and continue the conversation about building better software through better practices.

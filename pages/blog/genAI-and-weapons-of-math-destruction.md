@@ -64,6 +64,3 @@ As someone deeply passionate about reducing bias and promoting fairness in techn
 
 Cathy O’Neil’s work reminds us that algorithms are not inherently fair—they reflect the values of those who create them. Let’s ensure that as we build the future of AI, we prioritize transparency, fairness, and accountability.
 
-### Call to Action
-💡 What do you think? How can we design a better AI ecosystem while avoiding the pitfalls Cathy O’Neil warned us about? Let’s discuss and work together to shape a more equitable technological future.
-
