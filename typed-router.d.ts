@@ -21,6 +21,7 @@ declare module 'vue-router/auto-routes' {
     '/': RouteRecordInfo<'/', '/', Record<never, never>, Record<never, never>>,
     '/[...404]': RouteRecordInfo<'/[...404]', '/:404(.*)', { 404: ParamValue<true> }, { 404: ParamValue<false> }>,
     '/blog/': RouteRecordInfo<'/blog/', '/blog', Record<never, never>, Record<never, never>>,
+    '/blog/agile-manifesto-a-timeless-guide': RouteRecordInfo<'/blog/agile-manifesto-a-timeless-guide', '/blog/agile-manifesto-a-timeless-guide', Record<never, never>, Record<never, never>>,
     '/blog/genAI-and-weapons-of-math-destruction': RouteRecordInfo<'/blog/genAI-and-weapons-of-math-destruction', '/blog/genAI-and-weapons-of-math-destruction', Record<never, never>, Record<never, never>>,
     '/blog/the-importance-of-test-driven-development': RouteRecordInfo<'/blog/the-importance-of-test-driven-development', '/blog/the-importance-of-test-driven-development', Record<never, never>, Record<never, never>>,
     '/portfolio': RouteRecordInfo<'/portfolio', '/portfolio', Record<never, never>, Record<never, never>>,

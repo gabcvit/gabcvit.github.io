@@ -17,3 +17,7 @@
 .blog-post p {
 	@apply text-sm pt-4;
 }
+
+.blog-post a {
+	@apply underline text-pink-300;
+}
