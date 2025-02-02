@@ -21,3 +21,11 @@
 .blog-post a {
 	@apply underline text-pink-300;
 }
+
+.blog-post ul {
+	@apply list-disc text-sm ml-4;
+}
+
+.blog-post li {
+	@apply pl-2;
+}
