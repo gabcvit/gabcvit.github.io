@@ -1,0 +1,1 @@
+import{d as t,o as s,c as o,b as a,t as r}from"./app-B59m03je.js";const c={class:"mt-12 mb-4 border-b"},n={class:"text-xl"},l=t({__name:"SectionHeader",props:{title:{}},setup(_){return(e,i)=>(s(),o("div",c,[a("p",n,r(e.title),1)]))}});export{l as _};
