@@ -5,12 +5,12 @@
     </p>
     <div class="flex flex-start flex-wrap gap-2">
       <TagSocial
-        iconUrl="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+        iconUrl="https://cdn.simpleicons.org/github/dddddd"
         label="GitHub"
         url="https://github.com/gabcvit"
       />
       <TagSocial
-        iconUrl="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/stackoverflow/stackoverflow-original.svg"
+        iconUrl="https://cdn.simpleicons.org/stackoverflow"
         label="Stackoverflow"
         url="https://stackoverflow.com/users/6231562/gabcvit"
       />
@@ -20,12 +20,17 @@
         url="https://www.linkedin.com/in/gabcvit/"
       />
       <TagSocial
-        iconUrl="https://upload.wikimedia.org/wikipedia/commons/7/7a/Bluesky_Logo.svg"
+        iconUrl="https://cdn.simpleicons.org/bluesky"
         label="BlueSky"
         url="https://bsky.app/profile/gabcvit.bsky.social"
       />
       <TagSocial
-        iconUrl="https://cdn2.iconfinder.com/data/icons/social-icon-3/512/social_style_3_rss-1024.png"
+        iconUrl="https://cdn.simpleicons.org/mailboxdotorg/gray"
+        label="Email"
+        url="mailto:vitali.gabriel@gmail.com"
+      />
+      <TagSocial
+        iconUrl="https://cdn.simpleicons.org/rss"
         label="RSS"
         url="https://gabcvit.github.io/feed.xml"
       />
