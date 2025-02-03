@@ -1,6 +1,7 @@
 # gabcvit.github.io
 
-This repository is browsable using GitHub Pages on the following address:
-http://gabcvit.github.io/
+This repository is where my personal website is built and deployed! 🚀
 
-I hope you enjoy my online Resume!
+It's currently built using Vue, Typescript, Vite, Markdown files for blog pieces and some other libraries to make all this possible.
+
+http://gabcvit.github.io/
