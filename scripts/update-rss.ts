@@ -25,7 +25,7 @@ const OPTIONS = {
 	description: `${NAME}'s Blog`,
     title: NAME,
 	image: `${DOMAIN}/avatar.jpg`,
-	favicon: `${DOMAIN}/logo.png`,
+	favicon: `${DOMAIN}/favicon.svg`,
     id: `${DOMAIN}/`,
     link: `${DOMAIN}/`,
     copyright: `CC BY-NC-SA 4.0 2025 © ${NAME}`,
