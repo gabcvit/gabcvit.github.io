@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gabcvit.github.io/</id>
     <title>Gabriel Vitali</title>
-    <updated>2025-02-03T01:01:57.948Z</updated>
+    <updated>2025-02-03T10:08:17.957Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Gabriel Vitali</name>
@@ -13,7 +13,7 @@
     <link rel="self" href="https://gabcvit.github.io/feed.atom"/>
     <subtitle>Gabriel Vitali's Blog</subtitle>
     <logo>https://gabcvit.github.io/avatar.jpg</logo>
-    <icon>https://gabcvit.github.io/logo.png</icon>
+    <icon>https://gabcvit.github.io/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2025 © Gabriel Vitali</rights>
     <entry>
         <title type="html"><![CDATA[The Importance of Decentralization Technologies, Building a Trustless Society]]></title>
