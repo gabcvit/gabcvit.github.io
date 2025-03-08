@@ -4,10 +4,10 @@
     :to="path"
   >
     <div class="col-span-3 row-span-1">
-      <p class="font-bold text-pink-400">
+      <p class="font-bold">
         > {{ title }}
       </p>
-      <p class="pb-2">
+      <p class="pb-2 text-pink-400">
         Reading duration: {{ duration }}
       </p>
       <p class="text-sm">

@@ -4,10 +4,11 @@
   <div class="section-wrapper">
     <ResumeSingleElement
       title="Senior Developer Consultant"
-      description="Currently working as a Senior Developer Consultant in an Agile,
-  dynamic, fast-paced and innovative workspace. Worked together with clients from Sales, Crypto currency (finances)
-  and transportation branches, varying across greenfield projects and ongoing ones.
-  // Tech stack: Swift, SwiftUI, Vue, Typescript, Javascript, GraphQL, GitHub Actions, Terraform, AWS."
+      description="Currently working as a Senior Developer Consultant, I collaborate with cross-functional 
+      teams, mentor developers and business leaders, and optimize workflows to deliver high-quality, 
+      agile-driven software. My strength lies in simplifying complexity, driving collaboration, and 
+      guiding teams toward impactful results and high quality software."
+      techStack="Swift, SwiftUI, Vue, Typescript, Javascript, GraphQL, GitHub Actions, Terraform, AWS."
       office="Thoughtworks - Munich, Germany"
       period="2021 - now"
     />
@@ -15,9 +16,9 @@
     <ResumeSingleElement
       title="Mobile application developer"
       description="Developed over 10 mobile apps for multiple clients in a customer-centered small consultancy.
-  Had a lot of experience building and mocking design proposals, development, test and debug in a fast-paced
-  environment for both native and hybrid applications // Tech Stack: React-Native, Ionic 1 and 3,
-  Unity, Sketch, InVision, MongoDB, Node."
+      Had a lot of experience building and mocking design proposals, development, test and debug in a fast-paced
+      environment for both native and hybrid applications."
+      techStack="React-Native, Ionic 1 and 3, Unity, Sketch, InVision, MongoDB, Node."
       office="app-affairs GmbH. - Munich, Germany"
       period="2017 - 2021"
     />
@@ -35,11 +36,12 @@
     <ResumeSingleElement
       title="Research Scholarship"
       description="Participated in user experience software maintenance
-  and project development on Educational Flash-platform Game for
-  children with Haemophilia. The project was financed by PIBIC
-  (Programa institucional de bolsas de iniciação científica –
-  Program of Scientific Initiation Scholarships) at Campinas
-  State University (UNICAMP)."
+      and project development on Educational Flash-platform Game for
+      children with Haemophilia. The project was financed by PIBIC
+      (Programa institucional de bolsas de iniciação científica –
+      Program of Scientific Initiation Scholarships) at Campinas
+      State University (UNICAMP)."
+      techStack=""
       office="Campinas State University - Limeira, Brazil"
       period="2013 - 2014"
     />

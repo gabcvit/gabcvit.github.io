@@ -10,6 +10,9 @@
       <p class="text-sm">
         {{ description }}
       </p>
+      <p class="text-sm pt-2" v-if="techStack">
+        // Tech stack: {{ techStack }}
+      </p>
     </div>
     <div class="col-span-1 text-right">
       <p>{{ period }}</p>
@@ -21,6 +24,7 @@
 withDefaults(defineProps<{
   title: string,
   description: string,
+  techStack: string,
   office?: string,
   period?: string,
 }>(), {

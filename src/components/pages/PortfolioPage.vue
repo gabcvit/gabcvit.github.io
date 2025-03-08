@@ -3,7 +3,7 @@
 
   <PortfolioSingleElement
     title="gabcvit/birth-chart"
-    theme="Ongoing personal project that calculates all celestial bodies' positions at the time of birth."
+    theme="Personal project"
     roles="Main developer"
     link="https://github.com/gabcvit/birth-chart"
     period="2025"
@@ -11,7 +11,7 @@
 
   <PortfolioSingleElement
     title="gabcvit/find-my-btc-wallet"
-    theme="Retired personal project that helps users find their Bitcoin wallet inside their computer."
+    theme="Personal project"
     roles="Main developer"
     link="https://github.com/gabcvit/find-my-btc-wallet"
     period="2021"
