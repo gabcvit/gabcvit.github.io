@@ -14,7 +14,7 @@
         Role(s): {{ roles }}
       </p>
     </div>
-    <div class="col-span-1 mr-16 text-right">
+    <div class="col-span-1 text-right">
       <p>{{ period }}</p>
     </div>
   </a>

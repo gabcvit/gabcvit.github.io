@@ -15,19 +15,21 @@
       </p>
     </div>
     <div class="col-span-1 text-right">
-      <p>{{ date }}</p>
+      <p>{{ formattedDate }}</p>
     </div>
   </RouterLink>
 </template>
   
   <script lang="ts" setup>
-  withDefaults(defineProps<{
+  const props = withDefaults(defineProps<{
 	title: string,
 	path: string,
-	date: Date,
+	date: string,
 	duration: string,
 	description: string,
   }>(), {});
+
+  const formattedDate = new Date(props.date).toLocaleDateString();
   
   </script>
   
