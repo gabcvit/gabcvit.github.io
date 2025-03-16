@@ -43,7 +43,7 @@ const DEVOPS = [
 </script>
 
 <template>
-  <SectionHeader title="Technical Skills" />
+  <SectionHeader title="Tech Skills" />
 
   <div class="section-wrapper">
     <SectionSubheader title="Languages" />
