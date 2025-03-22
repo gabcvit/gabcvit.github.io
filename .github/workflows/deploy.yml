@@ -24,12 +24,20 @@ jobs:
     runs-on: ubuntu-latest
     needs: test
 
+    steps:
+      - name: start server
+        run: npm run dev
+      - name: Test
+        run: npx cypress run
+
   deploy:
     runs-on: ubuntu-latest
     needs: setup && test
-      - name: Deploy
-        run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/gabcvit/gabcvit.github.io
-          npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      steps:
+        - name: Deploy
+          run: |
+            git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/gabcvit/gabcvit.github.io
+            npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+          env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
