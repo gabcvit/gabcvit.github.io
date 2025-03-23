@@ -56,9 +56,8 @@ jobs:
       - name: Run Cypress tests
         uses: cypress-io/github-action@v6
         with:
-          start: npm run dev
+          start: npx vite --host
           wait-on: 'http://localhost:5173'
-          record: true
 
   deploy:
     name: Deploy
