@@ -1,0 +1,26 @@
+name: Test
+description: Runs tests on the application
+
+runs:
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '22.11'
+
+    - name: Restore Node Modules Cache
+      uses: actions/cache@v4
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node_modules-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node_modules-
+
+    - name: Start server
+      run: npm run dev & npx wait-on http://localhost:5173
+
+    - name: Run Cypress tests
+      run: npx cypress run

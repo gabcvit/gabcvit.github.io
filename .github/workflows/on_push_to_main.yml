@@ -1,0 +1,28 @@
+name: On push to main
+description: CI/CD pipeline that runs on push to main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  setup:
+    name: Setup
+    runs-on: ubuntu-latest
+    steps:
+      uses: ./.github/workflows/setup.yml
+
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    needs: setup
+    steps:
+      uses: ./.github/workflows/test.yml
+
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      uses: ./.github/workflows/deploy.yml

@@ -1,0 +1,12 @@
+name: On Open Pull Request
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  setup:
+    uses: ./.github/workflows/setup.yml
+
+  test:
+    uses: ./.github/workflows/test.yml

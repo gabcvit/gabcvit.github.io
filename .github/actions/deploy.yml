@@ -1,0 +1,27 @@
+name: Deploy
+description: Deploys the application
+
+runs:
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '22.11'
+
+    - name: Restore Node Modules Cache
+      uses: actions/cache@v3
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node_modules-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node_modules-
+
+    - name: Deploy
+      run: |
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/gabcvit/gabcvit.github.io
+        npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
