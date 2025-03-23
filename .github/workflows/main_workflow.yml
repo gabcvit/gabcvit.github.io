@@ -1,0 +1,94 @@
+name: On push to main
+description: CI/CD pipeline that runs on push to main
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  setup:
+    name: Setup
+    description: Sets up the repo and installs dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.11'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Upload Node Modules Cache
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node_modules-
+
+  test:
+    name: Test
+    description: Runs tests on the application
+    runs-on: ubuntu-latest
+    needs: ['setup']
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.11'
+
+      - name: Restore Node Modules Cache
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node_modules-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node_modules-
+
+      - name: Start server
+        run: npm run dev & npx wait-on http://localhost:5173
+
+      - name: Run Cypress tests
+        run: npx cypress run
+
+  deploy:
+    name: Deploy
+    description: Deploys the application
+    runs-on: ubuntu-latest
+    needs: ['setup', 'test']
+    if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22.11'
+
+    - name: Restore Node Modules Cache
+      uses: actions/cache@v4
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node_modules-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node_modules-
+
+    - name: Deploy
+      run: |
+        git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/gabcvit/gabcvit.github.io
+        npm run deploy -- -u "github-actions-bot <support+actions@github.com>"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
