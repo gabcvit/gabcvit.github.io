@@ -53,11 +53,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node_modules-
 
-      - name: Start server
-        run: npm run dev & npx wait-on http://localhost:5173
-
       - name: Run Cypress tests
-        run: npx cypress run
+        uses: cypress-io/github-action@v6
 
   deploy:
     name: Deploy
