@@ -6,7 +6,9 @@ on:
 
 jobs:
   setup:
+    runs-on: ubuntu-latest
     uses: ./.github/workflows/setup.yml
 
   test:
+    runs-on: ubuntu-latest
     uses: ./.github/workflows/test.yml
