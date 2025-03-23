@@ -2,6 +2,7 @@ name: Setup
 description: Sets up the repo and installs dependencies
 
 runs:
+  using: "composite"
   steps:
     - name: Checkout repository
       uses: actions/checkout@v2

@@ -11,4 +11,5 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
+    needs: ['setup']
     uses: ./.github/actions/run_tests

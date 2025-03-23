@@ -2,6 +2,7 @@ name: Deploy
 description: Deploys the application
 
 runs:
+  using: "composite"
   steps:
     - name: Checkout repository
       uses: actions/checkout@v2
