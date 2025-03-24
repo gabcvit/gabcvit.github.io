@@ -6,7 +6,7 @@ import fs from 'fs-extra'
 import matter from 'gray-matter'
 import MarkdownIt from 'markdown-it'
 
-const DOMAIN = 'https://gabcvit.github.io'
+const DOMAIN = 'https://gabcvit.dev'
 const NAME = 'Gabriel Vitali'
 const AUTHOR = {
   name: NAME,

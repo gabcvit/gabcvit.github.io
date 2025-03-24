@@ -5,11 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite-ssg build && npm run rss",
+    "build": "vite-ssg build && npm run rss && npm run add-cname",
     "deploy": "npm run build && gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview",
-    "rss": "tsx scripts/update-rss.ts"
+    "rss": "tsx scripts/update-rss.ts",
+    "add-cname": "tsx scripts/add-cname.ts"
   },
   "dependencies": {
     "gh-pages": "^6.2.0",
