@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /birth-chart
+
+Sitemap: https://gabcvit.dev/sitemap.xml
