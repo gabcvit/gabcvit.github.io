@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://gabcvit.github.io/</id>
+    <id>https://gabcvit.dev/</id>
     <title>Gabriel Vitali</title>
-    <updated>2025-03-24T21:47:38.919Z</updated>
+    <updated>2025-03-24T22:51:38.672Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Gabriel Vitali</name>
         <email>vitali.gabriel@gmail.com</email>
-        <uri>https://gabcvit.github.io</uri>
+        <uri>https://gabcvit.dev</uri>
     </author>
-    <link rel="alternate" href="https://gabcvit.github.io/"/>
-    <link rel="self" href="https://gabcvit.github.io/feed.atom"/>
+    <link rel="alternate" href="https://gabcvit.dev/"/>
+    <link rel="self" href="https://gabcvit.dev/feed.atom"/>
     <subtitle>Gabriel Vitali's Blog</subtitle>
-    <logo>https://gabcvit.github.io/avatar.jpg</logo>
-    <icon>https://gabcvit.github.io/favicon.svg</icon>
+    <logo>https://gabcvit.dev/avatar.jpg</logo>
+    <icon>https://gabcvit.dev/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2025 © Gabriel Vitali</rights>
     <entry>
         <title type="html"><![CDATA[The Importance of Decentralization Technologies, Building a Trustless Society]]></title>
-        <id>https://gabcvit.github.io/blog/the-importance-of-decentralization-technologies</id>
-        <link href="https://gabcvit.github.io/blog/the-importance-of-decentralization-technologies"/>
+        <id>https://gabcvit.dev/blog/the-importance-of-decentralization-technologies</id>
+        <link href="https://gabcvit.dev/blog/the-importance-of-decentralization-technologies"/>
         <updated>2025-02-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[In an era where data privacy concerns, corporate monopolization, and centralized control dominate the digital landscape, **decentralization technologies** offer a transformative alternative.]]></summary>
         <content type="html"><![CDATA[<!-- @layout-blog-post -->
@@ -78,13 +78,13 @@ By contrast, decentralized technologies:</p>
         <author>
             <name>Gabriel Vitali</name>
             <email>vitali.gabriel@gmail.com</email>
-            <uri>https://gabcvit.github.io</uri>
+            <uri>https://gabcvit.dev</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[Generative AI, A Weapon of Math Destruction in the Making?]]></title>
-        <id>https://gabcvit.github.io/blog/genAI-and-weapons-of-math-destruction</id>
-        <link href="https://gabcvit.github.io/blog/genAI-and-weapons-of-math-destruction"/>
+        <id>https://gabcvit.dev/blog/genAI-and-weapons-of-math-destruction</id>
+        <link href="https://gabcvit.dev/blog/genAI-and-weapons-of-math-destruction"/>
         <updated>2025-01-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[After reading Cathy O’Neil’s brilliant *Weapons of Math Destruction,* I found myself thinking deeply about how her insights apply to the explosive rise of Generative AI...]]></summary>
         <content type="html"><![CDATA[<!-- @layout-blog-post -->
@@ -146,13 +146,13 @@ By contrast, decentralized technologies:</p>
         <author>
             <name>Gabriel Vitali</name>
             <email>vitali.gabriel@gmail.com</email>
-            <uri>https://gabcvit.github.io</uri>
+            <uri>https://gabcvit.dev</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Importance of Test-Driven Development (TDD)]]></title>
-        <id>https://gabcvit.github.io/blog/the-importance-of-test-driven-development</id>
-        <link href="https://gabcvit.github.io/blog/the-importance-of-test-driven-development"/>
+        <id>https://gabcvit.dev/blog/the-importance-of-test-driven-development</id>
+        <link href="https://gabcvit.dev/blog/the-importance-of-test-driven-development"/>
         <updated>2024-08-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Test-Driven Development (TDD) is more than just a software development methodology—it’s a philosophy that fundamentally changes how we approach coding. Popularized by Kent Beck and detailed in Martin Fowler’s writings, We're gonna do a deeper dive in this post...]]></summary>
         <content type="html"><![CDATA[<!-- @layout-blog-post -->
@@ -214,13 +214,13 @@ By contrast, decentralized technologies:</p>
         <author>
             <name>Gabriel Vitali</name>
             <email>vitali.gabriel@gmail.com</email>
-            <uri>https://gabcvit.github.io</uri>
+            <uri>https://gabcvit.dev</uri>
         </author>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Agile Manifesto, A Timeless guide to achieve sustainable Software Development]]></title>
-        <id>https://gabcvit.github.io/blog/agile-manifesto-a-timeless-guide</id>
-        <link href="https://gabcvit.github.io/blog/agile-manifesto-a-timeless-guide"/>
+        <id>https://gabcvit.dev/blog/agile-manifesto-a-timeless-guide</id>
+        <link href="https://gabcvit.dev/blog/agile-manifesto-a-timeless-guide"/>
         <updated>2024-06-21T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Probably this is not the first time you see a developer writing about the famous buzzword "The Agile Manifesto", it I promise you, it will definitely not be the last.]]></summary>
         <content type="html"><![CDATA[<!-- @layout-blog-post -->
@@ -292,7 +292,7 @@ The <strong>Agile Manifesto</strong>, created in 2001 by a group of very experie
         <author>
             <name>Gabriel Vitali</name>
             <email>vitali.gabriel@gmail.com</email>
-            <uri>https://gabcvit.github.io</uri>
+            <uri>https://gabcvit.dev</uri>
         </author>
     </entry>
 </feed>

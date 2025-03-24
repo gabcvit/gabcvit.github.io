@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Gabriel Vitali</title>
-        <link>https://gabcvit.github.io/</link>
+        <link>https://gabcvit.dev/</link>
         <description>Gabriel Vitali's Blog</description>
-        <lastBuildDate>Mon, 24 Mar 2025 21:47:38 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 24 Mar 2025 22:51:38 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
             <title>Gabriel Vitali</title>
-            <url>https://gabcvit.github.io/avatar.jpg</url>
-            <link>https://gabcvit.github.io/</link>
+            <url>https://gabcvit.dev/avatar.jpg</url>
+            <link>https://gabcvit.dev/</link>
         </image>
         <copyright>CC BY-NC-SA 4.0 2025 © Gabriel Vitali</copyright>
-        <atom:link href="https://gabcvit.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://gabcvit.dev/feed.xml" rel="self" type="application/rss+xml"/>
         <item>
             <title><![CDATA[The Importance of Decentralization Technologies, Building a Trustless Society]]></title>
-            <link>https://gabcvit.github.io/blog/the-importance-of-decentralization-technologies</link>
-            <guid>https://gabcvit.github.io/blog/the-importance-of-decentralization-technologies</guid>
+            <link>https://gabcvit.dev/blog/the-importance-of-decentralization-technologies</link>
+            <guid>https://gabcvit.dev/blog/the-importance-of-decentralization-technologies</guid>
             <pubDate>Sat, 01 Feb 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[In an era where data privacy concerns, corporate monopolization, and centralized control dominate the digital landscape, **decentralization technologies** offer a transformative alternative.]]></description>
             <content:encoded><![CDATA[<!-- @layout-blog-post -->
@@ -78,8 +78,8 @@ By contrast, decentralized technologies:</p>
         </item>
         <item>
             <title><![CDATA[Generative AI, A Weapon of Math Destruction in the Making?]]></title>
-            <link>https://gabcvit.github.io/blog/genAI-and-weapons-of-math-destruction</link>
-            <guid>https://gabcvit.github.io/blog/genAI-and-weapons-of-math-destruction</guid>
+            <link>https://gabcvit.dev/blog/genAI-and-weapons-of-math-destruction</link>
+            <guid>https://gabcvit.dev/blog/genAI-and-weapons-of-math-destruction</guid>
             <pubDate>Sat, 25 Jan 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[After reading Cathy O’Neil’s brilliant *Weapons of Math Destruction,* I found myself thinking deeply about how her insights apply to the explosive rise of Generative AI...]]></description>
             <content:encoded><![CDATA[<!-- @layout-blog-post -->
@@ -142,8 +142,8 @@ By contrast, decentralized technologies:</p>
         </item>
         <item>
             <title><![CDATA[The Importance of Test-Driven Development (TDD)]]></title>
-            <link>https://gabcvit.github.io/blog/the-importance-of-test-driven-development</link>
-            <guid>https://gabcvit.github.io/blog/the-importance-of-test-driven-development</guid>
+            <link>https://gabcvit.dev/blog/the-importance-of-test-driven-development</link>
+            <guid>https://gabcvit.dev/blog/the-importance-of-test-driven-development</guid>
             <pubDate>Wed, 07 Aug 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Test-Driven Development (TDD) is more than just a software development methodology—it’s a philosophy that fundamentally changes how we approach coding. Popularized by Kent Beck and detailed in Martin Fowler’s writings, We're gonna do a deeper dive in this post...]]></description>
             <content:encoded><![CDATA[<!-- @layout-blog-post -->
@@ -206,8 +206,8 @@ By contrast, decentralized technologies:</p>
         </item>
         <item>
             <title><![CDATA[The Agile Manifesto, A Timeless guide to achieve sustainable Software Development]]></title>
-            <link>https://gabcvit.github.io/blog/agile-manifesto-a-timeless-guide</link>
-            <guid>https://gabcvit.github.io/blog/agile-manifesto-a-timeless-guide</guid>
+            <link>https://gabcvit.dev/blog/agile-manifesto-a-timeless-guide</link>
+            <guid>https://gabcvit.dev/blog/agile-manifesto-a-timeless-guide</guid>
             <pubDate>Fri, 21 Jun 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Probably this is not the first time you see a developer writing about the famous buzzword "The Agile Manifesto", it I promise you, it will definitely not be the last.]]></description>
             <content:encoded><![CDATA[<!-- @layout-blog-post -->
