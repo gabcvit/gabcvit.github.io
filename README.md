@@ -2,6 +2,6 @@
 
 This repository is where my personal website is built and deployed! 🚀
 
-It's currently built using Vue, Typescript, Vite, Markdown files for blog pieces and some other libraries to make all this possible.
+It's currently built using Vue, Typescript, Vite, Markdown files for separate blog pages.
 
-http://gabcvit.github.io/
+https://gabcvit.dev

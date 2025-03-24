@@ -8,6 +8,7 @@ import Markdown from 'unplugin-vue-markdown/vite'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
+import Sitemap from 'vite-plugin-sitemap'
 
 export default defineConfig({
   resolve: {
@@ -69,6 +70,32 @@ export default defineConfig({
       extensions: ['vue', 'md'],
       dts: true,
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
+    }),
+    Sitemap({
+      hostname: 'https://gabcvit.dev',
+      dynamicRoutes: [
+        '/',
+        '/resume',
+        '/portfolio',
+        '/blog',
+      ],
+      exclude: [
+        '/birth-chart',
+      ],
+      priority: {
+        '/': 1.0,
+        '/resume': 0.9,
+        '/portfolio': 0.9,
+        '/blog': 0.9,
+      },
+      lastmod: new Date(),
+      robots: [{
+        userAgent: '*',
+        disallow: [
+          '/birth-chart',
+        ],
+        allow: '/',
+      }],
     }),
   ],
   ssgOptions: {
