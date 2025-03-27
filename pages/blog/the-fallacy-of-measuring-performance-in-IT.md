@@ -1,5 +1,5 @@
 ---
-title: The fallacy of measuring performanc, Why tech companies get it wrong
+title: The fallacy of measuring performance, Why tech companies get it wrong
 description: In the fast-paced world of software development, performance measurement is presented to us as a "necessary solution". Companies and management want to ensure that their teams are productive, efficient, and delivering value. However,
 date: 2025-02-25
 duration: 9min
