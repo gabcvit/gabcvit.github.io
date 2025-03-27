@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gabcvit.dev/</id>
     <title>Gabriel Vitali</title>
-    <updated>2025-03-27T20:57:37.949Z</updated>
+    <updated>2025-03-27T21:14:13.471Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Gabriel Vitali</name>
@@ -16,7 +16,7 @@
     <icon>https://gabcvit.dev/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2025 © Gabriel Vitali</rights>
     <entry>
-        <title type="html"><![CDATA[The fallacy of measuring performanc, Why tech companies get it wrong]]></title>
+        <title type="html"><![CDATA[The fallacy of measuring performance, Why tech companies get it wrong]]></title>
         <id>https://gabcvit.dev/blog/the-fallacy-of-measuring-performance-in-IT</id>
         <link href="https://gabcvit.dev/blog/the-fallacy-of-measuring-performance-in-IT"/>
         <updated>2025-02-25T00:00:00.000Z</updated>
