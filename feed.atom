@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gabcvit.dev/</id>
     <title>Gabriel Vitali</title>
-    <updated>2025-03-30T16:10:47.716Z</updated>
+    <updated>2025-03-30T16:15:14.225Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Gabriel Vitali</name>
@@ -68,7 +68,7 @@ To implement it: use react-native, expo and typescript.
 <h3>Step 4: Manual fixes (1 Hour and 20 minutes)</h3>
 <p>Now it was time to interact with (GitHub's co-pilot)[<a href="https://github.com/features/copilot">https://github.com/features/copilot</a>] and try to fix and address some of the contrasts that the app had form the design. This process required some manual SVG icon imports and recoloring.</p>
 <p>Once my 4-hour timer went off, this was the current state of my horoscope app:</p>
-<p>(IMAGE FINAL)</p>
+<p><img src="/public/images/2025-03-30-blog-4.png" alt="Final result" title="Final result"></p>
 <h2>My key takeaway for people working in big teams</h2>
 <p>Overall the way I see it, the usual roles will become less defined and will start overlapping. We might see new roles for: &quot;Devs who can do UX prototyping&quot; or &quot;BAs with coding skills&quot; in the future. In other words, it might be not required to have a team full of speciallists in different topics, but a team composed by many &quot;Jacks of all trades&quot; with overlapping skills who would differ from each other by a more nuanced extra knowledge in a particular area.</p>
 <ul>
