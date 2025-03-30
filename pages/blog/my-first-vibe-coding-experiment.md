@@ -1,5 +1,5 @@
 ---
-title: I tried Vibe Coding for 4 hours, this is much bigger than I previously thought
+title: I tried Vibe Coding for 4 hours, this is how it went
 description: Vibe Coding, as the name suggests. Takes a more holistic look at software development, where specialists are not required to dig deep into a skill or tech stack in order to perform their work and have a final product
 date: 2025-03-30
 duration: 12min
@@ -7,7 +7,7 @@ duration: 12min
 
 <!-- @layout-blog-post -->
 
-# I tried Vibe Coding for 4 hours, this is much bigger than I previously thought
+# I tried Vibe Coding for 4 hours, this is how it went
 
 ## What is Vibe Coding?
 
@@ -20,7 +20,7 @@ Instead of having to endure endless courses online to have deep expert knowledge
 - **AI-assisted code generation based on design files**
 - **Manual adjustments on the codebase**
 
-## My Case Study: A Horoscope app in react-native: This is how far I got in a timeframe of 4 hours
+## My case study: Developing an astrogoly app in react-native for 4 hours
 
 **Quick disclaimer:** I have already worked on the creation of multiple apps from discovery until first launch and late support, so for me the steps to create such an app were very clear. The speed can always vary depending on the people trying this out and how much effort you want to put on a particular step.
 
@@ -28,23 +28,23 @@ I wanted to use my prior knowledge on the lifecycle for an app development to be
 
 ### Step 1: Brainstorming and concept idealisation (10 minutes)
 
-I have quickly chatted with (OpenAI's ChatGPT)[https://chatgpt.com/] per voice and explained that I wanted to create a horoscope app that was simple and intuitive to look and interact with, where an user could pick their zodiac sign and see quickly what the app had to tell them about it.
+I have quickly chatted with (OpenAI's ChatGPT)[https://chatgpt.com/] per voice and explained that I wanted to create an astrology app that was simple and intuitive to look and interact with, where an user could pick their zodiac sign and see quickly what the app had to tell them about it.
 
 ```text
-That sounds like a fun project! For a horoscope app that's simple and intuitive, here are a few design tips:
+That sounds like a fun project! For an astrology app that's simple and intuitive, here are a few design tips:
 1. Clean Layout: Use a clean, minimalistic design with plenty of white space. This will make the app feel welcoming and easy to navigate.
 2. Zodiac Selection: Provide a simple way for users to select their zodiac sign, like a dropdown menu or a set of icons representing each sign.
 3. Personalized Content: Once a sign is selected, display the horoscope clearly, with sections for daily, weekly, or monthly predictions.
-4. Visual Aesthetics: Choose a color palette that reflects the mystical and celestial nature of horoscopes. Soft blues, purples, and golds can be great choices.
+4. Visual Aesthetics: Choose a color palette that reflects the mystical and celestial nature of astrology. Soft blues, purples, and golds can be great choices.
 5. User-Friendly Navigation: Keep navigation simple, with a clear back button and easily accessible settings.
 Do you have any specific features or elements in mind that you want to include?
 ```
 
 Great start for a brainstorming, I already have some UX defaults I should strive for, coloring suggestions, layout suggestions and even feature suggestions that might be interesting to the user. For me the idea of having a grid for the zodiac signs sounded pretty good, so I expressed that in my response and asked it to generate a wireframe for the UI for me.
 
-This was the final result of our interaction, not too bad, I would've removed the top dropdown element, but as I wanted to design it myself, I can easily just ignore that it's there. As I also wanted to have the horoscope in a separate page, I also would prefer to have the grid as 3x4 instead of 4x3 and the horoscope text in a separate page.
+This was the final result of our interaction, not too bad, I would've removed the top dropdown element, but as I wanted to design it myself, I can easily just ignore that it's there. As I also wanted to have the astrological in a separate page, I also would prefer to have the grid as 3x4 instead of 4x3 and the astrological text in a separate page.
 
-[<img src="/public/images/2025-03-30-blog-1.png" style="width: 100%; max-width: 400px; display: block; margin: auto;"/>](image.png)
+[<img src="/images/2025-03-30-blog-1.png" style="width: 100%; max-width: 400px; display: block; margin: auto;"/>](image.png)
 
 ### Step 2: Designing in Figma (2 Hours)
 
@@ -54,7 +54,7 @@ During this step I have done a few prompts on ChatGPT again to ask for its' opin
 
 This was the end result:
 
-![Figma screenshot](/public/images/2025-03-30-blog-2.png "Figma screenshot")
+![Figma screenshot](/images/2025-03-30-blog-2.png "Figma screenshot")
 
 ### Step 3: Generating the Code with Vercel's AI (20 minutes)
 
@@ -70,7 +70,7 @@ The result was a codebase with 12 files, I wasn't able to deploy it directly to 
 
 This was the first version of the app after I installed all dependencies and ran `npm run web`:
 
-![First result from v0](/public/images/2025-03-30-blog-3.png "First result from v0")
+![First result from v0](/images/2025-03-30-blog-3.png "First result from v0")
 
 The icon design was pretty different from the design, also the bottom navigation bar was not sticking to the bottom of the screen once a different one was opened. Which is ok, I wasn't too aware that on figma it was possible to anchor elements to the bottom, so probably v0 didn't understand that it was a bottom navbar by itself.
 
@@ -81,20 +81,22 @@ Which brings us to the last step.
 ### Step 4: Manual fixes (1 Hour and 20 minutes)
 Now it was time to interact with (GitHub's co-pilot)[https://github.com/features/copilot] and try to fix and address some of the contrasts that the app had form the design. This process required some manual SVG icon imports and recoloring.
 
-Once my 4-hour timer went off, this was the current state of my horoscope app:
+Once my 4-hour timer went off, this was the current state of my astrology app:
 
-![Final result](/public/images/2025-03-30-blog-4.png "Final result")
+![Final result](/images/2025-03-30-blog-4.png "Final result")
 
-## My key takeaway for people working in big teams
-Overall the way I see it, the usual roles will become less defined and will start overlapping. We might see new roles for: "Devs who can do UX prototyping" or "BAs with coding skills" in the future. In other words, it might be not required to have a team full of speciallists in different topics, but a team composed by many "Jacks of all trades" with overlapping skills who would differ from each other by a more nuanced extra knowledge in a particular area.
+## In summary: A game changer for innovators
+After this quick experiment I realised that Vibe Coding and the usage of AI tools in software development offer us a huge opportunity to become more autonomous in the market and to launch new products with way less effort, knowledge and budget. A process that would normally take me days (if not weeks) and lots of prior knowledge in different areas to finish, was covered in just a few hours.
 
-- **What does it mean for PMs and BA people?** You might not need to have a dev to code your idea, but you might need to learn some code principles as well. Refinement ceremonies might be replaced by interactions with a chat tool such as (Vercel’s v0)[https://v0.dev/] until it codes what you have previously proposed. On more premium account tiers, it would even enable you to deploy your own applications. But in order to optimise its' outputs and avoid uneccessary back-and-forth, you'll need to be able to understand the issue in the code.
-- **What does it mean for UX people?** Your design and prototyping skills are key to optimising the code-generation with these tools, it's worth digging into how you can optimise your Figma file structure, components and anchors to optimise AI interpretation. Understanding better also tech requirements will be also key for you to proactively adapt your designs and requirements to work with AI. Similar to PMs and BAs, you'll need to get in touch with some code principles, even if it's only in a language-agnostic way.
-- **What does it mean for Dev people?** This will be the ultimate push to break the bubble of learning endless tech stacks and becoming masters of only a particular language. Business and PM skills as well as design/prototyping skills will be required of you more than ever if you're to adapt into the new needs of the IT industry. Code skills are definitely necessary in order to understand and dig deeper into the output and manually fix outputs (or empower a new output by giving a detailed prompt about where the error is coming from), but what we call the "soft skills" of software development will help you adapt into the potential new requirements coming up.
+This encourages me to try this out more often, it makes me also reflect if I need to be really working 5x per week from 9-5 in order to develop a product for others, where I could instead be creating things that I'm more interested in on my own.
 
-## Final thought: Are we moving into a more democratic IT industry?
-This quick experiment was crucial for me to see how much this changes the current dynamic of developing a new app. A process that would normally take me days (if not weeks) and lots of prior knowledge in different areas to finish, was covered in just a few hours. This also enables more independent creators to develop their own product much faster and in a much more autonomous way.
+## Finishing thoughts: the potential risks ahead
+**I wanted to finish this blog post on a positive note, but after seeing what happened to social networks and other content creation and news industries after heavy adoption of AI tools and making content creation more accessible to all, I need to raise this concern here as a final thought for reflection:**
 
-It's becoming easier for the average person to code and launch their own application or create their own tools, this is a huge potential for people to strive for more self-determination in their lives and depend less on specialists to create what they want. I would not be surprised if we see more Tech startups being founded without a single dev involved, or a single dev launching a very sleek-designed, complex business application without the involvement of a any deisgner or stakeholders.
+Making tools more accessible to people in other to empower them to create and have more self-determination is always the right thing to do, on the other hand reckless and heavy adoption was one of the biggest causes for the devaluation of artists, their career and their art thorugh spam of low quality, uncreative and AI-automated content (which ironically was fed content from the very artists damaged without their consent), other issues such as the heavy campaining of fake news by bots and automatically generated content are also extremely concerning.
 
-As people have the potential to become more autonomous without much struggle, how will big companies be able to maintain their workforce and keep their jobs interesting?
+It all looks very similar to the [Dead Internet Theory](https://en.wikipedia.org/wiki/Dead_Internet_theory) and I hope that this doesn't happen to the creation of apps as well. In the startup environment we used to tell young aspiring developers who wanted to publish their own app the following: "Just because you could publish your own app, doesn't mean you should.", the intent of this sentence was not to discourage people to publish their own app, but to focus harder on the *business acumen*, what would make their app stand out and be unique compared to the other apps that are already out there serving the same target audience, also to look for cheaper and simpler alternatives to solve the issues of the target audience they're looking at.
+
+App development is of course a completely different scope compared to content creation and it requires a much different set of commitment from the creator to its' creation, such as compliance with data policies and infoSec, following policies from each store they'll publish the app on, app performance and responding to direct user feedback. If app publishers become reckless on these sensible practices and are not taking full ownership of their product, this could be a huge risk to their users.
+
+Let's see how this will go, maybe I'll reopen this topic on another blog post.
