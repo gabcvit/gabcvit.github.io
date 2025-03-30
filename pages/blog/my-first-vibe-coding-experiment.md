@@ -83,7 +83,7 @@ Now it was time to interact with (GitHub's co-pilot)[https://github.com/features
 
 Once my 4-hour timer went off, this was the current state of my horoscope app:
 
-(IMAGE FINAL)
+![Final result](/public/images/2025-03-30-blog-4.png "Final result")
 
 ## My key takeaway for people working in big teams
 Overall the way I see it, the usual roles will become less defined and will start overlapping. We might see new roles for: "Devs who can do UX prototyping" or "BAs with coding skills" in the future. In other words, it might be not required to have a team full of speciallists in different topics, but a team composed by many "Jacks of all trades" with overlapping skills who would differ from each other by a more nuanced extra knowledge in a particular area.
