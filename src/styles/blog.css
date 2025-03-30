@@ -15,7 +15,7 @@
 }
 
 .blog-post p {
-	@apply text-sm pt-4;
+	@apply text-sm py-2;
 }
 
 .blog-post a {
@@ -28,4 +28,14 @@
 
 .blog-post li {
 	@apply pl-2;
+}
+
+.blog-post pre {
+	@apply border-2 border-pink-500 rounded-md p-4 my-2;
+	background-color: rgb(10, 14, 19);
+	text-wrap: wrap;
+}
+
+.blog-post code {
+	@apply text-pink-200 font-mono text-xs;
 }
