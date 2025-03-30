@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gabcvit.dev/</id>
     <title>Gabriel Vitali</title>
-    <updated>2025-03-29T17:39:43.845Z</updated>
+    <updated>2025-03-30T16:10:47.716Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Gabriel Vitali</name>
@@ -15,6 +15,78 @@
     <logo>https://gabcvit.dev/avatar.jpg</logo>
     <icon>https://gabcvit.dev/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2025 © Gabriel Vitali</rights>
+    <entry>
+        <title type="html"><![CDATA[I tried Vibe Coding for 4 hours, this is much bigger than I previously thought]]></title>
+        <id>https://gabcvit.dev/blog/my-first-vibe-coding-experiment</id>
+        <link href="https://gabcvit.dev/blog/my-first-vibe-coding-experiment"/>
+        <updated>2025-03-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Vibe Coding, as the name suggests. Takes a more holistic look at software development, where specialists are not required to dig deep into a skill or tech stack in order to perform their work and have a final product]]></summary>
+        <content type="html"><![CDATA[<!-- @layout-blog-post -->
+<h1>I tried Vibe Coding for 4 hours, this is much bigger than I previously thought</h1>
+<h2>What is Vibe Coding?</h2>
+<p><em>Vibe Coding</em>, as the name suggests. Takes a more holistic look at software development, where specialists are not required to dig deep into a skill or tech stack in order to perform their work and have a final product. As someone who have worked more than half of his career switching between BA, PM, UX and Dev roles, it's for me the sweet spot where design, development, and product thinking merge by using AI to speed up and cover for more fine-grained skills, allowing people to create with flow rather than friction.</p>
+<p>Instead of having to endure endless courses online to have deep expert knowledge of every role you're gonna perform during the development of an application, vibe coding brings:</p>
+<ul>
+<li><strong>LLM-powered Rapid brainstorming and app concept idealisation</strong></li>
+<li><strong>Automatic UX Designing which enables quicker Prototyping</strong></li>
+<li><strong>AI-assisted code generation based on design files</strong></li>
+<li><strong>Manual adjustments on the codebase</strong></li>
+</ul>
+<h2>My Case Study: A Horoscope app in react-native: This is how far I got in a timeframe of 4 hours</h2>
+<p><strong>Quick disclaimer:</strong> I have already worked on the creation of multiple apps from discovery until first launch and late support, so for me the steps to create such an app were very clear. The speed can always vary depending on the people trying this out and how much effort you want to put on a particular step.</p>
+<p>I wanted to use my prior knowledge on the lifecycle for an app development to be conceived until its' release, leverage it with Vibe Coding, in order to have a better perspective on its' potential. <strong>As I was doing this on my free time on a Sunday, I didn't want to spend more than 4 hours</strong>, so I have limited my time to this slot and to see how far I would've gotten with it. This is how it went:</p>
+<h3>Step 1: Brainstorming and concept idealisation (10 minutes)</h3>
+<p>I have quickly chatted with (OpenAI's ChatGPT)[<a href="https://chatgpt.com/">https://chatgpt.com/</a>] per voice and explained that I wanted to create a horoscope app that was simple and intuitive to look and interact with, where an user could pick their zodiac sign and see quickly what the app had to tell them about it.</p>
+<pre><code class="language-text">That sounds like a fun project! For a horoscope app that's simple and intuitive, here are a few design tips:
+1. Clean Layout: Use a clean, minimalistic design with plenty of white space. This will make the app feel welcoming and easy to navigate.
+2. Zodiac Selection: Provide a simple way for users to select their zodiac sign, like a dropdown menu or a set of icons representing each sign.
+3. Personalized Content: Once a sign is selected, display the horoscope clearly, with sections for daily, weekly, or monthly predictions.
+4. Visual Aesthetics: Choose a color palette that reflects the mystical and celestial nature of horoscopes. Soft blues, purples, and golds can be great choices.
+5. User-Friendly Navigation: Keep navigation simple, with a clear back button and easily accessible settings.
+Do you have any specific features or elements in mind that you want to include?
+</code></pre>
+<p>Great start for a brainstorming, I already have some UX defaults I should strive for, coloring suggestions, layout suggestions and even feature suggestions that might be interesting to the user. For me the idea of having a grid for the zodiac signs sounded pretty good, so I expressed that in my response and asked it to generate a wireframe for the UI for me.</p>
+<p>This was the final result of our interaction, not too bad, I would've removed the top dropdown element, but as I wanted to design it myself, I can easily just ignore that it's there. As I also wanted to have the horoscope in a separate page, I also would prefer to have the grid as 3x4 instead of 4x3 and the horoscope text in a separate page.</p>
+<p><a href="image.png"><img src="https://gabcvit.dev/public/images/2025-03-30-blog-1.png" style="width: 100%; max-width: 400px; display: block; margin: auto;"/></a></p>
+<h3>Step 2: Designing in Figma (2 Hours)</h3>
+<p>With the wireframe on my hand, I have started designing views on Figma. I took extra time here to make sure that components were being properly prototyped, and that the design actually looked good. I'm sure that this step could've been made quicker with another AI-powered tool or feature, but I wanted to make sure the design had a very good look and feel, as well as proper prototyping. (also it was super fun to reconnect with my designing skills, so I got a bit carried away here).</p>
+<p>During this step I have done a few prompts on ChatGPT again to ask for its' opinion on the color pallete and the overall &quot;feel&quot; of the design, it sounded very positive and it suggested me fun changes to achieve a cooler design. It was a bit like having a UX-sparring buddy.</p>
+<p>This was the end result:</p>
+<p><img src="/public/images/2025-03-30-blog-2.png" alt="Figma screenshot" title="Figma screenshot"></p>
+<h3>Step 3: Generating the Code with Vercel's AI (20 minutes)</h3>
+<p>Once I had the Figma file ready I went to (Vercel’s v0)[<a href="https://v0.dev/">https://v0.dev/</a>] to generate a first code structure. I wanted to give it a very simple explanation only to tell it the tech stack, just to test how smart It would actually be. This was the prompt:</p>
+<pre><code class="language-text">Please recreate the UI shown in the attached Figma URL as accurately as possible.
+
+To implement it: use react-native, expo and typescript.
+</code></pre>
+<p>The result was a codebase with 12 files, I wasn't able to deploy it directly to a GitHub repo, so I needed to copy-paste them manually into a new project, that process took me a bit of more time than it would've taken someone with a paid plan. This allowed me also to have a brief look at the files I was copying, and so far the quality was pretty good, the code was readable, the Figma prototypes were correctly identified as reusable components and the actions to navigate to another screen was also implemented.</p>
+<p>This was the first version of the app after I installed all dependencies and ran <code>npm run web</code>:</p>
+<p><img src="/public/images/2025-03-30-blog-3.png" alt="First result from v0" title="First result from v0"></p>
+<p>The icon design was pretty different from the design, also the bottom navigation bar was not sticking to the bottom of the screen once a different one was opened. Which is ok, I wasn't too aware that on figma it was possible to anchor elements to the bottom, so probably v0 didn't understand that it was a bottom navbar by itself.</p>
+<p>The Vibe Coder here could definitely write follow-up queries to the chat and ask it to fix its' mistakes, but I was too eager to dive a bit deeper into the code and see what was happening, I gues old habits die hard.</p>
+<p>Which brings us to the last step.</p>
+<h3>Step 4: Manual fixes (1 Hour and 20 minutes)</h3>
+<p>Now it was time to interact with (GitHub's co-pilot)[<a href="https://github.com/features/copilot">https://github.com/features/copilot</a>] and try to fix and address some of the contrasts that the app had form the design. This process required some manual SVG icon imports and recoloring.</p>
+<p>Once my 4-hour timer went off, this was the current state of my horoscope app:</p>
+<p>(IMAGE FINAL)</p>
+<h2>My key takeaway for people working in big teams</h2>
+<p>Overall the way I see it, the usual roles will become less defined and will start overlapping. We might see new roles for: &quot;Devs who can do UX prototyping&quot; or &quot;BAs with coding skills&quot; in the future. In other words, it might be not required to have a team full of speciallists in different topics, but a team composed by many &quot;Jacks of all trades&quot; with overlapping skills who would differ from each other by a more nuanced extra knowledge in a particular area.</p>
+<ul>
+<li><strong>What does it mean for PMs and BA people?</strong> You might not need to have a dev to code your idea, but you might need to learn some code principles as well. Refinement ceremonies might be replaced by interactions with a chat tool such as (Vercel’s v0)[<a href="https://v0.dev/">https://v0.dev/</a>] until it codes what you have previously proposed. On more premium account tiers, it would even enable you to deploy your own applications. But in order to optimise its' outputs and avoid uneccessary back-and-forth, you'll need to be able to understand the issue in the code.</li>
+<li><strong>What does it mean for UX people?</strong> Your design and prototyping skills are key to optimising the code-generation with these tools, it's worth digging into how you can optimise your Figma file structure, components and anchors to optimise AI interpretation. Understanding better also tech requirements will be also key for you to proactively adapt your designs and requirements to work with AI. Similar to PMs and BAs, you'll need to get in touch with some code principles, even if it's only in a language-agnostic way.</li>
+<li><strong>What does it mean for Dev people?</strong> This will be the ultimate push to break the bubble of learning endless tech stacks and becoming masters of only a particular language. Business and PM skills as well as design/prototyping skills will be required of you more than ever if you're to adapt into the new needs of the IT industry. Code skills are definitely necessary in order to understand and dig deeper into the output and manually fix outputs (or empower a new output by giving a detailed prompt about where the error is coming from), but what we call the &quot;soft skills&quot; of software development will help you adapt into the potential new requirements coming up.</li>
+</ul>
+<h2>Final thought: Are we moving into a more democratic IT industry?</h2>
+<p>This quick experiment was crucial for me to see how much this changes the current dynamic of developing a new app. A process that would normally take me days (if not weeks) and lots of prior knowledge in different areas to finish, was covered in just a few hours. This also enables more independent creators to develop their own product much faster and in a much more autonomous way.</p>
+<p>It's becoming easier for the average person to code and launch their own application or create their own tools, this is a huge potential for people to strive for more self-determination in their lives and depend less on specialists to create what they want. I would not be surprised if we see more Tech startups being founded without a single dev involved, or a single dev launching a very sleek-designed, complex business application without the involvement of a any deisgner or stakeholders.</p>
+<p>As people have the potential to become more autonomous without much struggle, how will big companies be able to maintain their workforce and keep their jobs interesting?</p>
+]]></content>
+        <author>
+            <name>Gabriel Vitali</name>
+            <email>vitali.gabriel@gmail.com</email>
+            <uri>https://gabcvit.dev</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[The fallacy of measuring performance, Why tech companies get it wrong]]></title>
         <id>https://gabcvit.dev/blog/the-fallacy-of-measuring-performance-in-IT</id>
