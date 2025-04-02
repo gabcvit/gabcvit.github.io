@@ -5,41 +5,18 @@
     </p>
     <div class="flex flex-start flex-wrap gap-2">
       <TagSocial
-        iconUrl="https://cdn.simpleicons.org/github/dddddd"
-        label="GitHub"
-        url="https://github.com/gabcvit"
-      />
-      <TagSocial
-        iconUrl="https://cdn.simpleicons.org/stackoverflow"
-        label="Stackoverflow"
-        url="https://stackoverflow.com/users/6231562/gabcvit"
-      />
-      <TagSocial
-        iconUrl="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
-        label="LinkedIn"
-        url="https://www.linkedin.com/in/gabcvit/"
-      />
-      <TagSocial
-        iconUrl="https://cdn.simpleicons.org/bluesky"
-        label="BlueSky"
-        url="https://bsky.app/profile/gabcvit.dev"
-      />
-      <TagSocial
-        iconUrl="https://cdn.simpleicons.org/mailboxdotorg/gray"
-        label="Email"
-        url="mailto:vitali.gabriel@gmail.com"
-      />
-      <TagSocial
-        iconUrl="https://cdn.simpleicons.org/rss"
-        label="RSS"
-        url="https://gabcvit.dev/feed.xml"
+        v-for="(link, index) in socialLinks"
+        :key="index"
+        :iconUrl="link.iconUrl"
+        :label="link.label"
+        :url="link.url"
       />
     </div>
-    
   </div>
 </template>
 
 <script setup lang="ts">
 import TagSocial from "./TagSocial.vue";
+import { socialLinks } from "../data/socialLinksData";
 </script>
 
