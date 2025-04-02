@@ -22,7 +22,7 @@
       <TagSocial
         iconUrl="https://cdn.simpleicons.org/bluesky"
         label="BlueSky"
-        url="https://bsky.app/profile/gabcvit.bsky.social"
+        url="https://bsky.app/profile/gabcvit.dev"
       />
       <TagSocial
         iconUrl="https://cdn.simpleicons.org/mailboxdotorg/gray"
@@ -32,7 +32,7 @@
       <TagSocial
         iconUrl="https://cdn.simpleicons.org/rss"
         label="RSS"
-        url="https://gabcvit.github.io/feed.xml"
+        url="https://gabcvit.dev/feed.xml"
       />
     </div>
     
