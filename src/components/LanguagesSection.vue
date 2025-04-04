@@ -1,23 +1,14 @@
 <script setup lang="ts">
-
 import SectionHeader from "../components/SectionHeader.vue";
+import { languages } from "../data/languagesData";
 </script>
 
 <template>
   <SectionHeader title="Language skills" />
   <div class="section-wrapper">
     <ul class="text-sm">
-      <li>
-        🇧🇷 Portuguese: native
-      </li>
-      <li>
-        🇺🇸 English: very advanced
-      </li>
-      <li>
-        🇩🇪 German: advanced
-      </li>
-      <li>
-        🇪🇸 Spanish: beginner
+      <li v-for="(language, index) in languages" :key="index">
+        {{ language.flag }} {{ language.name }}: {{ language.level }}
       </li>
     </ul>
   </div>
