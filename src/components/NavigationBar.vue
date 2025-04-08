@@ -2,7 +2,7 @@
   <div class="w-full align-middle flex justify-between items-center">
     <div class="relative bg-white w-64 min-w-64 p-6 flex-none">
       <a href="/" class="text-2xl text-black uppercase font-normal">
-        GABCVIT.DEV<span class="animate-ping">_</span>
+        { GABCVIT.DEV<span class="animate-ping">_</span>
       </a>
       <span class="absolute top-0 right-[-1px] bottom-[-5px] w-8 bg-black [clip-path:polygon(100%_0,100%_100%,0_100%)]"></span>
     </div>

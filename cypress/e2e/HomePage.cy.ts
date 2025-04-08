@@ -1,8 +1,8 @@
 describe("Home Page", () => {
 	it("should load the home page", () => {
 	  cy.visit("/");
-	  cy.contains("Welcome!").should("be.visible");
-	  cy.contains("Let’s connect!").should("be.visible");
+	  cy.contains("Hello there!").should("be.visible");
+	  cy.contains("Social links").should("be.visible");
 	});
   });
   

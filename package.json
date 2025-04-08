@@ -8,6 +8,7 @@
     "build": "vite-ssg build && npm run rss && npm run add-cname",
     "deploy": "npm run build && gh-pages -d dist",
     "lint": "eslint .",
+    "test": "npx cypress run",
     "preview": "vite preview",
     "rss": "tsx scripts/update-rss.ts",
     "add-cname": "tsx scripts/add-cname.ts"
