@@ -3,6 +3,7 @@ import { portfolio } from '@/data/portfolio';
 import PageHeader from '../PageHeader.vue';
 import { socialLinks } from '@/data/socialLinksData';
 import { useRouter } from 'vue-router/auto'
+import RssIcon from "@/assets/rss-icon.svg?raw";
 
 const router = useRouter()
 
@@ -99,9 +100,15 @@ const websiteStats = [
       Feel free to reach out via my social links or drop me a message, I’m always happy to chat about exciting ideas, collaborations and to receive feedback.
     </p>
     <SocialLinksWrapper />
+
+    <SectionHeader title="RSS Feed" />
+    <p>
+      Stay up-to-date every time I post something new! The posts in this website support RSS feed.
+    </p>
+    <TagSocial
+      :iconSvg="RssIcon"
+      label="RSS"
+      url="https://gabcvit.dev/feed.xml"
+    />
   </div>
 </template>
-
-<style scoped>
-
-</style>

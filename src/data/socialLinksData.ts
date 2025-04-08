@@ -3,7 +3,6 @@ import StackoverflowIcon from "@/assets/stackoverflow-icon.svg?raw";
 import LinkedInIcon from "@/assets/linkedin-icon.svg?raw";
 import BlueskyIcon from "@/assets/bluesky-icon.svg?raw";
 import EmailIcon from "@/assets/email-icon.svg?raw";
-import RssIcon from "@/assets/rss-icon.svg?raw";
 
 export const socialLinks = [
   {
@@ -30,10 +29,5 @@ export const socialLinks = [
     iconSvg: EmailIcon,
     label: "Email",
     url: "mailto:vitali.gabriel@gmail.com",
-  },
-  {
-    iconSvg: RssIcon,
-    label: "RSS",
-    url: "https://gabcvit.dev/feed.xml",
   },
 ];
