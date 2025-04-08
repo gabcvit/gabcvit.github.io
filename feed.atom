@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://gabcvit.dev/</id>
     <title>Gabriel Vitali</title>
-    <updated>2025-04-07T08:26:33.080Z</updated>
+    <updated>2025-04-08T16:37:31.850Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Gabriel Vitali</name>
@@ -21,7 +21,7 @@
         <link href="https://gabcvit.dev/blog/my-first-vibe-coding-experiment"/>
         <updated>2025-03-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Vibe Coding, as the name suggests. Takes a more holistic look at software development, where specialists are not required to dig deep into a skill or tech stack in order to perform their work and have a final product]]></summary>
-        <content type="html"><![CDATA[<!-- @layout-blog-post -->
+        <content type="html"><![CDATA[<!-- @layout-animated-content-wrapper -->
 <h1>I tried Vibe Coding for 4 hours, this is how it went</h1>
 <h2>What is Vibe Coding?</h2>
 <p><em>Vibe Coding</em>, as the name suggests. Takes a more holistic look at software development, where specialists are not required to dig deep into a skill or tech stack in order to perform their work and have a final product. As someone who have worked more than half of his career switching between BA, PM, UX and Dev roles, it's for me the sweet spot where design, development, and product thinking merge by using AI to speed up and cover for more fine-grained skills, allowing people to create with flow rather than friction.</p>
@@ -91,7 +91,7 @@ To implement it: use react-native, expo and typescript.
         <link href="https://gabcvit.dev/blog/the-fallacy-of-measuring-performance-in-IT"/>
         <updated>2025-02-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[In the fast-paced world of software development, performance measurement is presented to us as a "necessary solution". Companies and management want to ensure that their teams are productive, efficient, and delivering value. However,]]></summary>
-        <content type="html"><![CDATA[<!-- @layout-blog-post -->
+        <content type="html"><![CDATA[<!-- @layout-animated-content-wrapper -->
 <h1>The fallacy of measuring performance: Why tech companies get it wrong</h1>
 <p>In the fast-paced world of software development, performance measurement is presented to us as a &quot;necessary solution&quot;. Companies and management want to ensure that their teams are productive, efficient, and delivering value. However, the way tech companies approach performance metrics often does more harm than good, sacrificing software quality on the long run in the exchange for the illusion of efficiency and transparency.</p>
 <h2>The misuse of some common KPIs in software development</h2>
@@ -150,7 +150,7 @@ To implement it: use react-native, expo and typescript.
         <link href="https://gabcvit.dev/blog/the-importance-of-decentralization-technologies"/>
         <updated>2025-02-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[In an era where data privacy concerns, corporate monopolization, and centralized control dominate the digital landscape, **decentralization technologies** offer a transformative alternative.]]></summary>
-        <content type="html"><![CDATA[<!-- @layout-blog-post -->
+        <content type="html"><![CDATA[<!-- @layout-animated-content-wrapper -->
 <h1>The Importance of Decentralization Technologies, Building a Trustless Society</h1>
 <p>In an era where data privacy concerns, corporate monopolization, and centralized control dominate the digital landscape, <strong>decentralization technologies</strong> offer a transformative alternative. Blockchain, federated networks (like the Fediverse), and protocols such as <a href="https://atproto.com/">ATProtocol</a> (currently used by <a href="https://bsky.app/">BlueSky</a>) are reshaping the way we interact online, reducing reliance on centralized authorities and fostering a more equitable and trustless society.</p>
 <h2>What is Decentralization?</h2>
@@ -216,7 +216,7 @@ By contrast, decentralized technologies:</p>
         <link href="https://gabcvit.dev/blog/genAI-and-weapons-of-math-destruction"/>
         <updated>2025-01-25T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[After reading Cathy O’Neil’s brilliant *Weapons of Math Destruction,* I found myself thinking deeply about how her insights apply to the explosive rise of Generative AI...]]></summary>
-        <content type="html"><![CDATA[<!-- @layout-blog-post -->
+        <content type="html"><![CDATA[<!-- @layout-animated-content-wrapper -->
 <h1>Generative AI: A Weapon of Math Destruction in the Making?</h1>
 <p>After reading Cathy O’Neil’s brilliant <em>Weapons of Math Destruction,</em> I found myself thinking about how would her insights in algorthm and big data apply to the rise of Generative AI (GenAI). While GenAI holds big promises to revolutionize industries, it also risks replicating many of the same systemic issues highlighted in her analysis.</p>
 <p>Cathy warned in her book about the dangers of <strong>opaque, unfair, and unaccountable systems</strong>—algorithms that perpetuate biases and create harmful feedback loops. Today’s GenAI systems, despite their transformative capabilities, could easily fall into these same traps if developers do not have these concerns on their radar.</p>
@@ -284,7 +284,7 @@ By contrast, decentralized technologies:</p>
         <link href="https://gabcvit.dev/blog/the-importance-of-test-driven-development"/>
         <updated>2024-08-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Test-Driven Development (TDD) is more than just a software development methodology—it’s a philosophy that fundamentally changes how we approach coding. Popularized by Kent Beck and detailed in Martin Fowler’s writings, We're gonna do a deeper dive in this post...]]></summary>
-        <content type="html"><![CDATA[<!-- @layout-blog-post -->
+        <content type="html"><![CDATA[<!-- @layout-animated-content-wrapper -->
 <h1>The Importance of Test-Driven Development (TDD)</h1>
 <p>Test-Driven Development (TDD) is more than just a software development methodology, it’s a philosophy that fundamentally changes how we approach coding. Popularized by Kent Beck and detailed in Martin Fowler’s book and online posts, TDD emphasizes writing tests <em>before</em> writing production code, fostering a mindset of precision and accountability.</p>
 <p>As Martin Fowler describes in <em>Test-Driven Development by Example</em>, TDD provides developers with a robust framework for building reliable, maintainable, and high-quality software. Let’s explore the key reasons why TDD is essential in modern software development.</p>
@@ -352,7 +352,7 @@ By contrast, decentralized technologies:</p>
         <link href="https://gabcvit.dev/blog/agile-manifesto-a-timeless-guide"/>
         <updated>2024-06-21T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Probably this is not the first time you see a developer writing about the famous buzzword "The Agile Manifesto", it I promise you, it will definitely not be the last.]]></summary>
-        <content type="html"><![CDATA[<!-- @layout-blog-post -->
+        <content type="html"><![CDATA[<!-- @layout-animated-content-wrapper -->
 <h1>The Agile Manifesto: A Timeless guide to achieve sustainable Software Development</h1>
 <p>Probably this is not the first time you see a developer writing about the famous buzzword &quot;The Agile Manifesto&quot;, it I promise you, it will definitely not be the last.</p>
 <p>If this is your first time reading about it, let me give you a bit of context:<br>
