@@ -1,1 +1,0 @@
-import{d as t,c as a,o as n,t as o}from"./app-0_rUHSpt.js";const s={class:"mt-6 text-center text-3xl uppercase font-thin animate-fadeIn"},i=t({__name:"PageHeader",props:{title:{}},setup(r){return(e,c)=>(n(),a("h1",s,o(e.title),1))}});export{i as _};
