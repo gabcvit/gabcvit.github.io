@@ -5,9 +5,7 @@ withDefaults(defineProps<{
 </script>
 
 <template>
-  <div class="mt-12 mb-4 border-b">
-    <p class="text-xl">
+  <h2 class="opacity-100">
       {{ title }}
-    </p>
-  </div>
+    </h2>
 </template>

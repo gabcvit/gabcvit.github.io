@@ -1,6 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
-  font-family: monospace, monospace;
-  background-color: rgb(13, 17, 23);
+  font-family: 'Barlow', sans-serif;
+  background-color: black;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -9,4 +13,46 @@
   -webkit-text-size-adjust: 100%;
 
   @apply text-white;
+}
+
+.animated-content-wrapper {
+  @apply transition duration-300 animate-fadeInUp;
+}
+
+h1 {
+	@apply text-center text-3xl uppercase font-thin animate-fadeIn border-b border-gray-200 pb-4 my-6 mx-auto;
+}
+
+h2 {
+	@apply text-xl pt-6 pb-4 uppercase font-bold;
+}
+
+h3 {
+	@apply text-lg pt-2 pb-2 font-bold;
+}
+
+p {
+	@apply text-base pb-4 text-white opacity-90 font-thin;
+}
+
+a {
+	@apply text-base opacity-100 font-bold;
+}
+
+ul {
+	@apply list-disc text-base ml-4 font-thin;
+}
+
+li {
+	@apply pl-2;
+}
+
+pre {
+	@apply border-2 border-pink-500 p-4 my-2;
+	background-color: rgba(255,255,255,0.02);
+	text-wrap: wrap;
+}
+
+code {
+	@apply text-white opacity-80 font-mono text-sm;
 }

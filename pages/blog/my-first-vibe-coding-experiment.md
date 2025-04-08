@@ -5,7 +5,7 @@ date: 2025-03-30
 duration: 12min
 ---
 
-<!-- @layout-blog-post -->
+<!-- @layout-animated-content-wrapper -->
 
 # I tried Vibe Coding for 4 hours, this is how it went
 

@@ -5,7 +5,7 @@ date: 2024-06-21
 duration: 8min
 ---
 
-<!-- @layout-blog-post -->
+<!-- @layout-animated-content-wrapper -->
 
 # The Agile Manifesto: A Timeless guide to achieve sustainable Software Development
 

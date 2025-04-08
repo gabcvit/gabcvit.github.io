@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const props = withDefaults(defineProps<{
   label: string,
-  iconUrl: string,
+  iconSvg: string,
   url: string,
 }>(), {
   label: 'Example',
@@ -10,15 +10,15 @@ const props = withDefaults(defineProps<{
 
 <template>
   <a
-    class="inline-flex items-center gap-2 bg-gray-800 py-1 px-2 rounded border"
+    class="inline-flex items-center gap-2 bg-white py-2 px-2"
     :href="props.url"
     target="_blank"
   >
-    <img
-      class="w-6"
-      :alt="`${props.label} tag icon`"
-      :src="props.iconUrl"
-    >
-    <span class="text-xs font-medium text-white">{{ props.label }}</span>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      v-html="props.iconSvg"
+      class="w-6 h-6 fill-current text-black"
+    ></svg>
+    <span class="text-base font-bold text-black">{{ props.label }}</span>
   </a>
 </template>

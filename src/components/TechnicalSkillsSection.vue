@@ -45,37 +45,35 @@ const DEVOPS = [
 <template>
   <SectionHeader title="Tech Skills" />
 
-  <div class="section-wrapper">
-    <SectionSubheader title="Languages" />
-    <TagWithIcon
-      v-for="(singleLanguage, index) in LANGUAGES"
-      :key="`tagWithIcon-language-${index}`"
-      :label="singleLanguage.name"
-      :iconUrl="`${URL_PREFIX}${singleLanguage.iconUrl}`"
-    />
+  <SectionSubheader title="Languages" />
+  <TagWithIcon
+    v-for="(singleLanguage, index) in LANGUAGES"
+    :key="`tagWithIcon-language-${index}`"
+    :label="singleLanguage.name"
+    :iconUrl="`${URL_PREFIX}${singleLanguage.iconUrl}`"
+  />
 
-    <SectionSubheader title="Frameworks and Libraries" />
-    <TagWithIcon
-      v-for="(singleFramework, index) in FRAMEWORKS_LIBRARIES"
-      :key="`tagWithIcon-frameworks-${index}`"
-      :label="singleFramework.name"
-      :iconUrl="`${URL_PREFIX}${singleFramework.iconUrl}`"
-    />
+  <SectionSubheader title="Frameworks and Libraries" />
+  <TagWithIcon
+    v-for="(singleFramework, index) in FRAMEWORKS_LIBRARIES"
+    :key="`tagWithIcon-frameworks-${index}`"
+    :label="singleFramework.name"
+    :iconUrl="`${URL_PREFIX}${singleFramework.iconUrl}`"
+  />
 
-    <SectionSubheader title="Tools" />
-    <TagWithIcon
-      v-for="(singleTool, index) in TOOLS"
-      :key="`tagWithIcon-tool-${index}`"
-      :label="singleTool.name"
-      :iconUrl="`${URL_PREFIX}${singleTool.iconUrl}`"
-    />
+  <SectionSubheader title="Tools" />
+  <TagWithIcon
+    v-for="(singleTool, index) in TOOLS"
+    :key="`tagWithIcon-tool-${index}`"
+    :label="singleTool.name"
+    :iconUrl="`${URL_PREFIX}${singleTool.iconUrl}`"
+  />
 
-    <SectionSubheader title="DevOps and Cloud" />
-    <TagWithIcon
-      v-for="(singleDevop, index) in DEVOPS"
-      :key="`tagWithIcon-devop-${index}`"
-      :label="singleDevop.name"
-      :iconUrl="`${URL_PREFIX}${singleDevop.iconUrl}`"
-    />
-  </div>
+  <SectionSubheader title="DevOps and Cloud" />
+  <TagWithIcon
+    v-for="(singleDevop, index) in DEVOPS"
+    :key="`tagWithIcon-devop-${index}`"
+    :label="singleDevop.name"
+    :iconUrl="`${URL_PREFIX}${singleDevop.iconUrl}`"
+  />
 </template>

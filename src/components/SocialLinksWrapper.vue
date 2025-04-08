@@ -1,13 +1,10 @@
 <template>
-  <div class="absolute bottom-0 left-0 p-5 w-[90%] bg-gray-900 rounded-tr-2xl">
-    <p class="mb-4">
-      Let's connect! 🚀
-    </p>
+  <div class="block py-2 ">
     <div class="flex flex-start flex-wrap gap-2">
       <TagSocial
         v-for="(link, index) in socialLinks"
         :key="index"
-        :iconUrl="link.iconUrl"
+        :iconSvg="link.iconSvg"
         :label="link.label"
         :url="link.url"
       />

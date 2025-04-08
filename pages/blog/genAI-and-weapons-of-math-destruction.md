@@ -5,7 +5,7 @@ date: 2025-01-25
 duration: 8min
 ---
 
-<!-- @layout-blog-post -->
+<!-- @layout-animated-content-wrapper -->
 
 # Generative AI: A Weapon of Math Destruction in the Making?
 

@@ -1,21 +1,21 @@
 <template>
   <a :href="project.link"
     target="_blank"
-    class="grid grid-cols-4 my-4 p-4 rounded border border-emerald-500 bg-gray-950"
+    class="relative px-2 border border-white"
     >
-    <div class="col-span-3 row-span-1">
-      <p class="font-bold">
-        > {{ project.theme }}
-      </p>
-      <p class="text-emerald-500">
+    <div class="mb-16">
+      <h3 class="font-bold">
         {{ project.title }}
-      </p>
-      <p>
+      </h3>
+      <p class="pt-0 pb-0">
         Role(s): {{ project.roles }}
       </p>
+      <p class="pt-0 pb-0">
+        Topic: {{ project.theme }}
+      </p>
     </div>
-    <div class="col-span-1 text-right">
-      <p>{{ project.period }}</p>
+    <div class="absolute bottom-2 right-2">
+      <a class="text-emerald-500 text-right">Open project</a>
     </div>
   </a>
 </template>

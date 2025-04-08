@@ -5,11 +5,9 @@ import { languages } from "../data/languagesData";
 
 <template>
   <SectionHeader title="Language skills" />
-  <div class="section-wrapper">
-    <ul class="text-sm">
-      <li v-for="(language, index) in languages" :key="index">
-        {{ language.flag }} {{ language.name }}: {{ language.level }}
-      </li>
-    </ul>
-  </div>
+  <ul>
+    <li v-for="(language, index) in languages" :key="index">
+      {{ language.flag }} {{ language.name }}: {{ language.level }}
+    </li>
+  </ul>
 </template>

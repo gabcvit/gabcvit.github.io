@@ -1,5 +1,6 @@
 <template>
-  <div class="pb-16">
+  <PageHeader title="Resume" />
+  <div class="animated-content-wrapper pb-16">
     <ProfessionalSummarySection />
     <TechnicalSkillsSection />
     <ProfessionalExperienceSection />

@@ -1,19 +1,16 @@
 <template>
   <SectionHeader title="Professional Experience" />
-
-  <div class="section-wrapper">
-    <ResumeSingleElement
-      v-for="(item, index) in professionalExperience"
-      :key="index"
-      :title="item.title"
-      :description="item.description"
-      :keyResponsibilities="item.keyResponsibilities"
-      :keyAchievements="item.keyAchievements"
-      :techStack="item.techStack"
-      :office="item.office"
-      :period="item.period"
-    />
-  </div>
+  <ResumeSingleElement
+    v-for="(item, index) in professionalExperience"
+    :key="index"
+    :title="item.title"
+    :description="item.description"
+    :keyResponsibilities="item.keyResponsibilities"
+    :keyAchievements="item.keyAchievements"
+    :techStack="item.techStack"
+    :office="item.office"
+    :period="item.period"
+  />
 </template>
 
 <script lang="ts" setup>

@@ -1,16 +1,16 @@
 <template>
-  <SectionHeader title="Portfolio" />
+  <PageHeader title="My previous work" />
 
-  <PortfolioSingleElement
-    v-for="project in portfolioToRender"
-    :project="project"
-  />
+  <div class="animated-content-wrapper grid md:grid-cols-3 gap-4">
+    <PortfolioSingleElement v-for="project in portfolioToRender" :project="project" />
+  </div>
+
 </template>
 
 <script lang="ts" setup>
 import PortfolioSingleElement from "@/components/PortfolioSingleElement.vue";
-import SectionHeader from "@/components/SectionHeader.vue";
 import { portfolio } from "@/data/portfolio";
+import PageHeader from "../PageHeader.vue";
 
 const portfolioToRender = ref(portfolio);
 

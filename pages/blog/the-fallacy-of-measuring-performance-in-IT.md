@@ -5,7 +5,7 @@ date: 2025-02-25
 duration: 9min
 ---
 
-<!-- @layout-blog-post -->
+<!-- @layout-animated-content-wrapper -->
 
 # The fallacy of measuring performance: Why tech companies get it wrong
 

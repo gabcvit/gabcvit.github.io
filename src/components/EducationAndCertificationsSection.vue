@@ -6,15 +6,12 @@ import { educationAndCertifications } from "../data/educationAndCertificationsDa
 
 <template>
   <SectionHeader title="Education and Certifications" />
-
-  <div class="section-wrapper">
-    <ResumeSingleElement
-      v-for="(item, index) in educationAndCertifications"
-      :key="index"
-      :title="item.title"
-      :description="item.description"
-      :office="item.office"
-      :period="item.period"
-    />
-  </div>
+  <ResumeSingleElement
+    v-for="(item, index) in educationAndCertifications"
+    :key="index"
+    :title="item.title"
+    :description="item.description"
+    :office="item.office"
+    :period="item.period"
+  />
 </template>

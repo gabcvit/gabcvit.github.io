@@ -5,7 +5,7 @@ date: 2025-02-01
 duration: 10min
 ---
 
-<!-- @layout-blog-post -->
+<!-- @layout-animated-content-wrapper -->
 
 # The Importance of Decentralization Technologies, Building a Trustless Society
 

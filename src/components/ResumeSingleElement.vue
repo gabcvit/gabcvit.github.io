@@ -1,45 +1,44 @@
 <template>
-  <div class="grid grid-cols-4 my-4 p-4 rounded border border-indigo-500 bg-gray-950">
-    <div class="col-span-3 row-span-1">
-      <p class="font-bold">
-        > {{ office }}
-      </p>
-      <p class="text-indigo-400 pb-2">
-        {{ title }}
-      </p>
-      <div class="text-sm">
-        <span class="font-bold">Description:</span>
-        <p>{{ description }}</p>
+  <div class="mb-6">
+    <div class="grid md:grid-cols-5 grid-rows">
+      <div class="col-span-4">
+        <h3>
+          {{ title }} - {{ office }}
+        </h3>
       </div>
+      <div class="flex col-span-1 items-center md:justify-end justify-start">
+        <span class="opacity-80">{{ period }}</span>
+      </div>
+    </div>
+    <div class="w-11/12">
+      <span class="font-bold">Description:</span>
+      <p>{{ description }}</p>
       <div v-if="!isCollapsed">
-        <div class="text-sm pt-2" v-if="keyResponsibilities">
+        <div v-if="keyResponsibilities">
           <span class="font-bold">Key responsibilities:</span>
-          <ul class="list-disc ml-4">
+          <ul>
             <li v-for="keyResponsibility in keyResponsibilities">{{ keyResponsibility }}</li>
           </ul>
         </div>
-        <div class="text-sm pt-2" v-if="keyAchievements">
+        <div class="pt-2" v-if="keyAchievements">
           <span class="font-bold">Key achievements:</span>
-          <ul class="list-disc ml-4">
+          <ul>
             <li v-for="keyAchievement in keyAchievements">{{ keyAchievement }}</li>
           </ul>
         </div>
-        <div class="text-sm pt-2" v-if="techStack">
+        <div class="pt-2" v-if="techStack">
           <span class="font-bold">Tech stack:</span> 
           <p>{{ techStack }}</p>
         </div>
-        </div>
-        <button 
-          v-if="keyResponsibilities || keyAchievements || techStack"
-          @click="toggleCollapse" 
-          class="mt-4 text-indigo-400 hover:text-indigo-600">
-        {{ isCollapsed ? 'Show More' : 'Show Less' }}
-      </button>
+      </div>
     </div>
     
-    <div class="col-span-1 text-right">
-      <p>{{ period }}</p>
-    </div>
+    <button 
+      v-if="keyResponsibilities || keyAchievements || techStack"
+      @click="toggleCollapse" 
+      class="font-bold text-indigo-400 hover:text-indigo-600">
+    {{ isCollapsed ? 'Show More' : 'Show Less' }}
+  </button>
   </div>
 </template>
 

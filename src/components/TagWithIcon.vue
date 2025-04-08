@@ -8,12 +8,12 @@ const props = withDefaults(defineProps<{
 </script>
 
 <template>
-  <span class="inline-flex items-center gap-2 bg-gray-950 py-1 px-2 mr-2 mb-2 rounded border border-indigo-500">
+  <span class="inline-flex items-center gap-2 p-2 mr-2 mb-2 rounded border border-white">
     <img
       class="w-6"
       :alt="`${props.label} tag icon`"
       :src="props.iconUrl"
     >
-    <span class="text-xs font-medium text-indigo-300">{{ props.label }}</span>
+    <span class="text-base font-medium text-white pr-1">{{ props.label }}</span>
   </span>
 </template>

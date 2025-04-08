@@ -1,22 +1,24 @@
 <template>
   <RouterLink 
-    class="grid grid-cols-4 my-4 p-4 rounded border border-pink-500 bg-gray-950"
+    class="grid md:grid-cols-5 my-4"
     :to="path"
   >
-    <div class="col-span-3 row-span-1">
-      <p class="font-bold">
-        > {{ title }}
+    <div class="col-span-1">
+      <h3 class="font-thin opacity-80">{{ formattedDate }}</h3>
+    </div>
+    <div class="col-span-4">
+      <h3>{{ title }}</h3>
+      <p>
+        {{ description }}... 
       </p>
-      <p class="pb-2 text-pink-400">
+      <p>
         Reading duration: {{ duration }}
       </p>
-      <p class="text-sm">
-        {{ description }}
-      </p>
+      <a class="text-pink-600">
+        Read more
+      </a>
     </div>
-    <div class="col-span-1 text-right">
-      <p>{{ formattedDate }}</p>
-    </div>
+    
   </RouterLink>
 </template>
   

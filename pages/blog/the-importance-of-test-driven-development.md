@@ -5,7 +5,7 @@ date: 2024-08-07
 duration: 5min
 ---
 
-<!-- @layout-blog-post -->
+<!-- @layout-animated-content-wrapper -->
 
 # The Importance of Test-Driven Development (TDD)
 
