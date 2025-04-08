@@ -74,11 +74,11 @@ const websiteStats = [
     
     <SectionHeader title="In this webside you'll find" />
     <div class="flex justify-between my-4">
-      <div class="flex flex-col md:flex-row gap-4">
+      <div class="flex flex-col md:flex-row md:gap-16">
         <div
-        v-for="stat in websiteStats"
-        :key="stat.title"
-        class="block"
+          v-for="stat in websiteStats"
+          :key="stat.title"
+          class="block flex-1"
         >
         <p class="font-bold text-4xl">{{ stat.count }}</p>
         <p>

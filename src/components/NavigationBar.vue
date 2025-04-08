@@ -4,7 +4,7 @@
       <a href="/" class="text-2xl text-black uppercase font-normal">
         { GABCVIT.DEV<span class="animate-ping">_</span>
       </a>
-      <span class="absolute top-0 right-[-1px] bottom-[-5px] w-8 bg-black [clip-path:polygon(100%_0,100%_100%,0_100%)]"></span>
+      <span class="absolute top-0 right-[-1px] bottom-[-5px] w-8 bg-dark [clip-path:polygon(100%_0,100%_100%,0_100%)]"></span>
     </div>
 
     <button 
@@ -33,7 +33,7 @@
     <!-- Mobile Menu -->
     <div
       v-if="isNavOpen"
-      class="fixed top-0 left-0 w-full h-screen bg-black z-40 flex flex-col items-center justify-center md:hidden"
+      class="fixed top-0 left-0 w-full h-screen bg-dark z-40 flex flex-col items-center justify-center md:hidden"
     >
       <button @click="toggleNav" class="absolute top-6 right-6">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
