@@ -1,1 +1,0 @@
-import{u as o}from"./vue.-sixQ7xP-DGmjOEf_.js";import{c as r,o as n,a as t}from"./app-D13lRIyx.js";const d=[],f={__name:"[...404]",setup(s,{expose:a}){return a({frontmatter:{meta:[]}}),o({meta:[]}),(c,e)=>(n(),r("div",null,e[0]||(e[0]=[t("h1",null,"404",-1),t("p",null,"Sorry, couldn’t find this page",-1)])))}};export{f as default,d as meta};
