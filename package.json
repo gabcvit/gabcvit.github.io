@@ -33,7 +33,7 @@
     "eslint-plugin-vue": "^9.29.1",
     "feed": "^4.2.2",
     "fs-extra": "^11.3.0",
-    "globals": "^15.11.0",
+    "globals": "^16.0.0",
     "gray-matter": "^4.0.3",
     "postcss": "^8.4.31",
     "tailwind": "^4.0.0",
