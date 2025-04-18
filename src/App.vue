@@ -31,11 +31,13 @@
   <div class="block m-auto w-full max-w-[960px] px-4 md:px-0 pb-16">
     <RouterView />
   </div>
+  <Footer />
 </template>
 
 <script lang="ts" setup>
 import { ref, onMounted, onUnmounted } from 'vue';
 import NavigationBar from './components/NavigationBar.vue';
+import Footer from './components/Footer.vue';
 
 const scrollY = ref(0);
 
