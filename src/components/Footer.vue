@@ -16,8 +16,8 @@
       </g>
 	  </svg>
   </div>
-  <div class="bg-white py-2 px-2" >
-    <div xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/" class="flex text-black py-2 gap-1 justify-center">
+  <div class="bg-white py-4 px-2" >
+    <div xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/" class="flex text-black gap-1 justify-center flex-wrap">
       <a property="dct:title" rel="cc:attributionURL" href="https://gabcvit.dev/">
         gabcvit.dev 
       </a>
