@@ -9,6 +9,13 @@ export type Project = {
 export type Portfolio = Project[]
 
 export const portfolio: Portfolio = [
+  {
+		title: 'GGI Capital',
+		theme:  'Financial solutions',
+		roles: 'Branding, tech solutions and MVP coaching',
+		link: 'https://www.instagram.com/ggi_capital/',
+		period: '2025',
+	},
 	{
 		title: 'gabcvit/birth-chart',
 		theme:  'Personal project',
