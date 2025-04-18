@@ -16,9 +16,23 @@
       </g>
 	  </svg>
   </div>
-  <div class="bg-white align-center flex flex-col md:flex-row py-2 px-2 md:px-16" >
-    <h3 class="text-black flex-grow text-left">Copyright © {{new Date().getFullYear()}}</h3>
-    <h3 class="text-black md:text-right">Developed by gabcvit.dev</h3>
+  <div class="bg-white py-2 px-2" >
+    <div xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/" class="flex text-black py-2 gap-1 justify-center">
+      <a property="dct:title" rel="cc:attributionURL" href="https://gabcvit.dev/">
+        gabcvit.dev 
+      </a>
+      <span>by</span>
+      <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://gabcvit.dev/">
+        Gabriel Vitali
+      </a>
+      <span>is licensed under</span>
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="flex gap-1"> CC BY-NC-SA 4.0
+        <img class="license-icon" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
+        <img class="license-icon" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
+        <img class="license-icon" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
+        <img class="license-icon" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
+      </a>
+    </div>
   </div>
   
   
@@ -57,6 +71,12 @@
 .parallax > use:nth-child(4) {
   animation-delay: -5s;
   animation-duration: 20s;
+}
+
+.license-icon {
+  height: 22px!important;
+  margin-left: 3px;
+  vertical-align: text-bottom;
 }
 
 @keyframes move-forever {
