@@ -1,0 +1,1 @@
+import{j as o,c as n,o as r,a as t}from"./app-Dmx-UuDl.js";const u=[],d={__name:"[...404]",setup(s,{expose:a}){return a({frontmatter:{meta:[]}}),o({meta:[]}),(m,e)=>(r(),n("div",null,e[0]||(e[0]=[t("h1",null,"404",-1),t("p",null,"Sorry, couldn’t find this page",-1)])))}};export{d as default,u as meta};
