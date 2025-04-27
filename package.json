@@ -3,6 +3,11 @@
   "private": true,
   "version": "2.2.0",
   "type": "module",
+  "author": {
+    "name": "Gabriel Vitali",
+    "email": "vitali.gabriel@gmail.com",
+    "url": "https://gabcvit.dev/"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite-ssg build && npm run rss && npm run add-cname",
