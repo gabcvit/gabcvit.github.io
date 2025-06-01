@@ -1,0 +1,1 @@
+import{d as t,c as o,o as s,t as a}from"./app-qXkLW7v1.js";const n={class:"opacity-100"},i=t({__name:"SectionHeader",props:{title:{}},setup(c){return(e,r)=>(s(),o("h2",n,a(e.title),1))}});export{i as _};
