@@ -4,7 +4,7 @@
         <title>Gabriel Vitali</title>
         <link>https://gabcvit.dev/</link>
         <description>Gabriel Vitali's Blog</description>
-        <lastBuildDate>Wed, 07 Jan 2026 01:20:19 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 07 Jan 2026 01:20:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -17,7 +17,7 @@
         <item>
             <title><![CDATA[I tried Vibe Coding for 4 hours, this is how it went]]></title>
             <link>https://gabcvit.dev/blog/my-first-vibe-coding-experiment</link>
-            <guid>https://gabcvit.dev/blog/my-first-vibe-coding-experiment</guid>
+            <guid isPermaLink="true">https://gabcvit.dev/blog/my-first-vibe-coding-experiment</guid>
             <pubDate>Sun, 30 Mar 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Vibe Coding, as the name suggests. Takes a more holistic look at software development, where specialists are not required to dig deep into a skill or tech stack in order to perform their work and have a final product]]></description>
             <content:encoded><![CDATA[<!-- @layout-animated-content-wrapper -->
@@ -83,7 +83,7 @@ To implement it: use react-native, expo and typescript.
         <item>
             <title><![CDATA[The fallacy of measuring performance, Why tech companies get it wrong]]></title>
             <link>https://gabcvit.dev/blog/the-fallacy-of-measuring-performance-in-IT</link>
-            <guid>https://gabcvit.dev/blog/the-fallacy-of-measuring-performance-in-IT</guid>
+            <guid isPermaLink="true">https://gabcvit.dev/blog/the-fallacy-of-measuring-performance-in-IT</guid>
             <pubDate>Tue, 25 Feb 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[In the fast-paced world of software development, performance measurement is presented to us as a "necessary solution". Companies and management want to ensure that their teams are productive, efficient, and delivering value. However,]]></description>
             <content:encoded><![CDATA[<!-- @layout-animated-content-wrapper -->
@@ -138,7 +138,7 @@ To implement it: use react-native, expo and typescript.
         <item>
             <title><![CDATA[The Importance of Decentralization Technologies, Building a Trustless Society]]></title>
             <link>https://gabcvit.dev/blog/the-importance-of-decentralization-technologies</link>
-            <guid>https://gabcvit.dev/blog/the-importance-of-decentralization-technologies</guid>
+            <guid isPermaLink="true">https://gabcvit.dev/blog/the-importance-of-decentralization-technologies</guid>
             <pubDate>Sat, 01 Feb 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[In an era where data privacy concerns, corporate monopolization, and centralized control dominate the digital landscape, **decentralization technologies** offer a transformative alternative.]]></description>
             <content:encoded><![CDATA[<!-- @layout-animated-content-wrapper -->
@@ -200,7 +200,7 @@ By contrast, decentralized technologies:</p>
         <item>
             <title><![CDATA[Generative AI, A Weapon of Math Destruction in the Making?]]></title>
             <link>https://gabcvit.dev/blog/genAI-and-weapons-of-math-destruction</link>
-            <guid>https://gabcvit.dev/blog/genAI-and-weapons-of-math-destruction</guid>
+            <guid isPermaLink="true">https://gabcvit.dev/blog/genAI-and-weapons-of-math-destruction</guid>
             <pubDate>Sat, 25 Jan 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[After reading Cathy O’Neil’s brilliant *Weapons of Math Destruction,* I found myself thinking deeply about how her insights apply to the explosive rise of Generative AI...]]></description>
             <content:encoded><![CDATA[<!-- @layout-animated-content-wrapper -->
@@ -264,7 +264,7 @@ By contrast, decentralized technologies:</p>
         <item>
             <title><![CDATA[The Importance of Test-Driven Development (TDD)]]></title>
             <link>https://gabcvit.dev/blog/the-importance-of-test-driven-development</link>
-            <guid>https://gabcvit.dev/blog/the-importance-of-test-driven-development</guid>
+            <guid isPermaLink="true">https://gabcvit.dev/blog/the-importance-of-test-driven-development</guid>
             <pubDate>Wed, 07 Aug 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Test-Driven Development (TDD) is more than just a software development methodology—it’s a philosophy that fundamentally changes how we approach coding. Popularized by Kent Beck and detailed in Martin Fowler’s writings, We're gonna do a deeper dive in this post...]]></description>
             <content:encoded><![CDATA[<!-- @layout-animated-content-wrapper -->
@@ -328,7 +328,7 @@ By contrast, decentralized technologies:</p>
         <item>
             <title><![CDATA[The Agile Manifesto, A Timeless guide to achieve sustainable Software Development]]></title>
             <link>https://gabcvit.dev/blog/agile-manifesto-a-timeless-guide</link>
-            <guid>https://gabcvit.dev/blog/agile-manifesto-a-timeless-guide</guid>
+            <guid isPermaLink="true">https://gabcvit.dev/blog/agile-manifesto-a-timeless-guide</guid>
             <pubDate>Fri, 21 Jun 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Probably this is not the first time you see a developer writing about the famous buzzword "The Agile Manifesto", it I promise you, it will definitely not be the last.]]></description>
             <content:encoded><![CDATA[<!-- @layout-animated-content-wrapper -->
