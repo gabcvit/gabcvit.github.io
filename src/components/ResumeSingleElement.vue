@@ -36,7 +36,7 @@
     <button 
       v-if="keyResponsibilities || keyAchievements || techStack"
       @click="toggleCollapse" 
-      class="font-bold text-indigo-400 hover:text-indigo-600">
+      class="font-bold">
     {{ isCollapsed ? 'Show More' : 'Show Less' }}
   </button>
   </div>

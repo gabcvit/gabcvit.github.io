@@ -2,8 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Regardion;
+  src: url(../../public/fonts/Regardion-Demo-Regular-BF6976b30019af5.woff);
+}
+
 :root {
-  font-family: 'Barlow', sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
   background-color: rgb(10, 10, 10);
 
   font-synthesis: none;
@@ -15,16 +20,26 @@
   @apply text-white;
 }
 
+.light-green-color {
+	color: rgb(178, 255, 0)
+}
+
 .animated-content-wrapper {
   @apply transition duration-300 animate-fadeInUp;
 }
 
+.glow-pink-border {
+	border-color: rgb(219, 39, 119);
+}
+
 h1 {
-	@apply text-center text-3xl uppercase font-thin animate-fadeIn border-b border-gray-200 pb-4 my-6 mx-auto;
+	@apply text-center text-5xl uppercase font-thin animate-fadeIn border-b glow-pink-border pb-4 my-6 mx-auto light-green-color;
+	font-family: Regardion;
 }
 
 h2 {
-	@apply text-xl pt-6 pb-4 uppercase font-bold;
+	@apply text-3xl pt-6 pb-4 uppercase font-bold light-green-color;
+	font-family: Regardion;
 }
 
 h3 {
@@ -48,7 +63,8 @@ li {
 }
 
 pre {
-	@apply border-2 border-pink-500 p-4 my-2;
+	@apply border-2 p-4 my-2;
+	border-color: rgb(178, 255, 0);
 	background-color: rgba(255,255,255,0.02);
 	text-wrap: wrap;
 }

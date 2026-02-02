@@ -7,14 +7,14 @@
       <h3 class="font-thin opacity-80">{{ formattedDate }}</h3>
     </div>
     <div class="col-span-4">
-      <h3>{{ title }}</h3>
+      <h3 class="light-green-color">{{ title }}</h3>
       <p>
         {{ description }}... 
       </p>
       <p>
         Reading duration: {{ duration }}
       </p>
-      <a class="text-pink-600">
+      <a>
         Read more
       </a>
     </div>

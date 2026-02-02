@@ -1,8 +1,8 @@
 <template>
   <div class="w-full align-middle flex justify-between items-center">
-    <div class="relative bg-white w-64 min-w-64 p-6 flex-none">
+    <div class="relative bg-white w-56 min-w-56 p-6 flex-none">
       <a href="/" class="text-2xl text-black uppercase font-normal">
-        { GABCVIT.DEV<span class="animate-ping">_</span>
+        GABCVIT.DEV<span class="animate-ping">_</span>
       </a>
       <span class="absolute top-0 right-[-1px] bottom-[-5px] w-8 bg-dark [clip-path:polygon(100%_0,100%_100%,0_100%)]"></span>
     </div>
@@ -72,9 +72,9 @@ watch(route, () => {
 });
 
 const navigationLinks = [
-  { label: "Home", optionId: "/", color: "orange" },
-  { label: "Resume", optionId: "/resume", color: "indigo" },
+  { label: "Home", optionId: "/", color: "pink" },
+  { label: "Resume", optionId: "/resume", color: "pink" },
   { label: "Blog", optionId: "/blog", color: "pink" },
-  { label: "Portfolio", optionId: "/portfolio", color: "emerald" },
+  { label: "Portfolio", optionId: "/portfolio", color: "pink" },
 ];
 </script>

@@ -1,6 +1,6 @@
 ---
-title: Gabriel Vitali | Leadership-focused Web and Mobile applications developer
-description: Experienced Developer with expertise in Leadership, TypeScript, Vue, React-native and GraphQL. Passionate about GenAI, Decentralization and Equitable tech.
+title: gabcvit.dev
+description: Web & Mobile apps dev | Leadership, Decentralization and Self-ownership | Ethical and Equitable tech | A11y and Data Privacy
 ---
 
 <HomePage />

@@ -48,3 +48,9 @@ onUnmounted(() => {
   window.removeEventListener("scroll", updateScroll);
 });
 </script>
+
+<style>
+.bg-custom {
+  background-color: rgb(219, 39, 119)
+}
+</style>

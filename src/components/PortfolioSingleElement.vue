@@ -1,10 +1,10 @@
 <template>
   <a :href="project.link"
     target="_blank"
-    class="relative px-2 border border-white"
+    class="relative px-2 border border-pink-600"
     >
     <div class="mb-16">
-      <h3 class="font-bold">
+      <h3 class="font-bold light-green-color">
         {{ project.title }}
       </h3>
       <p class="pt-0 pb-0">
@@ -15,7 +15,7 @@
       </p>
     </div>
     <div class="absolute bottom-2 right-2">
-      <a class="text-emerald-500 text-right">Open project</a>
+      <a class="text-right">Open project</a>
     </div>
   </a>
 </template>
