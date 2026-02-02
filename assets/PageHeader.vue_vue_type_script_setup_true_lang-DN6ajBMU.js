@@ -1,1 +1,0 @@
-import{d as t,c as a,t as n,o}from"./app-CXN-dOmr.js";const s={class:"mt-6 text-center text-3xl uppercase font-thin animate-fadeIn"},p=t({__name:"PageHeader",props:{title:{}},setup(e){return(c,r)=>(o(),a("h1",s,n(e.title),1))}});export{p as _};
