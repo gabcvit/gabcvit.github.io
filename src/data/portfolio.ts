@@ -10,6 +10,13 @@ export type Portfolio = Project[]
 
 export const portfolio: Portfolio = [
   {
+		title: 'Chaos Tabletop',
+		theme:  'RPG Toolkit',
+		roles: 'Main developer',
+		link: 'https://github.com/caravana-do-absurdo/chaos-tabletop',
+		period: '2026',
+	},
+  {
 		title: 'GGI Capital',
 		theme:  'Financial solutions',
 		roles: 'Branding, tech solutions and MVP coaching',

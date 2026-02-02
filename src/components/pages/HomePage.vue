@@ -46,21 +46,21 @@ const websiteStats = [
       My name is <b>Gabriel Vitali</b>
     </p>
     <p>
-      I’m an experienced web and mobile apps dev with 10+ years of experience, heavily focused on empowering self-determined teams, devs and users alike to leverage technology to improve their lives.
+      I’m an experienced web and mobile apps dev with 10+ years of experience, heavily focused on empowering independent teams, devs and users alike to leverage technology to improve their lives.
     </p>
 
     <SectionHeader title="What drives me" />
     <p>
-      > Ethical tech
+      Ethical tech
     </p>
     <p>
-      > Decentralization and self-ownership
+      Decentralization and self-ownership
     </p>
     <p>
-      > Challenging code biases and structures of power
+      Challenging code biases and structures of power
     </p>
     <p>
-      > A11y and data privacy
+      A11y and data privacy
     </p>
 
     <SectionHeader title="Socials" />
