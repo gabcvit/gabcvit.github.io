@@ -1,1 +1,0 @@
-import{d as e,c as o,t as s,o as a}from"./app-BXhVnsIf.js";const c={class:"opacity-100"},p=e({__name:"SectionHeader",props:{title:{}},setup(t){return(n,r)=>(a(),o("h2",c,s(t.title),1))}});export{p as _};
