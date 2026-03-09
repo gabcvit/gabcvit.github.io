@@ -54,6 +54,10 @@ a {
 	@apply text-base opacity-100 font-bold;
 }
 
+.animated-content-wrapper a {
+	@apply underline;
+}
+
 ul {
 	@apply list-disc text-base ml-4 font-thin;
 }

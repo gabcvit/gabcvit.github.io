@@ -1,8 +1,5 @@
 <template>
-  <RouterLink 
-    class="grid md:grid-cols-5 my-4"
-    :to="path"
-  >
+  <div class="grid md:grid-cols-5 my-4">
     <div class="col-span-1">
       <h3 class="font-thin opacity-80">{{ formattedDate }}</h3>
     </div>
@@ -14,12 +11,11 @@
       <p>
         Reading duration: {{ duration }}
       </p>
-      <a class="underline">
+      <RouterLink :to="path">
         Read more
-      </a>
+      </RouterLink>
     </div>
-    
-  </RouterLink>
+  </div>
 </template>
   
   <script lang="ts" setup>

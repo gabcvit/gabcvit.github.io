@@ -24,9 +24,11 @@ declare module 'vue-router/auto-routes' {
     '/blog/agile-manifesto-a-timeless-guide': RouteRecordInfo<'/blog/agile-manifesto-a-timeless-guide', '/blog/agile-manifesto-a-timeless-guide', Record<never, never>, Record<never, never>>,
     '/blog/genAI-and-weapons-of-math-destruction': RouteRecordInfo<'/blog/genAI-and-weapons-of-math-destruction', '/blog/genAI-and-weapons-of-math-destruction', Record<never, never>, Record<never, never>>,
     '/blog/my-first-vibe-coding-experiment': RouteRecordInfo<'/blog/my-first-vibe-coding-experiment', '/blog/my-first-vibe-coding-experiment', Record<never, never>, Record<never, never>>,
+    '/blog/the-era-of-enshittification': RouteRecordInfo<'/blog/the-era-of-enshittification', '/blog/the-era-of-enshittification', Record<never, never>, Record<never, never>>,
     '/blog/the-fallacy-of-measuring-performance-in-IT': RouteRecordInfo<'/blog/the-fallacy-of-measuring-performance-in-IT', '/blog/the-fallacy-of-measuring-performance-in-IT', Record<never, never>, Record<never, never>>,
     '/blog/the-importance-of-decentralization-technologies': RouteRecordInfo<'/blog/the-importance-of-decentralization-technologies', '/blog/the-importance-of-decentralization-technologies', Record<never, never>, Record<never, never>>,
     '/blog/the-importance-of-test-driven-development': RouteRecordInfo<'/blog/the-importance-of-test-driven-development', '/blog/the-importance-of-test-driven-development', Record<never, never>, Record<never, never>>,
+    '/blog/til-about-local-first': RouteRecordInfo<'/blog/til-about-local-first', '/blog/til-about-local-first', Record<never, never>, Record<never, never>>,
     '/portfolio': RouteRecordInfo<'/portfolio', '/portfolio', Record<never, never>, Record<never, never>>,
     '/resume': RouteRecordInfo<'/resume', '/resume', Record<never, never>, Record<never, never>>,
   }
