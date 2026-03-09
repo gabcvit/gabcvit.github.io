@@ -11,15 +11,8 @@
       </div>
     </div>
     <div class="w-11/12">
-      <span class="font-bold">Description:</span>
       <p>{{ description }}</p>
-      <div v-if="!isCollapsed">
-        <div v-if="keyResponsibilities">
-          <span class="font-bold">Key responsibilities:</span>
-          <ul>
-            <li v-for="keyResponsibility in keyResponsibilities">{{ keyResponsibility }}</li>
-          </ul>
-        </div>
+      <div class="opacity-75" v-if="!isCollapsed">
         <div class="pt-2" v-if="keyAchievements">
           <span class="font-bold">Key achievements:</span>
           <ul>
@@ -36,7 +29,7 @@
     <button 
       v-if="keyResponsibilities || keyAchievements || techStack"
       @click="toggleCollapse" 
-      class="font-bold">
+      class="font-bold underline">
     {{ isCollapsed ? 'Show More' : 'Show Less' }}
   </button>
   </div>

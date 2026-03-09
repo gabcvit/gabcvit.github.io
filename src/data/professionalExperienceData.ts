@@ -2,22 +2,17 @@ export const professionalExperience = [
   {
     title: "Senior Developer Consultant",
     description: `Acting as a Senior Dev Consultant on a premium quality consultancy with very high 
-      standards and sensible defaults on software delivery and culture shift, my role is focused delivering 
+      standards and sensible defaults on software delivery, Agile and culture shift, my role is focused delivering 
       exceptional impact for all clients we engage with.`,
-    keyResponsibilities: [
-      "Shaping technical strategy and mentoring teams to build scalable cloud-native architectures with modern CI/CD practices",
-      "Setting technical direction, ensuring best practices, and mentoring developers for high-quality software delivery",
-      "Driving stakeholder engagement to enhance account growth, profitability, and strategic alignment",
-      "Advocating and mentoring on Agile methodologies and sensible defaults for collaboration improvement",
-      "Bridging technical knowledge gaps and business requirements, maintaining stakeholders at the center of every decision and polishing team’s transparency",
-      "Partnering with cross-functional teams and C-level leadership to resolve employee concerns, mediate conflicts, and drive impactful company-wide initiatives",
-    ],
     keyAchievements: [
-      "Strengthened client trust and team reputation. Team became the benchmark for excellence in an account of 200+ people",
-      "Drove initiatives with C-level leadership, improving workforce satisfaction and increasing transparency in internal processes",
-      "Implemented a streamlined process for external developers, accelerating software delivery and earning high praise from key client stakeholders.",
-      "Guided the project manager in making a critical mobile architecture decision, leveraging my expertise in hybrid and native development to ensure the best-fit solution for the client’s scope.",
-      "Led intersectional DEI initiatives, raising awareness of challenges faced by LGBTQIA+ and underrepresented gender minorities. Enhanced the company’s DEI visibility and strengthened its reputation in Germany.",
+      "Shaping technical strategy and mentoring teams to build scalable cloud-native architectures with modern CI/CD practices. Affecting over 200 internal customer-facing agents’ daily work in a fast and high-stakes environment",
+      "Strengthened client trust and team reputation, securing all roles during budget cuts. Our team became the benchmark for excellence in an account of 250+ people; The account has doubled after being engaged in it for 2 years",
+      "Implemented a streamlined process for external developers in a cross-functional team of 40+ developers, accelerating software delivery, and earning high praise from key client stakeholders.",
+      "Influenced a critical mobile architecture decision, ensuring the best fit between hybrid and native approaches for a product used by 10k+ users.",
+      "Set technical direction and introduced engineering best practices including TDD adoption, improved Scrum workflows, and stronger code quality standards (SOLID principles, reduced code complexity).",
+      "Bridging technical knowledge gaps and business requirements, maintaining stakeholders at the center of every decision and polishing team’s transparency;",
+      "Drove initiatives with C-level leadership, improving workforce of approximately 500 employees’ satisfaction, increasing transparency in salary, promotion, performance and budget financial processes. This has required a lot of mediation of conflict and finding alignment of employees’ concerns with global company-wide initiatives.",
+      "Led intersectional DEI initiatives, raising awareness of challenges faced by LGBTQIA+ and underrepresented gender minorities. Mobilized over 100 (approx. 20%) employees across Germany for the cause, enhanced the company’s DEI visibility and strengthened its reputation in Germany",
     ],
     techStack: "Swift, SwiftUI, Vue, Typescript, Javascript, GraphQL, GitHub Actions, Terraform, AWS.",
     office: "Thoughtworks - Munich, Germany",
@@ -29,18 +24,11 @@ export const professionalExperience = [
       small customer-centric consultancy, offering customized solutions and support for 
       clients who needed insights to achieve their goals during the entire duration of 
       the app’s discovery, development, launch and feedback management phases.`,
-    keyResponsibilities: [
-      "Empower clients to achieve their goals, either by developing a new application or by offering them Business Analysis support in order for them to evaluate their requirements",
-      "Translated technical concepts into actionable insights for non-technical stakeholders through effective communication and prototyping",
-      "Developed design and mock-ups which fulfill the client’s needs and supports them achieving their goals",
-      "Fully supported upload and approval processes of new apps in Google’s Play Store and Apple’s App Store, making sure that the app complies with all the requirements needed",
-      "Managed Feedback and guided customer after app’s release",
-      "Internally developed new innovative apps in order to create a B2C business model to the company",
-    ],
     keyAchievements: [
-      "Developed and launched over 10 customer mobile apps, achieving a 4.5+ average user rating.",
-      "Safeguarded 100% of customer’s engagement, all of them ending on a positive feedback and generating new engagements",
-      "Improved company’s visibility online by releasing new self-owned apps and optimizing brand’s website SEO performance online. Raising conversion rates and new contracts from potential clients",
+      "Empowered clients to achieve their goals, either by developing a new application or by offering them Business Analysis support to evaluate their requirements. Translated technical concepts into actionable insights for non-technical stakeholders through effective communication and prototyping;",
+      "Developed and launched over 10 customer mobile apps, achieving a 4.5+ average user rating. Fully supported upload and approval processes of new apps in Google’s Play Store and Apple’s App Store, making sure that the app complies with all the requirements needed",
+      "Safeguarded 100% of customer engagement, all of them ending in positive feedback and generating new engagements for the company. Managed Feedback and guided customer after app’s release",
+      "Improved the company’s visibility online by releasing new self-owned apps and optimizing brand’s website SEO performance online. Raising conversion rates and new contracts from potential clients.",
     ],
     techStack: "React-Native, Ionic 1 and 3, Unity, Sketch, InVision, MongoDB, Node.",
     office: "app-affairs GmbH. - Munich, Germany",
@@ -52,11 +40,6 @@ export const professionalExperience = [
       infrastructure, user support, internal tools test protocol,
       hardware and software Rollout administration & execution,
       and network maintenance.`,
-    keyResponsibilities: [
-      "Managed hardware and leasing contracts",
-      "Analyse budget decisions and implement initiatives to reduce costs",
-      "Safeguard information and data security",
-    ],
     keyAchievements: [
       "Rolled off over 300 hardware and software company-wide, ensuring all equipment was up-to-date and in good working order",
       "Fixed contract breaches and improved budget management, saving the branch 20% in leasing costs and fines",
@@ -73,10 +56,6 @@ export const professionalExperience = [
       The project was financed by PIBIC (Programa institucional de bolsas de 
       iniciação científica – Program of Scientific Initiation Scholarships) at Campinas
       State University (UNICAMP).`,
-    keyResponsibilities: [
-      "Improve User Experience through user testing, feedback and applying sensible defaults",
-      "Write down findings and heavily document the research and its results",
-    ],
     keyAchievements: [
       "Improved game receptibility by 100% through user testing and feedback",
       "Finished research with a very positive approval and guaranteed project funding for the next year",

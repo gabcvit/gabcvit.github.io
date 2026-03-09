@@ -14,7 +14,7 @@
       <p>
         Reading duration: {{ duration }}
       </p>
-      <a>
+      <a class="underline">
         Read more
       </a>
     </div>

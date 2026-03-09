@@ -5,26 +5,22 @@ import SectionHeader from "../components/SectionHeader.vue";
 <template>
   <SectionHeader title="Professional summary" />
   <p>
-    Experienced and Leadership-focused Web and Mobile applications engineer with 10+ years
-    in delivering scalable Web and Mobile solutions, leading cross-functional teams and 
-    aligning technical decisions with business goals across multiple industries. 
-    I focus on empowering teams by fostering a culture of continuous improvement, clear communication, 
-    and technical excellence. Passionate about challenging code bias, GenAI, decentralization and meditation practices. 
+    Experienced and Leadership-focused Web and Mobile applications engineer with 10+ years in
+    delivering scalable Web and Mobile solutions, leading cross-functional teams and aligning 
+    technical excellence with business goals across multiple industries. Passionate about ethical tech, 
+    decentralization, self-ownership, A11y, Data privacy and working on projects that have a meaningful impact. 
   </p>
   <SectionHeader title="Track record" />
   <ul>
-    <li>Heavy technical and development knowledge in web and mobile applications languages, frameworks, cloud solutions and Agile methodologies</li>
-    <li>10+ successful app launches, impacting thousands of users.</li>
-    <li>20+ client collaborations, delivering tailored tech solutions.</li>
-    <li>Multiple industry certifications in key web and mobile technologies.</li>
-  </ul>
-  <SectionHeader title="Core Skills" />
-  <ul>
-    <li>Technology Strategy & Roadmaps </li>
-    <li>Engineering Leadership & Team Growth </li>
-    <li>Stakeholder Engagement & Cross-Functional Collaboration </li>
-    <li>Agile & DevOps Transformation </li>
-    <li>Customer Experience & Accessibility </li>
-    <li>Security, Compliance & Data Protection </li>
+    <li>
+      Heavy technical knowledge in web and mobile app development, frameworks, 
+      cloud solutions and Agile methodologies
+    </li>
+    <li>10+ successful app launches, impacting hundreds of thousands of users.</li>
+    <li>20+ client collaborations, delivering tailored tech solutions and improving team collaboration and impact.</li>
+    <li>
+      2+ years of experience with high-stakes negotiations and co-determination with management
+      and worker representation.
+    </li>
   </ul>
 </template>

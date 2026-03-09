@@ -41,27 +41,39 @@ const websiteStats = [
 <template>
   <PageHeader title="Unapologetically human" />
   <div class="animated-content-wrapper">
-    <SectionHeader title="Who am I" />
-    <p>
-      My name is <b>Gabriel Vitali</b>
-    </p>
-    <p>
-      I’m an experienced web and mobile apps dev with 10+ years of experience, heavily focused on empowering independent teams, devs and users alike to leverage technology to improve their lives.
-    </p>
+    <div class="flex flex-col md:flex-row gap-6">
+      <img
+        class="md:w-2/6 md:max-w-[300px] object-contain"
+        src="../../../public/profile.png"
+        alt="Gabriel Vitali's picture"
+      >
+      <div class="md:w-4/6">
+        <SectionHeader title="Who am I" />
+        <p>
+          My name is <b>Gabriel Vitali</b>
+        </p>
+        <p>
+          I’m an experienced web and mobile apps dev with 10+ years of experience, heavily focused 
+          on empowering independent teams, devs and users alike to leverage technology to improve their lives.
+        </p>
+        <SectionHeader title="What drives me" />
+        <p>
+          Ethical tech
+        </p>
+        <p>
+          Decentralization and self-ownership
+        </p>
+        <p>
+          Challenging code biases and structures of power
+        </p>
+        <p>
+          A11y and data privacy
+        </p>
+      </div>
+    </div>
+    
 
-    <SectionHeader title="What drives me" />
-    <p>
-      Ethical tech
-    </p>
-    <p>
-      Decentralization and self-ownership
-    </p>
-    <p>
-      Challenging code biases and structures of power
-    </p>
-    <p>
-      A11y and data privacy
-    </p>
+    
 
     <SectionHeader title="Socials" />
     <SocialLinksWrapper />
@@ -78,7 +90,7 @@ const websiteStats = [
         <a 
           v-if="stat.url" 
           :href="stat.url"
-          class="light-green-color">
+          class="light-green-color underline">
           {{ stat.title }}
         </a>
       </p>
