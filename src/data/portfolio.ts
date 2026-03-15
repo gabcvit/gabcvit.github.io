@@ -10,6 +10,13 @@ export type Portfolio = Project[]
 
 export const portfolio: Portfolio = [
   {
+		title: 'Voto podre',
+		theme:  'Politics and voting information',
+		roles: 'Main developer',
+		link: 'https://gabcvit.dev/voto-podre/',
+		period: '2026',
+	},
+  {
 		title: 'Chaos Tabletop',
 		theme:  'RPG Toolkit',
 		roles: 'Main developer',
