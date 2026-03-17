@@ -2,7 +2,7 @@
   <PageHeader title="My previous work" />
 
   <div class="animated-content-wrapper grid md:grid-cols-3 gap-4">
-    <PortfolioSingleElement v-for="project in portfolioToRender" :project="project" />
+    <PortfolioSingleElement v-for="project in portfolioToRender" :key="project.title" :project="project" />
   </div>
 
 </template>

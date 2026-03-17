@@ -1,37 +1,40 @@
 <template>
-  <div class="mb-6">
+  <div class="mb-8 pl-4 border-l border-brand-green/30 hover:border-brand-green transition-colors duration-300">
     <div class="grid md:grid-cols-5 grid-rows">
       <div class="col-span-4">
-        <h3>
-          {{ title }} - {{ office }}
+        <h3 class="font-bold text-white">
+          {{ title }}<span v-if="office" class="text-white/50 font-normal"> — {{ office }}</span>
         </h3>
       </div>
       <div class="flex col-span-1 items-center md:justify-end justify-start">
-        <span class="opacity-80">{{ period }}</span>
+        <time class="text-xs font-mono text-white/40 tracking-wide">{{ period }}</time>
       </div>
     </div>
     <div class="w-11/12">
-      <p>{{ description }}</p>
-      <div class="opacity-75" v-if="!isCollapsed">
+      <p class="text-white/80 text-sm leading-relaxed">{{ description }}</p>
+      <div v-if="!isCollapsed" class="animate-fadeInUp">
         <div class="pt-2" v-if="keyAchievements">
-          <span class="font-bold">Key achievements:</span>
-          <ul>
-            <li v-for="keyAchievement in keyAchievements">{{ keyAchievement }}</li>
+          <span class="text-xs uppercase tracking-widest text-brand-green font-bold">Key achievements</span>
+          <ul class="mt-2">
+            <li v-for="keyAchievement in keyAchievements" :key="keyAchievement" class="text-sm text-white/70 pb-1">{{ keyAchievement }}</li>
           </ul>
         </div>
         <div class="pt-2" v-if="techStack">
-          <span class="font-bold">Tech stack:</span> 
-          <p>{{ techStack }}</p>
+          <span class="text-xs uppercase tracking-widest text-brand-green font-bold">Tech stack</span>
+          <p class="text-sm text-white/70 mt-1">{{ techStack }}</p>
         </div>
       </div>
     </div>
-    
-    <button 
+
+    <button
       v-if="keyResponsibilities || keyAchievements || techStack"
-      @click="toggleCollapse" 
-      class="font-bold underline">
-    {{ isCollapsed ? 'Show More' : 'Show Less' }}
-  </button>
+      @click="toggleCollapse"
+      class="mt-2 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-widest text-brand-pink hover:text-brand-green transition-colors duration-200"
+      :aria-expanded="!isCollapsed"
+    >
+      <span>{{ isCollapsed ? 'Show details' : 'Hide details' }}</span>
+      <span aria-hidden="true" class="transition-transform duration-200" :class="isCollapsed ? '' : 'rotate-180'">&#9660;</span>
+    </button>
   </div>
 </template>
 
@@ -56,5 +59,4 @@ const isCollapsed = ref(true);
 function toggleCollapse() {
   isCollapsed.value = !isCollapsed.value;
 }
-
 </script>

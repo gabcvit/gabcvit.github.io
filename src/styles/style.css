@@ -8,7 +8,7 @@
 }
 
 :root {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgb(10, 10, 10);
 
   font-synthesis: none;
@@ -20,8 +20,21 @@
   @apply text-white;
 }
 
+/* Brand accent selection */
+::selection {
+  background-color: rgb(178, 255, 0);
+  color: rgb(10, 10, 10);
+}
+
+/* Global focus-visible styles for keyboard accessibility */
+:focus-visible {
+  outline: 2px solid rgb(178, 255, 0);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
 .light-green-color {
-	color: rgb(178, 255, 0)
+  color: rgb(178, 255, 0);
 }
 
 .animated-content-wrapper {
@@ -29,54 +42,103 @@
 }
 
 .glow-pink-border {
-	border-color: rgb(219, 39, 119);
+  border-color: rgb(219, 39, 119);
+}
+
+.accent-left-border {
+  border-left: 3px solid rgb(178, 255, 0);
+  padding-left: 1rem;
 }
 
 h1 {
-	@apply text-center text-5xl uppercase font-thin animate-fadeIn border-b glow-pink-border pb-4 my-6 mx-auto light-green-color;
-	font-family: Regardion;
+  @apply text-center text-4xl md:text-5xl uppercase font-thin animate-fadeIn border-b glow-pink-border pb-4 my-6 mx-auto light-green-color;
+  font-family: Regardion;
+  letter-spacing: 0.05em;
 }
 
 h2 {
-	@apply text-3xl pt-6 pb-4 uppercase font-bold light-green-color;
-	font-family: Regardion;
+  @apply text-2xl md:text-3xl pt-6 pb-3 uppercase font-bold light-green-color;
+  font-family: Regardion;
+  letter-spacing: 0.04em;
 }
 
 h3 {
-	@apply text-lg pt-2 pb-2 font-bold;
+  @apply text-base md:text-lg pt-2 pb-2 font-bold;
 }
 
 p {
-	@apply text-base pb-4 text-white opacity-90 font-thin;
+  @apply text-base pb-4 text-white opacity-90;
+  font-weight: 300;
+  line-height: 1.7;
 }
 
 a {
-	@apply text-base opacity-100 font-bold;
+  @apply text-base opacity-100 font-bold transition-colors duration-200;
+}
+
+a:hover {
+  color: rgb(178, 255, 0);
 }
 
 .animated-content-wrapper a {
-	@apply underline;
+  @apply underline;
+}
+
+/* Markdown body links use green color */
+.animated-content-wrapper p a,
+.animated-content-wrapper li a {
+  color: rgb(178, 255, 0);
+}
+
+.animated-content-wrapper p a:hover,
+.animated-content-wrapper li a:hover {
+  color: rgb(219, 39, 119);
 }
 
 ul {
-	@apply list-disc text-base ml-4 font-thin;
+  @apply list-none text-base ml-0 mb-4;
+  font-weight: 300;
+}
+
+ul li {
+  @apply pl-4 pb-1 relative;
+}
+
+ul li::before {
+  content: '▸';
+  color: rgb(178, 255, 0);
+  position: absolute;
+  left: 0;
+  font-size: 0.75rem;
+  top: 0.25em;
 }
 
 li {
-	@apply pl-2;
+  @apply pl-2;
 }
 
 pre {
-	@apply border-2 p-4 my-2;
-	border-color: rgb(178, 255, 0);
-	background-color: rgba(255,255,255,0.02);
-	text-wrap: wrap;
+  @apply border-2 p-4 my-2 overflow-x-auto;
+  border-color: rgb(178, 255, 0);
+  background-color: rgba(178, 255, 0, 0.03);
+  text-wrap: wrap;
+  border-radius: 2px;
 }
 
 code {
-	@apply text-white opacity-80 font-mono text-sm;
+  @apply text-white opacity-80 font-mono text-sm;
+}
+
+/* Inline code */
+:not(pre) > code {
+  background-color: rgba(178, 255, 0, 0.08);
+  border: 1px solid rgba(178, 255, 0, 0.25);
+  border-radius: 3px;
+  padding: 0.1em 0.4em;
+  color: rgb(178, 255, 0);
+  opacity: 1;
 }
 
 .bg-dark {
-	background-color: rgb(10, 10, 10);
+  background-color: rgb(10, 10, 10);
 }

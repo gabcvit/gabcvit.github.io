@@ -3,37 +3,57 @@
 </script>
 
 <template>
-  <div class="relative">
+  <div class="relative overflow-hidden" aria-hidden="true">
     <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
       <defs>
         <path id="wave-shape" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
       </defs>
       <g class="parallax">
-        <use xlink:href="#wave-shape" x="48" y="0" fill="rgba(255, 255, 255, 0.7" />
-        <use xlink:href="#wave-shape" x="48" y="0" fill="rgba(255, 255, 255, 0.5" />
-        <use xlink:href="#wave-shape" x="48" y="0" fill="rgba(255, 255, 255, 0.3" />
-        <use xlink:href="#wave-shape" x="48" y="0" fill="rgba(255, 255, 255, 0.1" />
+        <use xlink:href="#wave-shape" x="48" y="0" fill="rgba(219, 39, 119, 0.15)" />
+        <use xlink:href="#wave-shape" x="48" y="0" fill="rgba(219, 39, 119, 0.1)" />
+        <use xlink:href="#wave-shape" x="48" y="0" fill="rgba(178, 255, 0, 0.06)" />
+        <use xlink:href="#wave-shape" x="48" y="0" fill="rgba(178, 255, 0, 0.04)" />
       </g>
-	  </svg>
+    </svg>
   </div>
-  <div class="bg-white py-4 px-2" >
-    <div xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/" class="flex text-black gap-1 justify-center flex-wrap">
-      <a property="dct:title" rel="cc:attributionURL" href="https://gabcvit.dev/">
-        gabcvit.dev 
+  <footer class="bg-dark border-t border-brand-green/30 py-6 px-4">
+    <div
+      xmlns:cc="http://creativecommons.org/ns#"
+      xmlns:dct="http://purl.org/dc/terms/"
+      class="flex text-white/60 gap-1 justify-center flex-wrap text-sm items-center"
+    >
+      <a
+        property="dct:title"
+        rel="cc:attributionURL"
+        href="https://gabcvit.dev/"
+        class="text-brand-green font-bold text-sm hover:text-white transition-colors duration-200"
+      >
+        gabcvit.dev
       </a>
       <span>by</span>
-      <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://gabcvit.dev/">
+      <a
+        rel="cc:attributionURL dct:creator"
+        property="cc:attributionName"
+        href="https://gabcvit.dev/"
+        class="text-brand-green font-bold text-sm hover:text-white transition-colors duration-200"
+      >
         Gabriel Vitali
       </a>
       <span>is licensed under</span>
-      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" class="flex gap-1"> CC BY-NC-SA 4.0
-        <img class="license-icon" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="">
-        <img class="license-icon" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="">
-        <img class="license-icon" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="">
-        <img class="license-icon" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="">
+      <a
+        href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+        target="_blank"
+        rel="license noopener noreferrer"
+        class="flex gap-1 items-center text-sm hover:text-brand-green transition-colors duration-200"
+      >
+        CC BY-NC-SA 4.0
+        <img class="license-icon" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt="Creative Commons">
+        <img class="license-icon" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt="Attribution">
+        <img class="license-icon" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt="NonCommercial">
+        <img class="license-icon" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt="ShareAlike">
       </a>
     </div>
-  </div>
+  </footer>
   
   
 </template>
@@ -74,9 +94,10 @@
 }
 
 .license-icon {
-  height: 22px!important;
-  margin-left: 3px;
-  vertical-align: text-bottom;
+  height: 18px !important;
+  margin-left: 2px;
+  vertical-align: middle;
+  filter: invert(1) opacity(0.6);
 }
 
 @keyframes move-forever {
@@ -90,11 +111,8 @@
 
 @media (max-width: 768px) {
   .waves {
-    height:40px;
-    min-height:40px;
-  }
-  h1 {
-    font-size:24px;
+    height: 40px;
+    min-height: 40px;
   }
 }
 

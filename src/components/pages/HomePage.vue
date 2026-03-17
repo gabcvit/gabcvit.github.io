@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { portfolio } from '@/data/portfolio';
 import PageHeader from '../PageHeader.vue';
-import { socialLinks } from '@/data/socialLinksData';
 import { useRouter } from 'vue-router/auto'
 import RssIcon from "@/assets/rss-icon.svg?raw";
 
@@ -41,12 +40,14 @@ const websiteStats = [
 <template>
   <PageHeader title="Unapologetically human" />
   <div class="animated-content-wrapper">
-    <div class="flex flex-col md:flex-row gap-6">
-      <img
-        class="md:w-2/6 md:max-w-[300px] object-contain"
-        src="../../../public/profile.png"
-        alt="Gabriel Vitali's picture"
-      >
+    <div class="flex flex-col md:flex-row gap-8 mb-4">
+      <div class="md:w-2/6 flex-none">
+        <img
+          class="w-full md:max-w-[280px] object-cover border-2 border-brand-green/30 hover:border-brand-green transition-colors duration-300"
+          src="../../../public/profile.png"
+          alt="Gabriel Vitali's profile picture"
+        >
+      </div>
       <div class="md:w-4/6">
         <SectionHeader title="Who am I" />
         <p>
@@ -57,18 +58,12 @@ const websiteStats = [
           on empowering independent teams, devs and users alike to leverage technology to improve their lives.
         </p>
         <SectionHeader title="What drives me" />
-        <p>
-          Ethical tech
-        </p>
-        <p>
-          Decentralization and self-ownership
-        </p>
-        <p>
-          Challenging code biases and structures of power
-        </p>
-        <p>
-          A11y and data privacy
-        </p>
+        <ul>
+          <li>Ethical tech</li>
+          <li>Decentralization and self-ownership</li>
+          <li>Challenging code biases and structures of power</li>
+          <li>A11y and data privacy</li>
+        </ul>
       </div>
     </div>
     
@@ -79,21 +74,22 @@ const websiteStats = [
     <SocialLinksWrapper />
 
     <SectionHeader title="Content in this website" />
-    <div
-      v-for="stat in websiteStats"
-      :key="stat.title"
-      class="block flex-1"
-    >
-      <p class="font-bold text-4xl pt-0 pb-2">{{ stat.count }}</p>
-      <p>
-        {{ stat.description }} 
-        <a 
-          v-if="stat.url" 
-          :href="stat.url"
-          class="light-green-color underline">
-          {{ stat.title }}
-        </a>
-      </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+      <div
+        v-for="stat in websiteStats"
+        :key="stat.title"
+        class="border border-brand-green/20 hover:border-brand-green/60 transition-colors duration-300 p-4 bg-white/[0.02]"
+      >
+        <p class="font-bold text-4xl pt-0 pb-1 text-brand-green">{{ stat.count }}</p>
+        <p class="text-sm text-white/70 pb-0">
+          {{ stat.description }}
+          <a
+            v-if="stat.url"
+            :href="stat.url"
+            class="text-brand-green hover:text-white font-bold underline transition-colors duration-200"
+          >{{ stat.title }}</a>
+        </p>
+      </div>
     </div>
 
     <SectionHeader title="RSS Feed" />

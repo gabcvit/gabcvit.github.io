@@ -1,12 +1,21 @@
 <template>
   <RouterLink
     :class="[
-      'text-2xl w-1/4 text-center uppercase font-normal',
-      isActive ? variantStyles[color] : 'cursor-pointer',
+      'text-xl w-1/4 text-center uppercase font-normal tracking-widest',
+      'transition-colors duration-200 relative group py-1',
+      isActive ? variantStyles[color] : 'text-white hover:text-brand-green',
     ]"
     :to="optionId"
+    :aria-current="isActive ? 'page' : undefined"
   >
     {{ label }}
+    <span
+      aria-hidden="true"
+      :class="[
+        'absolute bottom-0 left-1/2 -translate-x-1/2 h-0.5 transition-all duration-200',
+        isActive ? 'w-full bg-pink-600' : 'w-0 group-hover:w-full bg-brand-green',
+      ]"
+    />
   </RouterLink>
 </template>
 
