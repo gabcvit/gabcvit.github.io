@@ -1,11 +1,17 @@
 <template>
   <PageHeader title="All my posts" />
 
-  <div class="animated-content-wrapper">
-    <BlogPostPreview v-for="post in posts" :key="post.path" :path="post.path" :title="post.title"
-      :description="post.description" :date="post.date" :duration="post.duration" />
-  </div>
-
+  <BlogPostPreview
+    v-for="(post, index) in posts"
+    :key="post.path"
+    :path="post.path"
+    :title="post.title"
+    :description="post.description"
+    :date="post.date"
+    :duration="post.duration"
+    class="animate-fade-in-up"
+    :style="{ animationDelay: `${index * 70}ms` }"
+  />
 </template>
 
 <script lang="ts" setup>

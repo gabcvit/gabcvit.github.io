@@ -2,6 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.4s ease-out both;
+}
+
+/* Page-level route transitions */
+.page-enter-active {
+  animation: fade-in-up 0.3s ease-out both;
+}
+.page-leave-active {
+  transition-property: opacity;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.page-leave-to {
+  opacity: 0;
+}
+
 @font-face {
   font-family: Regardion;
   src: url(../../public/fonts/Regardion-Demo-Regular-BF6976b30019af5.woff);
@@ -38,7 +66,7 @@
 }
 
 .animated-content-wrapper {
-  @apply transition duration-300 animate-fadeInUp;
+  animation: fade-in-up 0.4s ease-out 150ms both;
 }
 
 .glow-pink-border {

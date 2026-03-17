@@ -1,18 +1,28 @@
 <template>
   <PageHeader title="Resume" />
-  <div class="animated-content-wrapper pb-16">
-    <div class="md:float-right">
+  <div class="pb-16">
+    <div class="md:float-right animate-fade-in-up">
       <TagSocial
         :iconSvg="DownloadIcon"
         label="Download Resume"
         url="../../../public/CVGabrielVitali.pdf"
       />
     </div>
-    <ProfessionalSummarySection />
-    <TechnicalSkillsSection />
-    <ProfessionalExperienceSection />
-    <EducationAndCertificationsSection />
-    <LanguagesSection />
+    <div class="animate-fade-in-up" style="animation-delay: 80ms">
+      <ProfessionalSummarySection />
+    </div>
+    <div class="animate-fade-in-up" style="animation-delay: 160ms">
+      <TechnicalSkillsSection />
+    </div>
+    <div class="animate-fade-in-up" style="animation-delay: 240ms">
+      <ProfessionalExperienceSection />
+    </div>
+    <div class="animate-fade-in-up" style="animation-delay: 320ms">
+      <EducationAndCertificationsSection />
+    </div>
+    <div class="animate-fade-in-up" style="animation-delay: 400ms">
+      <LanguagesSection />
+    </div>
   </div>
 </template>
 
